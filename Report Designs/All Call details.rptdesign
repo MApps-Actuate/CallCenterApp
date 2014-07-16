@@ -1,0 +1,1533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/D:/IHUB_WORKSPACE/BIRT%20Project/Data%20Objects/Call%20Center%20Vendor%20Performance.data">
+                <reference-elements>Calls;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Call Center Management System" id="2">
+                            <property name="HOME">Data/</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">YES</property>
+                            <property name="TRAILNULLCOLS">NO</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Call Center Performance Results" id="3">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">CALL ID</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">CALL ID</text-property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Call_Date</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Call_Date</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Product</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Product</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Resolved_Ontime</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Resolved_Ontime</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Service</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Service</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Support_Rep</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Support_Rep</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Minutes_On_Phone</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Minutes_On_Phone</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Severity</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Severity</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Failure_Type</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Failure_Type</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Customer_Type</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer_Type</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Customer Sat Rating</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer Sat Rating</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">TTA</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">TTA</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Vendor</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Vendor</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <list-property name="parameters"/>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">CALL ID</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Call_Date</property>
+                                        <property name="dataType">date</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">Product</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Resolved_Ontime</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Service</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">Support_Rep</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Minutes_On_Phone</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">Severity</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">Failure_Type</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">Customer_Type</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">11</property>
+                                        <property name="name">Customer Sat Rating</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">12</property>
+                                        <property name="name">TTA</property>
+                                        <property name="dataType">float</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">13</property>
+                                        <property name="name">Vendor</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Call Center Management System</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">CALL ID</property>
+                                    <property name="nativeName">CALL ID</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Call_Date</property>
+                                    <property name="nativeName">Call_Date</property>
+                                    <property name="dataType">date</property>
+                                    <property name="nativeDataType">91</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">Product</property>
+                                    <property name="nativeName">Product</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Resolved_Ontime</property>
+                                    <property name="nativeName">Resolved_Ontime</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Service</property>
+                                    <property name="nativeName">Service</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">Support_Rep</property>
+                                    <property name="nativeName">Support_Rep</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">Minutes_On_Phone</property>
+                                    <property name="nativeName">Minutes_On_Phone</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">Severity</property>
+                                    <property name="nativeName">Severity</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">Failure_Type</property>
+                                    <property name="nativeName">Failure_Type</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">Customer_Type</property>
+                                    <property name="nativeName">Customer_Type</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">11</property>
+                                    <property name="name">Customer Sat Rating</property>
+                                    <property name="nativeName">Customer Sat Rating</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">12</property>
+                                    <property name="name">TTA</property>
+                                    <property name="nativeName">TTA</property>
+                                    <property name="dataType">float</property>
+                                    <property name="nativeDataType">8</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">13</property>
+                                    <property name="name">Vendor</property>
+                                    <property name="nativeName">Vendor</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "CALL ID", "Call_Date", "Product", "Resolved_Ontime", "Service", "Support_Rep", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type", "Customer Sat Rating", "TTA", "Vendor" from "callcenterdata.csv" : {"CALL ID","CALL ID",STRING;"Call_Date","Call_Date",DATE;"Product","Product",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Service","Service",STRING;"Support_Rep","Support_Rep",STRING;"Minutes_On_Phone","Minutes_On_Phone",DOUBLE;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING;"Customer Sat Rating","Customer Sat Rating",STRING;"TTA","TTA",DOUBLE;"Vendor","Vendor",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Call_Date</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Call_Date</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Product</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Product</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Resolved_Ontime</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Resolved_Ontime</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Service</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Service</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Support_Rep</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Support_Rep</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Minutes_On_Phone</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Minutes_On_Phone</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Severity</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Severity</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Failure_Type</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Failure_Type</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Customer_Type</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Customer_Type</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Customer Sat Rating</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Customer Sat Rating</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>TTA</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>TTA</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Vendor</design:name>
+              <design:position>12</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Vendor</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                    <property name="linkedDataModels">
+                        <linked-data-model name="Data Model" id="4">
+                            <property name="aliasDataSets">
+                                <alias-data-set name="Call Center Performance Results" id="18">
+                                    <property name="originDataSet">Call Center Performance Results</property>
+                                </alias-data-set>
+                            </property>
+                            <property name="drillPaths">
+                                <drill-path id="19">
+                                    <text-property name="displayName">Call Date</text-property>
+                                    <simple-property-list name="drillPathColumns">
+                                        <value>dataSetRow["Call Date"]["Year"]</value>
+                                        <value>dataSetRow["Call Date"]["Quarter"]</value>
+                                        <value>dataSetRow["Call Date"]["Month"]</value>
+                                        <value>dataSetRow["Call Date"]["DayOfMonth"]</value>
+                                    </simple-property-list>
+                                </drill-path>
+                                <drill-path id="20">
+                                    <text-property name="displayName">Support</text-property>
+                                    <simple-property-list name="drillPathColumns">
+                                        <value>dataSetRow["Vendor"]</value>
+                                        <value>dataSetRow["Support Rep"]</value>
+                                        <value>dataSetRow["Contact Type"]</value>
+                                    </simple-property-list>
+                                </drill-path>
+                                <drill-path id="21">
+                                    <text-property name="displayName">Product</text-property>
+                                    <simple-property-list name="drillPathColumns">
+                                        <value>dataSetRow["Service"]</value>
+                                        <value>dataSetRow["Product"]</value>
+                                    </simple-property-list>
+                                </drill-path>
+                            </property>
+                            <property name="categories">
+                                <category name="Call Center Performance Results" id="5">
+                                    <property name="categoryColumns">
+                                        <category-column name="Call Date" id="6">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Call_Date</property>
+                                        </category-column>
+                                        <category-column name="Product" id="7">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Product</property>
+                                        </category-column>
+                                        <category-column name="Resolved Ontime" id="8">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Resolved_Ontime</property>
+                                        </category-column>
+                                        <category-column name="Service" id="9">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Service</property>
+                                        </category-column>
+                                        <category-column name="Support Rep" id="10">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Support_Rep</property>
+                                        </category-column>
+                                        <category-column name="Call Minutes" id="11">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Minutes_On_Phone</property>
+                                        </category-column>
+                                        <category-column name="Call Severity" id="12">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Severity</property>
+                                        </category-column>
+                                        <category-column name="Contact Type" id="13">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Failure_Type</property>
+                                        </category-column>
+                                        <category-column name="Account Type" id="14">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Customer_Type</property>
+                                        </category-column>
+                                        <category-column name="Customer Sat Rating" id="15">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Customer Sat Rating</property>
+                                        </category-column>
+                                        <category-column name="Time To Answer" id="16">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">TTA</property>
+                                        </category-column>
+                                        <category-column name="Vendor" id="17">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">Vendor</property>
+                                        </category-column>
+                                        <category-column name="Case ID" id="22">
+                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
+                                            <property name="resultSetColumnName">CALL ID</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                            </property>
+                            <property name="pushDown">true</property>
+                        </linked-data-model>
+                    </property>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <data-sources>
+        <data-mart-data-source name="Calls" id="7">
+            <property name="datamartURL">Data Objects/Call Center Vendor Performance</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="Data Set" id="165">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">CALL ID</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">CALL ID</text-property>
+                </structure>
+                <structure>
+                    <property name="columnName">Call_Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Call_Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Product</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Product</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Resolved_Ontime</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Resolved_Ontime</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Service</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Service</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Support_Rep</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Support_Rep</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Minutes_On_Phone</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Minutes_On_Phone</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Severity</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Severity</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Failure_Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Failure_Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Customer_Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer_Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Customer Sat Rating</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer Sat Rating</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">TTA</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">TTA</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Vendor</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Vendor</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <list-property name="filter"/>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">CALL ID</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Call_Date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">Product</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Resolved_Ontime</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Service</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Support_Rep</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Minutes_On_Phone</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Severity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Failure_Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">Customer_Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Customer Sat Rating</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">TTA</property>
+                        <property name="dataType">float</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">Vendor</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Calls</property>
+            <property name="dataObject">Call Center Performance Results</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">CALL ID</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Call_Date</property>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">Product</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">Resolved_Ontime</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">Service</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Support_Rep</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">Minutes_On_Phone</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">Severity</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">Failure_Type</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">Customer_Type</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">Customer Sat Rating</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">TTA</property>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">Vendor</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table name="Table" id="166">
+            <property name="dataSet">Data Set</property>
+            <property name="theme">ThemesReportItems3.Modern Table</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">CALL ID</property>
+                    <text-property name="displayName">CALL ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CALL ID"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Call_Date</property>
+                    <text-property name="displayName">Call_Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Call_Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Product</property>
+                    <text-property name="displayName">Product</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Product"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Resolved_Ontime</property>
+                    <text-property name="displayName">Resolved_Ontime</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Resolved_Ontime"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Service</property>
+                    <text-property name="displayName">Service</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Service"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Support_Rep</property>
+                    <text-property name="displayName">Support_Rep</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Support_Rep"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Minutes_On_Phone</property>
+                    <text-property name="displayName">Minutes_On_Phone</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Minutes_On_Phone"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">Severity</property>
+                    <text-property name="displayName">Severity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Severity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Failure_Type</property>
+                    <text-property name="displayName">Failure_Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Failure_Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Customer_Type</property>
+                    <text-property name="displayName">Customer_Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Customer_Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Customer Sat Rating</property>
+                    <text-property name="displayName">Customer Sat Rating</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Customer Sat Rating"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">TTA</property>
+                    <text-property name="displayName">TTA</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["TTA"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">Vendor</property>
+                    <text-property name="displayName">Vendor</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Vendor"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="sort">
+                <structure>
+                    <expression name="key" type="javascript">row["Call_Date"]</expression>
+                    <property name="direction">desc</property>
+                    <property name="strength">-1</property>
+                </structure>
+            </list-property>
+            <column id="235"/>
+            <column id="236"/>
+            <column id="237"/>
+            <column id="238"/>
+            <column id="239"/>
+            <column id="240"/>
+            <column id="241"/>
+            <column id="242"/>
+            <column id="243"/>
+            <column id="244"/>
+            <column id="245"/>
+            <column id="246"/>
+            <column id="247"/>
+            <header>
+                <row id="264">
+                    <cell id="265">
+                        <property name="colSpan">13</property>
+                        <property name="rowSpan">1</property>
+                        <property name="backgroundColor">white</property>
+                        <property name="borderBottomColor">#FFFFFF</property>
+                        <property name="borderBottomStyle">solid</property>
+                        <property name="borderBottomWidth">medium</property>
+                        <property name="borderLeftColor">#FFFFFF</property>
+                        <property name="borderLeftStyle">solid</property>
+                        <property name="borderLeftWidth">medium</property>
+                        <property name="borderRightColor">#FFFFFF</property>
+                        <property name="borderRightStyle">solid</property>
+                        <property name="borderRightWidth">medium</property>
+                        <property name="borderTopColor">#FFFFFF</property>
+                        <property name="borderTopStyle">solid</property>
+                        <property name="borderTopWidth">medium</property>
+                        <label id="278">
+                            <text-property name="text">Vendor Call Detail Report</text-property>
+                        </label>
+                    </cell>
+                </row>
+                <row id="248">
+                    <cell id="249">
+                        <property name="colSpan">13</property>
+                        <property name="rowSpan">1</property>
+                        <property name="backgroundColor">white</property>
+                        <extended-item extensionName="Chart" id="262">
+                            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,747.0,130.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="A, B, C"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+   <orthogonalSampleData dataSetRepresentation="42,91,62,9,21" seriesDefinitionIndex="1"/>
+  </sampleData>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,102,176,209"/>
+      <entries _body=",255,53,120,173"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="Call Mins" stacked="false" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;Minutes_On_Phone&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <associatedAxes titlePosition="3" labelPosition="3" primaryAxis="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,53,120,173"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+      <entries _body=",255,80,166,218"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Time To Answer" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;TTA&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin type="1">
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,80,166,218"/>
+     <entries _body=",255,242,88,106"/>
+     <entries _body=",255,232,172,57"/>
+     <entries _body=",255,128,255,128"/>
+     <entries _body=",255,64,128,128"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,170,85,85"/>
+     <entries _body=",255,128,128,0"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Product&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true"/>
+    <sortKey/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+                            <property name="outputFormat">JS</property>
+                            <property name="inheritColumns">true</property>
+                            <property name="height">2.6041666666666665in</property>
+                            <property name="width">12.458333333333334in</property>
+                            <property name="theme">ThemesReportItems3.Modern</property>
+                        </extended-item>
+                    </cell>
+                </row>
+                <row id="167">
+                    <cell id="168">
+                        <label id="169">
+                            <text-property name="text">Case</text-property>
+                        </label>
+                    </cell>
+                    <cell id="170">
+                        <label id="171">
+                            <text-property name="text">Date</text-property>
+                        </label>
+                    </cell>
+                    <cell id="172">
+                        <label id="173">
+                            <text-property name="text">Product</text-property>
+                        </label>
+                    </cell>
+                    <cell id="174">
+                        <label id="175">
+                            <text-property name="text">Resolved Ontime</text-property>
+                        </label>
+                    </cell>
+                    <cell id="176">
+                        <label id="177">
+                            <text-property name="text">Service</text-property>
+                        </label>
+                    </cell>
+                    <cell id="178">
+                        <label id="179">
+                            <text-property name="text">Support Rep</text-property>
+                        </label>
+                    </cell>
+                    <cell id="180">
+                        <label id="181">
+                            <text-property name="text">Call Mins</text-property>
+                        </label>
+                    </cell>
+                    <cell id="182">
+                        <label id="183">
+                            <text-property name="text">Severity</text-property>
+                        </label>
+                    </cell>
+                    <cell id="184">
+                        <label id="185">
+                            <text-property name="text">Contact Type</text-property>
+                        </label>
+                    </cell>
+                    <cell id="186">
+                        <label id="187">
+                            <text-property name="text">Account Type</text-property>
+                        </label>
+                    </cell>
+                    <cell id="188">
+                        <label id="189">
+                            <text-property name="text">Customer Sat Rating</text-property>
+                        </label>
+                    </cell>
+                    <cell id="190">
+                        <label id="191">
+                            <text-property name="text">TTA</text-property>
+                        </label>
+                    </cell>
+                    <cell id="192">
+                        <label id="193">
+                            <text-property name="text">Vendor</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="194">
+                    <cell id="195">
+                        <property name="textAlign">center</property>
+                        <data id="196">
+                            <property name="resultSetColumn">CALL ID</property>
+                        </data>
+                    </cell>
+                    <cell id="197">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="198">
+                            <property name="resultSetColumn">Call_Date</property>
+                        </data>
+                    </cell>
+                    <cell id="199">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="200">
+                            <property name="resultSetColumn">Product</property>
+                        </data>
+                    </cell>
+                    <cell id="201">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="202">
+                            <property name="resultSetColumn">Resolved_Ontime</property>
+                        </data>
+                    </cell>
+                    <cell id="203">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="204">
+                            <property name="resultSetColumn">Service</property>
+                        </data>
+                    </cell>
+                    <cell id="205">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="206">
+                            <property name="resultSetColumn">Support_Rep</property>
+                        </data>
+                    </cell>
+                    <cell id="207">
+                        <property name="paddingRight">5pt</property>
+                        <data id="208">
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">Minutes_On_Phone</property>
+                        </data>
+                    </cell>
+                    <cell id="209">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="210">
+                            <property name="textAlign">left</property>
+                            <property name="resultSetColumn">Severity</property>
+                        </data>
+                    </cell>
+                    <cell id="211">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="212">
+                            <property name="resultSetColumn">Failure_Type</property>
+                        </data>
+                    </cell>
+                    <cell id="213">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="214">
+                            <property name="resultSetColumn">Customer_Type</property>
+                        </data>
+                    </cell>
+                    <cell id="215">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="216">
+                            <property name="resultSetColumn">Customer Sat Rating</property>
+                        </data>
+                    </cell>
+                    <cell id="217">
+                        <property name="paddingRight">5pt</property>
+                        <data id="218">
+                            <property name="textAlign">right</property>
+                            <property name="resultSetColumn">TTA</property>
+                        </data>
+                    </cell>
+                    <cell id="219">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="220">
+                            <property name="resultSetColumn">Vendor</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="221">
+                    <cell id="222"/>
+                    <cell id="223"/>
+                    <cell id="224"/>
+                    <cell id="225"/>
+                    <cell id="226"/>
+                    <cell id="227"/>
+                    <cell id="228"/>
+                    <cell id="229"/>
+                    <cell id="230"/>
+                    <cell id="231"/>
+                    <cell id="232"/>
+                    <cell id="233"/>
+                    <cell id="234"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>

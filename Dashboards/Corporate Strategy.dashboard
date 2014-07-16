@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="layoutPreference">auto layout</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems</property>
+        </structure>
+    </list-property>
+    <body>
+        <text name="c148069a-6b7d-41c9-9bdc-5168a219c71c" id="11">
+            <text-property name="content"><![CDATA[]]></text-property>
+        </text>
+        <text name="cab5f37b-d483-4085-adb8-6d8e2adf1e10" id="15">
+            <text-property name="content"><![CDATA[]]></text-property>
+        </text>
+    </body>
+    <property name="dashboardView">
+        <dashboard id="2">
+            <property name="activeTab">011b823d-f598-4b35-9b99-823acc8a3df9</property>
+            <property name="tabs">
+                <tab-element name="011b823d-f598-4b35-9b99-823acc8a3df9" id="3">
+                    <property name="title">Corporate Strategy</property>
+                    <property name="backgroundColor">auto</property>
+                    <property name="freeFormGadgets">
+                        <gadget name="f52872e5-6c3e-4dc7-bfb9-0d4378aff981" id="6">
+                            <property name="x">10px</property>
+                            <property name="y">429px</property>
+                            <property name="height">150px</property>
+                            <property name="width">789px</property>
+                            <property name="zIndex">1</property>
+                            <property name="isVisible">false</property>
+                            <property name="height">150px</property>
+                            <property name="width">789px</property>
+                            <property name="caption">
+                                <gadget-caption id="8">
+                                    <property name="showCaption">true</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Source Sans Pro"</property>
+                                    <property name="fontSize">24pt</property>
+                                    <property name="fontWeight">200</property>
+                                    <property name="color">#353535</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <current-selections id="7"/>
+                            </property>
+                        </gadget>
+                        <gadget name="c270ac79-fab3-4cea-813e-56d173ff7f97" id="13">
+                            <list-property name="userProperties">
+                                <structure>
+                                    <property name="name">candidateId</property>
+                                    <property name="type">string</property>
+                                </structure>
+                            </list-property>
+                            <property name="candidateId">-1898436891</property>
+                            <property name="x">144px</property>
+                            <property name="y">18px</property>
+                            <property name="height">875px</property>
+                            <property name="width">1089px</property>
+                            <property name="title">New Performance Map Gadget 2</property>
+                            <property name="gadgetContentType">html</property>
+                            <property name="zIndex">3</property>
+                            <property name="showScrollBar">false</property>
+                            <property name="height">875px</property>
+                            <property name="width">1089px</property>
+                            <property name="caption">
+                                <gadget-caption id="14">
+                                    <property name="showCaption">false</property>
+                                    <property name="horizontalAlignment">left</property>
+                                    <property name="fontFamily">"Source Sans Pro"</property>
+                                    <property name="fontSize">18pt</property>
+                                    <property name="fontWeight">normal</property>
+                                    <property name="fontStyle">normal</property>
+                                    <property name="color">#353535</property>
+                                    <property name="textUnderline">none</property>
+                                </gadget-caption>
+                            </property>
+                            <property name="content">
+                                <data-view id="16">
+                                    <property name="gadgetType">Map</property>
+                                    <property name="internalReportLetRef">cab5f37b-d483-4085-adb8-6d8e2adf1e10</property>
+                                </data-view>
+                            </property>
+                        </gadget>
+                    </property>
+                </tab-element>
+            </property>
+        </dashboard>
+    </property>
+</report>

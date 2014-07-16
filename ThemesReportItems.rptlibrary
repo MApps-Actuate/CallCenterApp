@@ -1,0 +1,4539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 3.7.2.v20130129-1905 Build &lt;3.7.2.v20130129-1905></property>
+    <themes>
+        <report-item-theme type="Table" name="default-table" id="4">
+            <styles>
+                <style name="table" id="896">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                    <property name="color">#666666</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-detail-cell" id="918">
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-header-cell" id="919">
+                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#666666</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-group-header-cell" id="920">
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-group-footer-cell" id="921">
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="table-footer-cell" id="922">
+                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#666666</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Crosstab" name="default-crosstab" id="10">
+            <styles>
+                <style name="crosstab" id="11">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                    <property name="color">#666666</property>
+                </style>
+                <style name="crosstab-header" id="12">
+                    <property name="backgroundColor">#EDEEF3</property>
+                    <property name="fontSize">10pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="crosstab-detail" id="901">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                </style>
+                <style name="crosstab-row-header" id="902">
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="crosstab-column-sub-total" id="903">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-row-sub-total" id="923">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-column-grand-total" id="924">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-row-grand-total" id="925">
+                    <property name="fontWeight">bold</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Crosstab" name="olive-crosstab" id="904">
+            <styles>
+                <style name="crosstab" id="905">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                </style>
+                <style name="crosstab-header" id="906">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="crosstab-row-sub-total" id="907">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-column-sub-total" id="908">
+                    <property name="backgroundColor">#C0C0C0</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#000000</property>
+                </style>
+                <style name="crosstab-row-grand-total" id="909">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="crosstab-column-grand-total" id="910">
+                    <property name="backgroundColor">#808040</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                </style>
+                <style name="crosstab-row-header" id="911">
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="crosstab-detail" id="912">
+                    <property name="borderBottomColor">#000000</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#000000</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#000000</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#000000</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="FlashChart" name="default-flashChart" id="913">
+            <styles>
+                <style name="flashchart" id="915">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Unformatted</property>
+                    </structure>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="FlashGadget" name="default-flashGadget" id="914">
+            <styles>
+                <style name="flashgadget" id="916">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">10pt</property>
+                    <structure name="numberFormat">
+                        <property name="category">Fixed</property>
+                        <property name="pattern">###0.00{RoundingMode=HALF_UP}</property>
+                    </structure>
+                </style>
+            </styles>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="default-chart" id="930">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.06&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation) {&amp;#13;&amp;#10;        options.plotOptions.series = {&amp;#13;&amp;#10;            animation: {duration:1500}&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var formatter = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(2);&amp;#13;&amp;#10;        var val = this.value;&amp;#13;&amp;#10;        if (Math.abs(val) &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;T&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;B&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;M&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000) {&amp;#13;&amp;#10;            val = parseInt(val / 100) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;K&amp;quot;;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return val;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;            options.yAxis[i].labels.formatter = formatter; &amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="3">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="" leaderLineLength="0.0">
+      <label>
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes>
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="3">
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _body=",255,192,192,192"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="0.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="true">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Average Line" id="933">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="afterRendering: function(myChart) {&amp;#13;&amp;#10;&amp;#13;&amp;#10;    // average color line based on series color.  negative to darken&amp;#13;&amp;#10;    var brightenFactor = -0.25;&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var chart = myChart.getCore();&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var seriesNum = chart.series.length;&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; seriesNum; i++) {&amp;#13;&amp;#10;        var series = chart.series[i];&amp;#13;&amp;#10;&amp;#13;&amp;#10;        var total = 0;&amp;#13;&amp;#10; &amp;#13;&amp;#10;        for (var j = 0; j &amp;lt; series.data.length; j++) {&amp;#13;&amp;#10;            total +=  series.data[j].y;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;        var avg = total / series.data.length;&amp;#13;&amp;#10;&amp;#13;&amp;#10;        var color = actuate.report.HTML5Chart.Highcharts.Color(series.color).brighten(brightenFactor).get(&amp;quot;rgb&amp;quot;);&amp;#13;&amp;#10;&amp;#13;&amp;#10;        //Avg line&amp;#13;&amp;#10;        series.yAxis.addPlotLine({&amp;#13;&amp;#10;            color: color,&amp;#13;&amp;#10;            width: 2,&amp;#13;&amp;#10;            value: avg,&amp;#13;&amp;#10;            id: &amp;quot;averageValuePlotLine&amp;quot; + i,&amp;#13;&amp;#10;            zIndex: 3&amp;#13;&amp;#10;        });&amp;#13;&amp;#10; &amp;#13;&amp;#10;        // legend&amp;#13;&amp;#10;        chart.addSeries({&amp;#13;&amp;#10;            color: color,&amp;#13;&amp;#10;            name: &amp;quot;Avg: &amp;quot; + series.name,&amp;#13;&amp;#10;            marker: {&amp;#13;&amp;#10;                enabled: false&amp;#13;&amp;#10;            }&amp;#13;&amp;#10;        });&amp;#13;&amp;#10;    } &amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.06&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation) {&amp;#13;&amp;#10;        options.plotOptions.series = {&amp;#13;&amp;#10;            animation: {duration:1500}&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var formatter = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(2);&amp;#13;&amp;#10;        var val = this.value;&amp;#13;&amp;#10;        if (Math.abs(val) &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;T&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;B&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;M&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000) {&amp;#13;&amp;#10;            val = parseInt(val / 100) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;K&amp;quot;;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return val;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;            options.yAxis[i].labels.formatter = formatter; &amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="3">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes>
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="90.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="true">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Average Line Colored" id="935">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="beforeDrawSeries: function(series, seriesOptions, tempChart, seriesIndex) {&amp;#13;&amp;#10;&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var aboveBrightenFactor = 0.15;&amp;#13;&amp;#10;    var belowBrightenFactor = -0.15;&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var aboveColor = actuate.report.HTML5Chart.Highcharts.Color(series.color).brighten(aboveBrightenFactor).get(&amp;quot;rgb&amp;quot;);&amp;#13;&amp;#10;    var belowColor = actuate.report.HTML5Chart.Highcharts.Color(series.color).brighten(belowBrightenFactor).get(&amp;quot;rgb&amp;quot;);&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var total = 0;&amp;#13;&amp;#10; &amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; series.data.length; i++) {&amp;#13;&amp;#10;        total +=  series.data[i].y;&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var avg = total / series.data.length;&amp;#13;&amp;#10; &amp;#13;&amp;#10;    for (var j = 0; j &amp;lt; series.data.length; j++) {&amp;#13;&amp;#10;        if (series.data[j].y &amp;lt; avg)&amp;#13;&amp;#10;            seriesOptions.data[j].color = belowColor;  &amp;#13;&amp;#10;        else if (series.data[j].y &amp;gt; avg)&amp;#13;&amp;#10;            seriesOptions.data[j].color = aboveColor;&amp;#13;&amp;#10;    } &amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;afterRendering: function(myChart) {&amp;#13;&amp;#10;&amp;#13;&amp;#10;    // average color line based on series color.  negative to darken&amp;#13;&amp;#10;    var brightenFactor = -0.25;&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var chart = myChart.getCore();&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var seriesNum = chart.series.length;&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; seriesNum; i++) {&amp;#13;&amp;#10;        var series = chart.series[i];&amp;#13;&amp;#10;&amp;#13;&amp;#10;        var total = 0;&amp;#13;&amp;#10; &amp;#13;&amp;#10;        for (var j = 0; j &amp;lt; series.data.length; j++) {&amp;#13;&amp;#10;            total +=  series.data[j].y;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;        var avg = total / series.data.length;&amp;#13;&amp;#10;&amp;#13;&amp;#10;        var color = actuate.report.HTML5Chart.Highcharts.Color(series.color).brighten(brightenFactor).get(&amp;quot;rgb&amp;quot;);&amp;#13;&amp;#10;&amp;#13;&amp;#10;        //Avg line&amp;#13;&amp;#10;        series.yAxis.addPlotLine({&amp;#13;&amp;#10;            color: color,&amp;#13;&amp;#10;            width: 2,&amp;#13;&amp;#10;            value: avg,&amp;#13;&amp;#10;            id: &amp;quot;averageValuePlotLine&amp;quot; + i,&amp;#13;&amp;#10;            zIndex: 3&amp;#13;&amp;#10;        });&amp;#13;&amp;#10; &amp;#13;&amp;#10;        // legend&amp;#13;&amp;#10;        chart.addSeries({&amp;#13;&amp;#10;            color: color,&amp;#13;&amp;#10;            name: &amp;quot;Avg: &amp;quot; + series.name,&amp;#13;&amp;#10;            marker: {&amp;#13;&amp;#10;                enabled: false&amp;#13;&amp;#10;            }&amp;#13;&amp;#10;        });&amp;#13;&amp;#10;    } &amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.06&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation) {&amp;#13;&amp;#10;        options.plotOptions.series = {&amp;#13;&amp;#10;            animation: {duration:1500}&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var formatter = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(2);&amp;#13;&amp;#10;        var val = this.value;&amp;#13;&amp;#10;        if (Math.abs(val) &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;T&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;B&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;M&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000) {&amp;#13;&amp;#10;            val = parseInt(val / 100) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;K&amp;quot;;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return val;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;            options.yAxis[i].labels.formatter = formatter; &amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="3">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes>
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="90.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="true">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Average Line Colored v2" id="936">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="beforeDrawSeries: function(series, seriesOptions, tempChart, seriesIndex) {&amp;#13;&amp;#10;&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var aboveBrightenFactor = 0.15;&amp;#13;&amp;#10;    var belowBrightenFactor = -0.15;&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var aboveColor = actuate.report.HTML5Chart.Highcharts.Color(series.color).brighten(aboveBrightenFactor).get(&amp;quot;rgb&amp;quot;);&amp;#13;&amp;#10;    var belowColor = actuate.report.HTML5Chart.Highcharts.Color(series.color).brighten(belowBrightenFactor).get(&amp;quot;rgb&amp;quot;);&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var total = 0;&amp;#13;&amp;#10; &amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; series.data.length; i++) {&amp;#13;&amp;#10;        total +=  series.data[i].y;&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var avg = total / series.data.length;&amp;#13;&amp;#10; &amp;#13;&amp;#10;    for (var j = 0; j &amp;lt; series.data.length; j++) {&amp;#13;&amp;#10;        if (series.data[j].y &amp;lt; avg)&amp;#13;&amp;#10;            seriesOptions.data[j].color = belowColor;  &amp;#13;&amp;#10;        else if (series.data[j].y &amp;gt; avg)&amp;#13;&amp;#10;            seriesOptions.data[j].color = aboveColor;&amp;#13;&amp;#10;    } &amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.06&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation) {&amp;#13;&amp;#10;        options.plotOptions.series = {&amp;#13;&amp;#10;            animation: {duration:1500}&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var formatter = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(2);&amp;#13;&amp;#10;        var val = this.value;&amp;#13;&amp;#10;        if (Math.abs(val) &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;T&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;B&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;M&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000) {&amp;#13;&amp;#10;            val = parseInt(val / 100) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;K&amp;quot;;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return val;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;            options.yAxis[i].labels.formatter = formatter; &amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="3">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes>
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="90.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="true">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Error Bars" id="931">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="afterRendering: function(myChart) {&amp;#13;&amp;#10;    // Add +/- % error bars to each value&amp;#13;&amp;#10;    var errorPct = 10;&amp;#13;&amp;#10;    var extraBarWidth = 0;&amp;#13;&amp;#10;    var chart = myChart.getCore();&amp;#13;&amp;#10;&amp;#13;&amp;#10;    function renderErrorBars ( dataPoint, chart )  {&amp;#13;&amp;#10;   &amp;#13;&amp;#10;        // Find the error bar&amp;#039;s dimensions by getting the column&amp;#039;s width&amp;#13;&amp;#10;        var errorWidth = dataPoint.barW * ((extraBarWidth / 100) + 1);&amp;#13;&amp;#10;        var errorHeight = dataPoint.barH * (errorPct / 100 * 2);&amp;#13;&amp;#10;        var savedToolTipFormat;&amp;#13;&amp;#10;   &amp;#13;&amp;#10;        // Create the SVG rectangle to represent the error bar&amp;#13;&amp;#10;        var errorBar = chart.renderer.rect(dataPoint.barX + chart.plotLeft - (dataPoint.barW * (extraBarWidth / 100 / 2)), &amp;#13;&amp;#10;            dataPoint.barY + chart.plotTop - (dataPoint.barH * (errorPct / 100)), &amp;#13;&amp;#10;            errorWidth, &amp;#13;&amp;#10;            errorHeight, &amp;#13;&amp;#10;            0).attr({&amp;#13;&amp;#10;                fill : &amp;quot;rgba( 255, 0, 0, .25 )&amp;quot;,&amp;#13;&amp;#10;                stroke: &amp;quot;black&amp;quot;,&amp;#13;&amp;#10;                &amp;quot;stroke-width&amp;quot;: 1,&amp;#13;&amp;#10;                zIndex: 3&amp;#13;&amp;#10;            });&amp;#13;&amp;#10;                    &amp;#13;&amp;#10;                    &amp;#13;&amp;#10;        var showToolTip = function() {&amp;#13;&amp;#10;            errorBar.attr({&amp;quot;fill-opacity&amp;quot; : 0.75});&amp;#13;&amp;#10;&amp;#13;&amp;#10;            savedTooltipFormat = dataPoint.tooltipFormatter;&amp;#13;&amp;#10;            dataPoint.tooltipFormatter = function() {&amp;#13;&amp;#10;                var text = &amp;quot;&amp;lt;span style=\&amp;quot;color:&amp;quot; + dataPoint.series.color + &amp;quot;\&amp;quot;&amp;gt;&amp;quot; + dataPoint.series.name + &amp;quot; :&amp;lt;/span&amp;gt;&amp;quot;;&amp;#13;&amp;#10;                text += &amp;quot;&amp;lt;span style=\&amp;quot;font-weight:bold\&amp;quot;&amp;gt;&amp;quot; + errorPct + &amp;quot;% error range&amp;lt;/span&amp;gt;&amp;quot;;&amp;#13;&amp;#10;                return text;&amp;#13;&amp;#10;            }&amp;#13;&amp;#10;            chart.tooltip.refresh( dataPoint );&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;                &amp;#13;&amp;#10;        var hideToolTip = function() {&amp;#13;&amp;#10;            errorBar.attr({&amp;quot;fill-opacity&amp;quot; : 0.25});&amp;#13;&amp;#10;&amp;#13;&amp;#10;            dataPoint.tooltipFormatter = savedTooltipFormat;&amp;#13;&amp;#10;            chart.tooltip.hide();&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;                &amp;#13;&amp;#10;        errorBar.on(&amp;quot;mouseover&amp;quot;, showToolTip);&amp;#13;&amp;#10;        errorBar.on(&amp;quot;mouseout&amp;quot;, hideToolTip);&amp;#13;&amp;#10;        errorBar.on(&amp;quot;touchstart&amp;quot;, showToolTip);&amp;#13;&amp;#10;        errorBar.on(&amp;quot;touchend&amp;quot;, hideToolTip);&amp;#13;&amp;#10;                &amp;#13;&amp;#10;        errorBar.add();    &amp;#13;&amp;#10;    }&amp;#13;&amp;#10;&amp;#13;&amp;#10;    for ( var i = 0; i &amp;lt; chart.series.length; i++ ) {&amp;#13;&amp;#10;        var series = chart.series[i];&amp;#13;&amp;#10;&amp;#13;&amp;#10;        for ( var j = 0; j &amp;lt; series.data.length; j++ ) {&amp;#13;&amp;#10;            renderErrorBars(series.data[j], chart);&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.06&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation) {&amp;#13;&amp;#10;        options.plotOptions.series = {&amp;#13;&amp;#10;            animation: {duration:1500}&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var formatter = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(2);&amp;#13;&amp;#10;        var val = this.value;&amp;#13;&amp;#10;        if (Math.abs(val) &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;T&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;B&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;M&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000) {&amp;#13;&amp;#10;            val = parseInt(val / 100) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;K&amp;quot;;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return val;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;            options.yAxis[i].labels.formatter = formatter; &amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="3">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes>
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="true">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="90.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="true">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Point Tracking" id="932">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.06&amp;#13;&amp;#10;        },&amp;#13;&amp;#10;        series: {&amp;#13;&amp;#10;            point: {&amp;#13;&amp;#10;                events: {&amp;#13;&amp;#10;                    mouseOver: function() {&amp;#13;&amp;#10;                        this.series.xAxis.addPlotLine({&amp;#13;&amp;#10;                            color: this.series.color,&amp;#13;&amp;#10;                            width: 1,&amp;#13;&amp;#10;                            value: this.x,&amp;#13;&amp;#10;                            id: &amp;#039;dynamicVerticalPlotLine&amp;#039;&amp;#13;&amp;#10;                        });&amp;#13;&amp;#10;                        this.series.yAxis.addPlotLine({&amp;#13;&amp;#10;                            color: this.series.color,&amp;#13;&amp;#10;                            width: 1,&amp;#13;&amp;#10;                            value: this.y,&amp;#13;&amp;#10;                            id: &amp;#039;dynamicHorizontalPlotLine&amp;#039;&amp;#13;&amp;#10;                        });&amp;#13;&amp;#10;                    },&amp;#13;&amp;#10;                    mouseOut: function() {&amp;#13;&amp;#10;                        this.series.xAxis.removePlotLine(&amp;#039;dynamicVerticalPlotLine&amp;#039;);&amp;#13;&amp;#10;                        this.series.yAxis.removePlotLine(&amp;#039;dynamicHorizontalPlotLine&amp;#039;);&amp;#13;&amp;#10;                    }&amp;#13;&amp;#10;                }&amp;#13;&amp;#10;            }&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation)&amp;#13;&amp;#10;        options.plotOptions.series.animation = {duration:1500};&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var formatter = function () {&amp;#13;&amp;#10;        if (this.isFirst === undefined)&amp;#13;&amp;#10;            return this.value.toFixed(2);&amp;#13;&amp;#10;        var val = this.value;&amp;#13;&amp;#10;        if (Math.abs(val) &amp;gt;= 1000000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;T&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;B&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000000) {&amp;#13;&amp;#10;            val = parseInt(val / 100000) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;M&amp;quot;;&amp;#13;&amp;#10;        } else if (Math.abs(val) &amp;gt;= 1000) {&amp;#13;&amp;#10;            val = parseInt(val / 100) / 10;&amp;#13;&amp;#10;            val = &amp;quot;&amp;quot; + val + &amp;quot;K&amp;quot;;&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;        return val;&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.yAxis &amp;amp;&amp;amp; options.yAxis.length) {&amp;#13;&amp;#10;        for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;            options.yAxis[i].labels.formatter = formatter; &amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="3">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes>
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers type="0" visible="true">
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title>
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="90.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Chart" name="Spark" id="937">
+            <xml-property name="customValues"><![CDATA[<type>1</type><ActuateChart version="2.5.3">
+ <ChartWithAxes version="2.5.3" type="Line Chart" subType="Overlay" unitSpacing="35.0">
+  <description value="">
+   <font>
+    <alignment/>
+   </font>
+  </description>
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <caption>
+      <font name="Trebuchet MS" size="9.0"/>
+      <color _body=",255,126,128,135"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot" horizontalSpacing="0" verticalSpacing="0">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline style="0" visible="true">
+      <color _body=",255,128,128,128"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" anchor="0" visible="false" orientation="0" direction="0" position="0" showValue="false">
+    <insets _body="0.0,0.0,0.0,0.0"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <text>
+     <font name="Trebuchet MS" size="8.0"/>
+     <color _body=",255,126,128,135"/>
+    </text>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <insets _body="0.0,0.0,4.0,0.0"/>
+   <outline visible="false">
+    <color _nil="1"/>
+   </outline>
+   <background _body=",0,255,255,255"/>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="jschart.client.script" value="beforeGeneration: function(options) {&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series.length; i++) {&amp;#13;&amp;#10;        var ind = options.series[i].name.indexOf(&amp;quot;/&amp;quot;);&amp;#13;&amp;#10;        if (ind &amp;gt;= 0)&amp;#13;&amp;#10;            options.series[i].name = options.series[i].name.substring(ind);&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    var title = options.title.text;&amp;#13;&amp;#10;    if (title)&amp;#13;&amp;#10;        title = title.replace(/^\s+|\s+$/g, &amp;quot;&amp;quot;);&amp;#13;&amp;#10;    if (title == &amp;quot;&amp;quot;)&amp;#13;&amp;#10;        options.setTitle(null);&amp;#13;&amp;#10;},&amp;#13;&amp;#10;&amp;#13;&amp;#10;beforeRendering: function(options, chart) {&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var minPercent = 10;&amp;#13;&amp;#10;    var lineWidth = 2;&amp;#13;&amp;#10;&amp;#13;&amp;#10;    options.plotOptions = {&amp;#13;&amp;#10;        column : {&amp;#13;&amp;#10;            pointPadding: 0,&amp;#13;&amp;#10;            groupPadding: 0.02&amp;#13;&amp;#10;        },&amp;#13;&amp;#10;        series: {&amp;#13;&amp;#10;            shadow: false&amp;#13;&amp;#10;        }&amp;#13;&amp;#10;    };&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (chart._settings.animation)&amp;#13;&amp;#10;        options.plotOptions.series.animation = {duration:1500}; &amp;#13;&amp;#10;    &amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;line&amp;quot; || options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        options.xAxis = {&amp;#13;&amp;#10;            startOnTick: true,&amp;#13;&amp;#10;            endOnTick: true,&amp;#13;&amp;#10;            maxPadding: 0,&amp;#13;&amp;#10;            labels: {enabled: false}&amp;#13;&amp;#10;        };&amp;#13;&amp;#10;    } else {&amp;#13;&amp;#10;        options.xAxis.labels.enabled = false; &amp;#13;&amp;#10;    }&amp;#13;&amp;#10;&amp;#13;&amp;#10;    options.chart.zoomType = null;&amp;#13;&amp;#10;    options.chart.alignTicks = false; &amp;#13;&amp;#10;    options.tooltip = {enabled: false};&amp;#13;&amp;#10;    options.legend = {enabled: false};&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.yAxis.length; i++) {&amp;#13;&amp;#10;        options.yAxis[i].labels.enabled = false; &amp;#13;&amp;#10;    }  &amp;#13;&amp;#10;    options.yAxis[0].minPadding = 0;&amp;#13;&amp;#10;    options.yAxis[0].maxPadding = 0;&amp;#13;&amp;#10;&amp;#13;&amp;#10;    var min = options.series[0].data[0].y;&amp;#13;&amp;#10;    var max = options.series[0].data[0].y;&amp;#13;&amp;#10;    for (var i = 0; i &amp;lt; options.series[0].data.length; i++) { &amp;#13;&amp;#10;        if (min &amp;gt; options.series[0].data[i].y)&amp;#13;&amp;#10;            min = options.series[0].data[i].y;  &amp;#13;&amp;#10;        if (max &amp;lt; options.series[0].data[i].y)&amp;#13;&amp;#10;            max = options.series[0].data[i].y;   &amp;#13;&amp;#10;    }&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    var valPerPx = (max - min) / chart.getCore().plotHeight; &amp;#13;&amp;#10;    var fixedMin = min;&amp;#13;&amp;#10;    if (options.series[0].type == &amp;quot;column&amp;quot;) {&amp;#13;&amp;#10;        fixedMin -= (valPerPx * minPercent);&amp;#13;&amp;#10;    } else if (options.series[0].type == &amp;quot;line&amp;quot; || options.series[0].type == &amp;quot;area&amp;quot;) {&amp;#13;&amp;#10;        var paddingVal = valPerPx * lineWidth;&amp;#13;&amp;#10;        max += paddingVal;&amp;#13;&amp;#10;        min -+ paddingVal;&amp;#13;&amp;#10;        fixedMin -= paddingVal&amp;#13;&amp;#10;    }&amp;#13;&amp;#10;&amp;#13;&amp;#10;    options.yAxis[0].startOnTick = false; &amp;#13;&amp;#10;    if (min &amp;lt; 0)&amp;#13;&amp;#10;        options.yAxis[0].min = min;&amp;#13;&amp;#10;    else&amp;#13;&amp;#10;        options.yAxis[0].min = fixedMin;&amp;#13;&amp;#10;        &amp;#13;&amp;#10;    options.yAxis[0].endOnTick = false;&amp;#13;&amp;#10;    options.yAxis[0].max = max;&amp;#13;&amp;#10;    &amp;#13;&amp;#10;    &amp;#13;&amp;#10;},"/>
+  <extendedProperties name="theme.withoutaxes" value=""/>
+  <extendedProperties name="jschart.glass.style" value="false"/>
+  <interactivity legendBehavior="1"/>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes>
+   <title visible="false">
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title visible="false">
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="">
+      <grouping/>
+     </query>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,255,204,0"/>
+      <entries _body=",255,51,153,102"/>
+      <entries _body=",255,102,102,153"/>
+      <entries _body=",255,0,128,128"/>
+      <entries _body=",255,0,179,0"/>
+      <entries _body=",255,244,47,47"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Actual" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&amp;quot;Series Data&amp;quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers type="3" size="0" visible="false">
+       <outline/>
+      </markers>
+      <lineAttributes thickness="2">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="BarSeries" seriesIdentifier="" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="AreaSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes thickness="2">
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="PieSeries" seriesIdentifier="">
+      <label visible="false">
+       <caption>
+        <font name="Trebuchet MS" size="8.0"/>
+        <color _body=",255,128,128,128"/>
+       </caption>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint prefix="" separator=", ">
+       <components type="0"/>
+      </dataPoint>
+      <title visible="false">
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </title>
+      <leaderLineAttributes visible="false">
+       <color _body=",255,128,128,128"/>
+      </leaderLineAttributes>
+     </series>
+     <series _type="DialSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <dial>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+       <majorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </majorGrid>
+       <minorGrid>
+        <lineAttributes>
+         <color _nil="1"/>
+        </lineAttributes>
+        <tickAttributes>
+         <color _nil="1"/>
+        </tickAttributes>
+       </minorGrid>
+       <label>
+        <background _nil="1"/>
+        <outline>
+         <color _nil="1"/>
+        </outline>
+       </label>
+      </dial>
+      <needle>
+       <lineAttributes>
+        <color _nil="1"/>
+       </lineAttributes>
+      </needle>
+     </series>
+     <series _type="ScatterSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <series _type="StockSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+     <series _type="BubbleSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <accLineAttributes>
+       <color _nil="1"/>
+      </accLineAttributes>
+     </series>
+     <series _type="DifferenceSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+      <negativeMarkers>
+       <outline/>
+      </negativeMarkers>
+      <negativeLineAttributes>
+       <color _nil="1"/>
+      </negativeLineAttributes>
+     </series>
+     <series _type="GanttSeries" seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+      <connectionLine>
+       <color _nil="1"/>
+      </connectionLine>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+      <decorationLabel>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </decorationLabel>
+     </series>
+     <series _type="RadarSeries" seriesIdentifier="">
+      <label>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <marker>
+       <outline/>
+      </marker>
+      <lineAttributes/>
+      <webLineAttributes/>
+      <webLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </webLabel>
+      <catLabel>
+       <caption>
+        <font>
+         <alignment/>
+        </font>
+       </caption>
+       <outline/>
+       <insets/>
+      </catLabel>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes visible="false">
+     <color _body=",255,128,128,128"/>
+    </lineAttributes>
+    <label visible="false">
+     <caption>
+      <font name="Trebuchet MS" size="8.0"/>
+      <color _body=",255,128,128,128"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid tickStyle="0">
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes visible="false">
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes visible="false">
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <ancillaryAxes>
+    <title visible="false">
+     <caption value="Z-Axis Title"/>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,0,121,193"/>
+      <entries _body=",255,241,90,34"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,250,166,26"/>
+      <entries _body=",255,19,181,234"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series seriesIdentifier="">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <curveFitting _nil="1"/>
+     </series>
+    </seriesDefinitions>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <label visible="false">
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes visible="false">
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _type="NumberDataElement" value="0.0"/>
+    </origin>
+   </ancillaryAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,0,121,193"/>
+     <entries _body=",255,241,90,34"/>
+     <entries _body=",255,154,204,0"/>
+     <entries _body=",255,250,166,26"/>
+     <entries _body=",255,19,181,234"/>
+     <entries _body=",255,255,204,0"/>
+     <entries _body=",255,51,153,102"/>
+     <entries _body=",255,102,102,153"/>
+     <entries _body=",255,0,128,128"/>
+     <entries _body=",255,0,179,0"/>
+     <entries _body=",255,244,47,47"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&amp;quot;Date&amp;quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping _nil="1"/>
+   </seriesDefinitions>
+   <lineAttributes visible="false">
+    <color _body=",255,128,128,128"/>
+   </lineAttributes>
+   <label visible="false">
+    <caption>
+     <font name="Trebuchet MS" size="8.0" rotation="90.0"/>
+     <color _body=",255,128,128,128"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <majorGrid tickStyle="3">
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes visible="false">
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes visible="false">
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>]]></xml-property>
+        </report-item-theme>
+        <report-item-theme type="Crosstab" name="Blue-crosstab" id="938">
+            <styles>
+                <style name="crosstab" id="934">
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                    <property name="color">#666666</property>
+                </style>
+                <style name="crosstab-header" id="939">
+                    <property name="backgroundColor">#0079C1</property>
+                    <property name="fontFamily">"Verdana"</property>
+                    <property name="fontSize">8pt</property>
+                    <property name="fontWeight">bold</property>
+                    <property name="color">#FFFFFF</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                </style>
+                <style name="crosstab-detail" id="940">
+                    <property name="backgroundColor">#FFFFFF</property>
+                    <property name="borderBottomColor">#DADADA</property>
+                    <property name="borderBottomStyle">solid</property>
+                    <property name="borderBottomWidth">1px</property>
+                    <property name="borderLeftColor">#DADADA</property>
+                    <property name="borderLeftStyle">solid</property>
+                    <property name="borderLeftWidth">1px</property>
+                    <property name="borderRightColor">#DADADA</property>
+                    <property name="borderRightStyle">solid</property>
+                    <property name="borderRightWidth">1px</property>
+                    <property name="borderTopColor">#DADADA</property>
+                    <property name="borderTopStyle">solid</property>
+                    <property name="borderTopWidth">1px</property>
+                    <property name="textAlign">right</property>
+                </style>
+                <style name="crosstab-row-header" id="941">
+                    <property name="textAlign">left</property>
+                </style>
+                <style name="crosstab-column-sub-total" id="942">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-row-sub-total" id="943">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-column-grand-total" id="944">
+                    <property name="fontWeight">bold</property>
+                </style>
+                <style name="crosstab-row-grand-total" id="945">
+                    <property name="fontWeight">bold</property>
+                </style>
+            </styles>
+        </report-item-theme>
+    </themes>
+    <components>
+        <grid name="Corporate Header" id="946">
+            <column id="947"/>
+            <row id="948">
+                <cell id="949">
+                    <image name="NewImage" id="951">
+                        <property name="height">30px</property>
+                        <property name="width">200px</property>
+                        <property name="source">file</property>
+                        <expression name="uri" type="constant">images/sfcomm_logo.jpg</expression>
+                    </image>
+                </cell>
+            </row>
+        </grid>
+    </components>
+    <page-setup>
+        <simple-master-page name="NewSimpleMasterPage" id="23"/>
+    </page-setup>
+</library>

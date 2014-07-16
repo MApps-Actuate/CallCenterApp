@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_GOIv0A0NEeSgsst1sVzOvg" type="Model" name="project.model_diagram" measurementUnit="Pixel">
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_GOIv0Q0NEeSgsst1sVzOvg"/>
+  <element xmi:type="com.actuate.istudio.analysis.model:Project" href="project.model#/"/>
+</notation:Diagram>
