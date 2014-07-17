@@ -665,7 +665,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,420.75,"/>
+   <bounds _body=",,441.75,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -822,7 +822,7 @@
 ]]></xml-property>
             <property name="outputFormat">JS</property>
             <property name="height">186pt</property>
-            <property name="width">420.75pt</property>
+            <property name="width">441.75pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Vendor</property>
@@ -902,7 +902,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,420.75,"/>
+   <bounds _body=",,441.75,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1062,7 +1062,7 @@
 ]]></xml-property>
             <property name="outputFormat">JS</property>
             <property name="height">199.5pt</property>
-            <property name="width">420.75pt</property>
+            <property name="width">441.75pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Call Date</property>
@@ -1137,7 +1137,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,434.25,"/>
+   <bounds _body=",,456.0,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1315,7 +1315,7 @@
                 </structure>
             </list-property>
             <property name="height">236.25pt</property>
-            <property name="width">434.25pt</property>
+            <property name="width">456pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Call Date</property>
@@ -1390,7 +1390,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,434.25,"/>
+   <bounds _body=",,456.0,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1556,7 +1556,7 @@
                 </structure>
             </list-property>
             <property name="height">347pt</property>
-            <property name="width">434.25pt</property>
+            <property name="width">456pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Service</property>
@@ -1592,7 +1592,7 @@
     </body>
     <property name="dashboardView">
         <dashboard id="2">
-            <property name="activeTab">a3038cde-9feb-4fc0-97ed-194899223fe9</property>
+            <property name="activeTab">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
             <property name="tabs">
                 <tab-element name="180a3b33-87c3-4efd-af27-ac689d7b111c" id="3">
                     <property name="title">Call Center Management Dashboard</property>
@@ -2457,10 +2457,10 @@
                     <property name="externalTab">/Applications/CallCenterApp/Dashboards/Briefing Book.dashboard</property>
                     <property name="externalTabName">44933ef1-0bf1-4301-8728-7e0f58f52a49</property>
                 </tab-element>
-                <tab-element name="0d97ff86-7b96-4555-889e-56d7a3b32f4a" id="88">
+                <tab-element name="cc91d065-de16-4495-9d6f-dd5abcf7249b" id="97">
                     <property name="title">Corporate Strategy</property>
                     <property name="externalTab">/Applications/CallCenterApp/Dashboards/Corporate Strategy.dashboard</property>
-                    <property name="externalTabName">011b823d-f598-4b35-9b99-823acc8a3df9</property>
+                    <property name="externalTabName">e1d8138a-0f43-4f9a-a6bc-ce8389111e83</property>
                 </tab-element>
                 <tab-element name="e7510ae9-f89b-46c9-8093-bc74b5e03248" id="90">
                     <property name="title">Performance View</property>

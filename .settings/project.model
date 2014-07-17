@@ -1,23 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.actuate.istudio.analysis.model:Project xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.actuate.istudio.analysis.model="http:///com.actuate.istudio.analysis.model.ecore" name="CallCenterApp">
-  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Briefing Book.dashboard" path="/CallCenterApp/Dashboards/Briefing Book.dashboard"/>
-  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Call Center Support Performance.dashboard" path="/CallCenterApp/Dashboards/Call Center Support Performance.dashboard">
-    <missingDependencies>platform:/resource/CallCenterApp/Data%20Objects/Call%20Center%20Vendor%20Performance.data</missingDependencies>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ThemesReportItems.rptlibrary" path="/CallCenterApp/ThemesReportItems.rptlibrary" reports="//@files.16 //@files.19 //@files.20"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="ServiceMetricsMoving30Days.datadesign" path="/CallCenterApp/Data Objects/ServiceMetricsMoving30Days.datadesign">
+    <dataSets name="MovingMonth">
+      <columns name="MeasureName"/>
+      <columns name="LocationName"/>
+      <columns name="PeriodName"/>
+      <columns name="BaseName"/>
+      <columns name="BaseData"/>
+      <columns name="CompName"/>
+      <columns name="CompData"/>
+      <columns name="CompVar"/>
+      <columns name="CompVarPct"/>
+      <columns name="CompIdx"/>
+      <columns name="CompIdxRangeId"/>
+      <columns name="CompIdxColor"/>
+      <columns name="CompTxtColor"/>
+      <columns name="EndsAt1"/>
+      <columns name="BkgColor1"/>
+      <columns name="TxtColor1"/>
+      <columns name="Identifier1"/>
+      <columns name="EndsAt2"/>
+      <columns name="BkgColor2"/>
+      <columns name="TxtColor2"/>
+      <columns name="Identifier2"/>
+      <columns name="EndsAt3"/>
+      <columns name="BkgColor3"/>
+      <columns name="TxtColor3"/>
+      <columns name="Identifier3"/>
+      <columns name="EndsAt4"/>
+      <columns name="BkgColor4"/>
+      <columns name="TxtColor4"/>
+      <columns name="Identifier4"/>
+      <columns name="EndsAt5"/>
+      <columns name="BkgColor5"/>
+      <columns name="TxtColor5"/>
+      <columns name="Identifier5"/>
+      <columns name="Polarity"/>
+      <columns name="UnitPrefix"/>
+      <columns name="UnitSuffix"/>
+      <columns name="UnitThousandSeparator"/>
+      <columns name="UnitDecimalSeparator"/>
+      <columns name="UnitWholeDigits"/>
+      <columns name="UnitDecimalDigits"/>
+      <columns name="MeasureID"/>
+      <columns name="LocationID"/>
+      <columns name="PeriodID"/>
+      <columns name="Date" expression="new Date(row[&quot;PeriodName&quot;])"/>
+    </dataSets>
+    <dataSets name="ParameterChoices">
+      <columns name="MeasureName"/>
+      <columns name="LocationName"/>
+      <columns name="PeriodName"/>
+      <columns name="Date" expression="new Date(row[&quot;PeriodName&quot;])"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Provider SLA.dashboard" path="/CallCenterApp/Dashboards/Provider SLA.dashboard">
+    <dataMap key="//@files.10" value="1"/>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Call Volume Analysis.dashboard" path="/CallCenterApp/Dashboards/Call Volume Analysis.dashboard">
-    <missingDependencies>platform:/resource/CallCenterApp/Data%20Objects/ServiceMetricsMoving30Days.data</missingDependencies>
+    <dataMap key="//@files.7" value="1"/>
   </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Call Volume Analysis2.dashboard" path="/CallCenterApp/Dashboards/Call Volume Analysis2.dashboard">
-    <missingDependencies>platform:/resource/CallCenterApp/Data%20Objects/ServiceMetricsMoving30Days.data</missingDependencies>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ThemesReportItems3.rptlibrary" path="/CallCenterApp/ThemesReportItems3.rptlibrary" reports="//@files.17 //@files.18 //@files.19 //@files.20 //@files.21 //@files.22"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Performance View.dashboard" path="/CallCenterApp/Dashboards/Performance View.dashboard"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="CustomerComplaintsByProvider.data" path="/CallCenterApp/Data Objects/CustomerComplaintsByProvider.data">
+    <targetReportsMap key="//@files.19" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="ServiceMetricsMoving30Days.data" path="/CallCenterApp/Data Objects/ServiceMetricsMoving30Days.data">
+    <targetReportsMap key="//@files.20" value="1"/>
+    <targetDashboardsMap key="//@files.13" value="1"/>
+    <targetDashboardsMap key="//@files.3" value="1"/>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Corporate Strategy.dashboard" path="/CallCenterApp/Dashboards/Corporate Strategy.dashboard"/>
-  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Performance View.dashboard" path="/CallCenterApp/Dashboards/Performance View.dashboard"/>
-  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Provider SLA.dashboard" path="/CallCenterApp/Dashboards/Provider SLA.dashboard">
-    <missingDependencies>platform:/resource/CallCenterApp/Data%20Objects/CallCenter.data</missingDependencies>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Briefing Book.dashboard" path="/CallCenterApp/Dashboards/Briefing Book.dashboard"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="CallCenter.data" path="/CallCenterApp/Data Objects/CallCenter.data">
+    <targetReportsMap key="//@files.21" value="1"/>
+    <targetReportsMap key="//@files.22" value="1"/>
+    <targetDashboardsMap key="//@files.2" value="1"/>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:Data" name="Call Center Vendor Performance.data" path="/CallCenterApp/Data Objects/Call Center Vendor Performance.data">
-    <targetReportsMap key="//@files.15" value="1"/>
-    <targetReportsMap key="//@files.16" value="1"/>
+    <targetReportsMap key="//@files.17" value="1"/>
+    <targetReportsMap key="//@files.18" value="1"/>
+    <targetDashboardsMap key="//@files.15" value="1"/>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="Call Center Vendor Performance.datadesign" path="/CallCenterApp/Data Objects/Call Center Vendor Performance.datadesign">
     <dataSets name="Call Center Performance Results">
@@ -36,9 +100,8 @@
       <columns name="Vendor"/>
     </dataSets>
   </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="CallCenter.data" path="/CallCenterApp/Data Objects/CallCenter.data">
-    <targetReportsMap key="//@files.14" value="1"/>
-    <targetReportsMap key="//@files.19" value="1"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Call Volume Analysis2.dashboard" path="/CallCenterApp/Dashboards/Call Volume Analysis2.dashboard">
+    <dataMap key="//@files.7" value="1"/>
   </files>
   <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="CallCenter.datadesign" path="/CallCenterApp/Data Objects/CallCenter.datadesign">
     <dataSets name="List of Views">
@@ -146,140 +209,10 @@
       <columns name="Name"/>
     </dataSets>
   </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="CustomerComplaintsByProvider.data" path="/CallCenterApp/Data Objects/CustomerComplaintsByProvider.data">
-    <targetReportsMap key="//@files.18" value="1"/>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:Data" name="ServiceMetricsMoving30Days.data" path="/CallCenterApp/Data Objects/ServiceMetricsMoving30Days.data">
-    <targetReportsMap key="//@files.17" value="1"/>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:DataDesign" name="ServiceMetricsMoving30Days.datadesign" path="/CallCenterApp/Data Objects/ServiceMetricsMoving30Days.datadesign">
-    <dataSets name="MovingMonth">
-      <columns name="MeasureName"/>
-      <columns name="LocationName"/>
-      <columns name="PeriodName"/>
-      <columns name="BaseName"/>
-      <columns name="BaseData"/>
-      <columns name="CompName"/>
-      <columns name="CompData"/>
-      <columns name="CompVar"/>
-      <columns name="CompVarPct"/>
-      <columns name="CompIdx"/>
-      <columns name="CompIdxRangeId"/>
-      <columns name="CompIdxColor"/>
-      <columns name="CompTxtColor"/>
-      <columns name="EndsAt1"/>
-      <columns name="BkgColor1"/>
-      <columns name="TxtColor1"/>
-      <columns name="Identifier1"/>
-      <columns name="EndsAt2"/>
-      <columns name="BkgColor2"/>
-      <columns name="TxtColor2"/>
-      <columns name="Identifier2"/>
-      <columns name="EndsAt3"/>
-      <columns name="BkgColor3"/>
-      <columns name="TxtColor3"/>
-      <columns name="Identifier3"/>
-      <columns name="EndsAt4"/>
-      <columns name="BkgColor4"/>
-      <columns name="TxtColor4"/>
-      <columns name="Identifier4"/>
-      <columns name="EndsAt5"/>
-      <columns name="BkgColor5"/>
-      <columns name="TxtColor5"/>
-      <columns name="Identifier5"/>
-      <columns name="Polarity"/>
-      <columns name="UnitPrefix"/>
-      <columns name="UnitSuffix"/>
-      <columns name="UnitThousandSeparator"/>
-      <columns name="UnitDecimalSeparator"/>
-      <columns name="UnitWholeDigits"/>
-      <columns name="UnitDecimalDigits"/>
-      <columns name="MeasureID"/>
-      <columns name="LocationID"/>
-      <columns name="PeriodID"/>
-      <columns name="Date" expression="new Date(row[&quot;PeriodName&quot;])"/>
-    </dataSets>
-    <dataSets name="ParameterChoices">
-      <columns name="MeasureName"/>
-      <columns name="LocationName"/>
-      <columns name="PeriodName"/>
-      <columns name="Date" expression="new Date(row[&quot;PeriodName&quot;])"/>
-    </dataSets>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="ActualvsTarget.rptdesign" path="/CallCenterApp/Report Designs/ActualvsTarget.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems3.rptlibrary</missingDependencies>
-    <dataMap key="//@files.9" value="1"/>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="All Call details.rptdesign" path="/CallCenterApp/Report Designs/All Call details.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems3.rptlibrary</missingDependencies>
-    <dataMap key="//@files.7" value="1"/>
-    <dataSets name="Data Set">
-      <columns name="CALL ID"/>
-      <columns name="Call_Date"/>
-      <columns name="Product"/>
-      <columns name="Resolved_Ontime"/>
-      <columns name="Service"/>
-      <columns name="Support_Rep"/>
-      <columns name="Minutes_On_Phone"/>
-      <columns name="Severity"/>
-      <columns name="Failure_Type"/>
-      <columns name="Customer_Type"/>
-      <columns name="Customer Sat Rating"/>
-      <columns name="TTA"/>
-      <columns name="Vendor"/>
-    </dataSets>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Call Details.rptdesign" path="/CallCenterApp/Report Designs/Call Details.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems3.rptlibrary</missingDependencies>
-    <dataMap key="//@files.7" value="1"/>
-    <dataSets name="Data Set">
-      <columns name="CALL ID"/>
-      <columns name="Call_Date"/>
-      <columns name="Product"/>
-      <columns name="Resolved_Ontime"/>
-      <columns name="Service"/>
-      <columns name="Support_Rep"/>
-      <columns name="Minutes_On_Phone"/>
-      <columns name="Severity"/>
-      <columns name="Failure_Type"/>
-      <columns name="Customer_Type"/>
-      <columns name="Customer Sat Rating"/>
-      <columns name="TTA"/>
-      <columns name="Vendor"/>
-    </dataSets>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Cube.rptdesign" path="/CallCenterApp/Report Designs/Cube.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems3.rptlibrary</missingDependencies>
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems.rptlibrary</missingDependencies>
-    <dataMap key="//@files.12" value="1"/>
-    <dataSets name="ListOfMeasures">
-      <columns name="MeasureName"/>
-    </dataSets>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="CustomerComplaintsByProvider.rptdesign" path="/CallCenterApp/Report Designs/CustomerComplaintsByProvider.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems3.rptlibrary</missingDependencies>
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems.rptlibrary</missingDependencies>
+  <files xsi:type="com.actuate.istudio.analysis.model:Dashboard" name="Call Center Support Performance.dashboard" path="/CallCenterApp/Dashboards/Call Center Support Performance.dashboard">
     <dataMap key="//@files.11" value="1"/>
-    <dataSets name="Data Set">
-      <columns name="Call_Date"/>
-      <columns name="Complaint"/>
-      <columns name="ID"/>
-      <columns name="Product"/>
-      <columns name="Resolution_Description"/>
-      <columns name="Resolved_Ontime"/>
-      <columns name="Provider"/>
-      <columns name="Minutes_On_Phone"/>
-      <columns name="Severity"/>
-      <columns name="Failure_Type"/>
-      <columns name="Customer_Type"/>
-    </dataSets>
   </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="MonthlyMetrics.rptdesign" path="/CallCenterApp/Report Designs/MonthlyMetrics.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems3.rptlibrary</missingDependencies>
-    <dataMap key="//@files.9" value="1"/>
-  </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="map.rptdesign" path="/CallCenterApp/Report Designs/map.rptdesign">
-    <missingDependencies>platform:/resource/CallCenterApp/ThemesReportItems.rptlibrary</missingDependencies>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="map.rptdesign" path="/CallCenterApp/Report Designs/map.rptdesign" libraries="//@files.0">
     <dataSets name="China">
       <columns name="Short Name (Abbreviated Name)"/>
       <columns name="Long Name"/>
@@ -306,6 +239,68 @@
       <columns name="OriginatingCalls"/>
     </dataSets>
   </files>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ThemesReportItems.rptlibrary" path="/CallCenterApp/ThemesReportItems.rptlibrary"/>
-  <files xsi:type="com.actuate.istudio.analysis.model:RptLibrary" name="ThemesReportItems3.rptlibrary" path="/CallCenterApp/ThemesReportItems3.rptlibrary"/>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Call Details.rptdesign" path="/CallCenterApp/Report Designs/Call Details.rptdesign" libraries="//@files.4">
+    <dataMap key="//@files.11" value="1"/>
+    <dataSets name="Data Set">
+      <columns name="CALL ID"/>
+      <columns name="Call_Date"/>
+      <columns name="Product"/>
+      <columns name="Resolved_Ontime"/>
+      <columns name="Service"/>
+      <columns name="Support_Rep"/>
+      <columns name="Minutes_On_Phone"/>
+      <columns name="Severity"/>
+      <columns name="Failure_Type"/>
+      <columns name="Customer_Type"/>
+      <columns name="Customer Sat Rating"/>
+      <columns name="TTA"/>
+      <columns name="Vendor"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="All Call details.rptdesign" path="/CallCenterApp/Report Designs/All Call details.rptdesign" libraries="//@files.4">
+    <dataMap key="//@files.11" value="1"/>
+    <dataSets name="Data Set">
+      <columns name="CALL ID"/>
+      <columns name="Call_Date"/>
+      <columns name="Product"/>
+      <columns name="Resolved_Ontime"/>
+      <columns name="Service"/>
+      <columns name="Support_Rep"/>
+      <columns name="Minutes_On_Phone"/>
+      <columns name="Severity"/>
+      <columns name="Failure_Type"/>
+      <columns name="Customer_Type"/>
+      <columns name="Customer Sat Rating"/>
+      <columns name="TTA"/>
+      <columns name="Vendor"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="CustomerComplaintsByProvider.rptdesign" path="/CallCenterApp/Report Designs/CustomerComplaintsByProvider.rptdesign" libraries="//@files.4 //@files.0">
+    <dataMap key="//@files.6" value="1"/>
+    <dataSets name="Data Set">
+      <columns name="Call_Date"/>
+      <columns name="Complaint"/>
+      <columns name="ID"/>
+      <columns name="Product"/>
+      <columns name="Resolution_Description"/>
+      <columns name="Resolved_Ontime"/>
+      <columns name="Provider"/>
+      <columns name="Minutes_On_Phone"/>
+      <columns name="Severity"/>
+      <columns name="Failure_Type"/>
+      <columns name="Customer_Type"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="Cube.rptdesign" path="/CallCenterApp/Report Designs/Cube.rptdesign" libraries="//@files.4 //@files.0">
+    <dataMap key="//@files.7" value="1"/>
+    <dataSets name="ListOfMeasures">
+      <columns name="MeasureName"/>
+    </dataSets>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="ActualvsTarget.rptdesign" path="/CallCenterApp/Report Designs/ActualvsTarget.rptdesign" libraries="//@files.4">
+    <dataMap key="//@files.10" value="1"/>
+  </files>
+  <files xsi:type="com.actuate.istudio.analysis.model:RptDesign" name="MonthlyMetrics.rptdesign" path="/CallCenterApp/Report Designs/MonthlyMetrics.rptdesign" libraries="//@files.4">
+    <dataMap key="//@files.10" value="1"/>
+  </files>
 </com.actuate.istudio.analysis.model:Project>

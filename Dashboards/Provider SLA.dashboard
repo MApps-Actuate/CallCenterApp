@@ -3,7 +3,7 @@
     <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <xml-property name="externalMetadata">
         <external-datamarts>
-            <datamart-node location="file:/C:/ihub3/CallCenter/file/003/035.dat">
+            <datamart-node location="file:/C:/ihub3/CallCenter/file/006/002.dat">
                 <reference-elements>NewDataMartDataSource;</reference-elements>
                 <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
                     <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
@@ -5611,10 +5611,12 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                         <event-object>
                                             <property name="appliedTo">pMeasure</property>
                                             <property name="gadget">Gadget_7e249acd-9199-4dfa-a506-bd0d989c0797</property>
+                                            <property name="dirty">false</property>
                                         </event-object>
                                         <event-object>
                                             <property name="appliedTo">pMeasure</property>
                                             <property name="gadget">Gadget_7e249acd-9199-4dfa-a506-bd0d989c0797</property>
+                                            <property name="dirty">false</property>
                                         </event-object>
                                     </property>
                                 </event-subscriber>
@@ -5668,7 +5670,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                         <value>LocationName</value>
                                     </simple-property-list>
                                     <simple-property-list name="selectedValues">
-                                        <value>Performacall</value>
+                                        <value>TeleSynch</value>
                                     </simple-property-list>
                                     <property name="orientation">horizontal</property>
                                     <property name="autoAdjust">false</property>
@@ -5774,7 +5776,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                         <value>Date</value>
                                     </simple-property-list>
                                     <simple-property-list name="selectedValues">
-                                        <value>2012-07-17</value>
+                                        <value>2014-07-06</value>
                                     </simple-property-list>
                                     <property name="allowTyping">false</property>
                                     <property name="autoSuggest">false</property>
@@ -6022,6 +6024,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                         <event-object>
                                             <property name="appliedTo">pMeasure</property>
                                             <property name="gadget">Gadget_bf13812e-d5a4-4e08-bace-ca91e065bafd</property>
+                                            <property name="dirty">false</property>
                                         </event-object>
                                         <event-object>
                                             <property name="appliedTo">pLocation</property>
@@ -6031,6 +6034,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                         <event-object>
                                             <property name="appliedTo">pMeasure</property>
                                             <property name="gadget">Gadget_bf13812e-d5a4-4e08-bace-ca91e065bafd</property>
+                                            <property name="dirty">false</property>
                                         </event-object>
                                         <event-object>
                                             <property name="appliedTo">pLocation</property>
