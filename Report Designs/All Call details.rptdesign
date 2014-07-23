@@ -997,6 +997,7 @@
                         <property name="borderTopStyle">solid</property>
                         <property name="borderTopWidth">medium</property>
                         <label id="278">
+                            <property name="fontSize">12pt</property>
                             <text-property name="text">Vendor Call Detail Report</text-property>
                         </label>
                     </cell>
@@ -1428,43 +1429,60 @@
             </header>
             <detail>
                 <row id="194">
+                    <list-property name="highlightRules">
+                        <structure>
+                            <property name="operator">eq</property>
+                            <property name="backgroundColor">#E6E6E6</property>
+                            <expression name="testExpr" type="javascript">row.__rownum %2</expression>
+                            <simple-property-list name="value1">
+                                <value type="javascript">1</value>
+                            </simple-property-list>
+                        </structure>
+                    </list-property>
                     <cell id="195">
+                        <property name="fontSize">9pt</property>
                         <property name="textAlign">center</property>
                         <data id="196">
                             <property name="resultSetColumn">CALL ID</property>
                         </data>
                     </cell>
                     <cell id="197">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="198">
                             <property name="resultSetColumn">Call_Date</property>
                         </data>
                     </cell>
                     <cell id="199">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="200">
                             <property name="resultSetColumn">Product</property>
                         </data>
                     </cell>
                     <cell id="201">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="202">
                             <property name="resultSetColumn">Resolved_Ontime</property>
                         </data>
                     </cell>
                     <cell id="203">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="204">
                             <property name="resultSetColumn">Service</property>
                         </data>
                     </cell>
                     <cell id="205">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="206">
                             <property name="resultSetColumn">Support_Rep</property>
                         </data>
                     </cell>
                     <cell id="207">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingRight">5pt</property>
                         <data id="208">
                             <property name="textAlign">right</property>
@@ -1472,6 +1490,7 @@
                         </data>
                     </cell>
                     <cell id="209">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="210">
                             <property name="textAlign">left</property>
@@ -1479,24 +1498,28 @@
                         </data>
                     </cell>
                     <cell id="211">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="212">
                             <property name="resultSetColumn">Failure_Type</property>
                         </data>
                     </cell>
                     <cell id="213">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="214">
                             <property name="resultSetColumn">Customer_Type</property>
                         </data>
                     </cell>
                     <cell id="215">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="216">
                             <property name="resultSetColumn">Customer Sat Rating</property>
                         </data>
                     </cell>
                     <cell id="217">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingRight">5pt</property>
                         <data id="218">
                             <property name="textAlign">right</property>
@@ -1504,6 +1527,7 @@
                         </data>
                     </cell>
                     <cell id="219">
+                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="220">
                             <property name="resultSetColumn">Vendor</property>
