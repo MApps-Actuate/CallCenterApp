@@ -3,10 +3,16 @@
     <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <xml-property name="externalMetadata">
         <external-datamarts>
-            <datamart-node location="file:/C:/ihub3/CallCenter/file/002/021.dat">
+            <datamart-node location="file:/C:/ihub3/CallCenter/file/006/065.dat">
                 <reference-elements>NewDataMartDataSource;</reference-elements>
                 <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
                     <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+                    <list-property name="propertyBindings">
+                        <structure>
+                            <property name="name">queryText</property>
+                            <property name="id">3</property>
+                        </structure>
+                    </list-property>
                     <data-sources>
                         <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Call Center Management System" id="2">
                             <property name="HOME">Data/</property>
@@ -293,7 +299,7 @@
                                     <property name="nativeDataType">12</property>
                                 </structure>
                             </list-property>
-                            <xml-property name="queryText"><![CDATA[select "CALL ID", "Call_Date", "Product", "Resolved_Ontime", "Service", "Support_Rep", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type", "Customer Sat Rating", "TTA", "Vendor" from "callcenterdata.csv" : {"CALL ID","CALL ID",STRING;"Call_Date","Call_Date",DATE;"Product","Product",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Service","Service",STRING;"Support_Rep","Support_Rep",STRING;"Minutes_On_Phone","Minutes_On_Phone",DOUBLE;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING;"Customer Sat Rating","Customer Sat Rating",STRING;"TTA","TTA",DOUBLE;"Vendor","Vendor",STRING}]]></xml-property>
+                            <xml-property name="queryText"><![CDATA[select "CALL ID", "Call_Date", "Product", "Resolved_Ontime", "Service", "Support_Rep", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type", "Customer Sat Rating", "TTA", "Vendor" from "callcenterdata_updated.csv" : {"CALL ID","CALL ID",STRING;"Call_Date","Call_Date",DATE;"Product","Product",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Service","Service",STRING;"Support_Rep","Support_Rep",STRING;"Minutes_On_Phone","Minutes_On_Phone",DOUBLE;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING;"Customer Sat Rating","Customer Sat Rating",STRING;"TTA","TTA",DOUBLE;"Vendor","Vendor",STRING}]]></xml-property>
                             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
@@ -665,7 +671,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,441.75,"/>
+   <bounds _body=",,498.0,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -822,7 +828,7 @@
 ]]></xml-property>
             <property name="outputFormat">JS</property>
             <property name="height">186pt</property>
-            <property name="width">441.75pt</property>
+            <property name="width">498pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Vendor</property>
@@ -902,7 +908,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,441.75,"/>
+   <bounds _body=",,498.0,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1062,7 +1068,7 @@
 ]]></xml-property>
             <property name="outputFormat">JS</property>
             <property name="height">199.5pt</property>
-            <property name="width">441.75pt</property>
+            <property name="width">498pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Call Date</property>
@@ -1137,7 +1143,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,456.0,"/>
+   <bounds _body=",,515.25,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1152,7 +1158,7 @@
   <extendedProperties name="keep.hierarchy.series" value="true"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="drilled.filters_" value="dataSetRow[&quot;Call Date&quot;][&quot;Quarter&quot;]eq&quot;3&quot;_@,_dataSetRow[&quot;Call Date&quot;][&quot;Month&quot;]eq&quot;8&quot;_@,__@,_"/>
+  <extendedProperties name="drilled.filters_" value="dataSetRow[&quot;Call Date&quot;][&quot;Quarter&quot;]eq&quot;3&quot;_@,_dataSetRow[&quot;Call Date&quot;][&quot;Month&quot;]eq&quot;7&quot;_@,__@,_"/>
   <extendedProperties name="enable.drill.proc_" value="true"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
@@ -1310,12 +1316,12 @@
                     <property name="operator">eq</property>
                     <expression name="expr" type="javascript">dataSetRow["Call Date"]["Month"]</expression>
                     <simple-property-list name="value1">
-                        <value>"8"</value>
+                        <value>"7"</value>
                     </simple-property-list>
                 </structure>
             </list-property>
             <property name="height">236.25pt</property>
-            <property name="width">456pt</property>
+            <property name="width">515.25pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Call Date</property>
@@ -1330,6 +1336,11 @@
                 <structure>
                     <property name="name">Service</property>
                     <expression name="expression">dataSetRow["Service"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Product</property>
+                    <expression name="expression">dataSetRow["Product"]</expression>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
@@ -1390,7 +1401,7 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,456.0,"/>
+   <bounds _body=",,515.25,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1406,7 +1417,7 @@
   <extendedProperties name="jschart.glass.style" value="false"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
   <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="drilled.filters_" value="row[&quot;Service&quot;]eq&quot;Credit Services&quot;_@,__@,_"/>
+  <extendedProperties name="drilled.filters_" value="_@,_"/>
   <extendedProperties name="enable.drill.proc_" value="true"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
@@ -1502,7 +1513,7 @@
        <color _nil="1"/>
       </outline>
      </label>
-     <dataDefinition definition="row[&quot;Product&quot;]"/>
+     <dataDefinition definition="row[&quot;Service&quot;]"/>
      <curveFitting _nil="1"/>
     </series>
     <grouping enabled="true" groupingInterval="0.0"/>
@@ -1546,17 +1557,8 @@
 </ActuateChart>
 ]]></xml-property>
             <property name="outputFormat">JS</property>
-            <list-property name="filter">
-                <structure>
-                    <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">row["Service"]</expression>
-                    <simple-property-list name="value1">
-                        <value>"Credit Services"</value>
-                    </simple-property-list>
-                </structure>
-            </list-property>
             <property name="height">347pt</property>
-            <property name="width">456pt</property>
+            <property name="width">515.25pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Service</property>

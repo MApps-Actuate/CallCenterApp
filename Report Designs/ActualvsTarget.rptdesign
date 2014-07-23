@@ -5675,6 +5675,12 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
     <outline>
      <color _nil="1"/>
     </outline>
+    <triggers condition="2">
+     <action type="2">
+      <value _type="SeriesValue" name=""/>
+     </action>
+    </triggers>
+    <cursor type="0"/>
     <clientArea>
      <outline>
       <color _nil="1"/>
@@ -5785,10 +5791,10 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
            <caption value="Drill to Meteric Detail"/>
           </label>
          </uRLValues>
+         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
          <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
          <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
          <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
-         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
         </value>
        </action>
       </triggers>
@@ -5850,10 +5856,10 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
       <triggers condition="2">
        <action type="0">
         <value _type="MultiURLValues">
+         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
          <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
          <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
          <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
-         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
         </value>
        </action>
       </triggers>

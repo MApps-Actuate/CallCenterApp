@@ -3,66 +3,68 @@
     <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
     <xml-property name="externalMetadata">
         <external-datamarts>
-            <datamart-node location="file:/C:/Users/ActuateUser/git/CallCenterApp/Data%20Objects/CustomerComplaintsByProvider.data">
+            <datamart-node location="file:/C:/Users/ActuateUser/git/CallCenterApp/Data%20Objects/CustomerComplaintsbyProvider.data">
                 <reference-elements>Data Source;</reference-elements>
                 <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-                    <property name="createdBy">Eclipse BIRT Designer Version 2.6.3.v20111028-0207 Build &lt;2.6.3.v20111028-0207></property>
+                    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
                     <data-sources>
-                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Data Source" id="7">
-                            <property name="HOME">C:\Users\BIRTAdmin\Desktop</property>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Data Source" id="2">
+                            <property name="HOME">Data/</property>
                             <property name="DELIMTYPE">COMMA</property>
                             <property name="CHARSET">UTF-8</property>
                             <property name="INCLCOLUMNNAME">YES</property>
-                            <property name="INCLTYPELINE">YES</property>
+                            <property name="INCLTYPELINE">NO</property>
                             <property name="TRAILNULLCOLS">NO</property>
                         </oda-data-source>
                     </data-sources>
                     <data-sets>
-                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Complaints" id="48">
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Customer Complaints By Provider" id="3">
                             <list-property name="columnHints">
                                 <structure>
                                     <property name="columnName">Call_Date</property>
                                     <property name="analysis">dimension</property>
                                     <text-property name="heading">Call_Date</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Complaint</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Complaint</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">ID</property>
-                                    <property name="analysis">dimension</property>
+                                    <property name="analysis">measure</property>
                                     <text-property name="heading">ID</text-property>
-                                    <property name="indexColumn">true</property>
+                                    <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Product</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Product</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Resolution_Description</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Resolution_Description</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Resolved_Ontime</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Resolved_Ontime</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Provider</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Provider</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
@@ -76,27 +78,26 @@
                                 </structure>
                                 <structure>
                                     <property name="columnName">Severity</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Severity</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Failure_Type</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Failure_Type</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                                 <structure>
                                     <property name="columnName">Customer_Type</property>
-                                    <property name="analysis">attribute</property>
+                                    <property name="analysis">dimension</property>
                                     <text-property name="heading">Customer_Type</text-property>
                                     <property name="indexColumn">false</property>
                                     <property name="compressed">false</property>
                                 </structure>
                             </list-property>
-                            <list-property name="parameters"/>
                             <structure name="cachedMetaData">
                                 <list-property name="resultSet">
                                     <structure>
@@ -236,7 +237,7 @@
                                     <property name="nativeDataType">12</property>
                                 </structure>
                             </list-property>
-                            <xml-property name="queryText"><![CDATA[select "Call_Date", "Complaint", "ID", "Product", "Resolution_Description", "Resolved_Ontime", "Provider", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type" from "Customer_ComplaintsSLA.csv" : {"Call_Date","Call_Date",DATE;"Complaint","Complaint",STRING;"ID","ID",INT;"Product","Product",STRING;"Resolution_Description","Resolution_Description",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Provider","Provider",STRING;"Minutes_On_Phone","Minutes_On_Phone",INT;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING}]]></xml-property>
+                            <xml-property name="queryText"><![CDATA[select "Call_Date", "Complaint", "ID", "Product", "Resolution_Description", "Resolved_Ontime", "Provider", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type" from "CustomerComplaintsByProvider.csv" : {"Call_Date","Call_Date",DATE;"Complaint","Complaint",STRING;"ID","ID",INT;"Product","Product",STRING;"Resolution_Description","Resolution_Description",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Provider","Provider",STRING;"Minutes_On_Phone","Minutes_On_Phone",INT;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING}]]></xml-property>
                             <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
   <Version>2.0</Version>
@@ -249,7 +250,7 @@
               <design:name>Call_Date</design:name>
               <design:position>1</design:position>
             </design:identifier>
-            <design:nativeDataTypeCode>93</design:nativeDataTypeCode>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
             <design:precision>-1</design:precision>
             <design:scale>-1</design:scale>
             <design:nullability>Unknown</design:nullability>
@@ -426,116 +427,76 @@
 </model:DesignValues>]]></xml-property>
                         </oda-data-set>
                     </data-sets>
-                    <cubes>
-                        <tabular-cube name="Data Cube" id="71">
-                            <property name="dimensions">
-                                <tabular-dimension name="Group" id="72">
-                                    <property name="isTimeType">true</property>
-                                    <property name="defaultHierarchy">NewTabularHierarchy1</property>
-                                    <property name="hierarchies">
-                                        <tabular-hierarchy name="NewTabularHierarchy1" id="73">
-                                            <property name="levels">
-                                                <tabular-level name="Year" id="74">
-                                                    <property name="dataType">integer</property>
-                                                    <property name="dateTimeLevelType">year</property>
-                                                    <property name="dateTimeFormat">yyyy</property>
-                                                    <list-property name="attributes">
-                                                        <structure>
-                                                            <property name="name">DateTime</property>
-                                                            <property name="dataType">date-time</property>
-                                                        </structure>
-                                                    </list-property>
-                                                    <property name="columnName">Call_Date</property>
-                                                </tabular-level>
-                                                <tabular-level name="Month" id="75">
-                                                    <property name="dataType">integer</property>
-                                                    <property name="dateTimeLevelType">month</property>
-                                                    <property name="dateTimeFormat">MMM</property>
-                                                    <list-property name="attributes">
-                                                        <structure>
-                                                            <property name="name">DateTime</property>
-                                                            <property name="dataType">date-time</property>
-                                                        </structure>
-                                                    </list-property>
-                                                    <property name="columnName">Call_Date</property>
-                                                </tabular-level>
-                                                <tabular-level name="Day Of Month" id="76">
-                                                    <property name="dataType">integer</property>
-                                                    <property name="dateTimeLevelType">day-of-month</property>
-                                                    <property name="dateTimeFormat">dd</property>
-                                                    <list-property name="attributes">
-                                                        <structure>
-                                                            <property name="name">DateTime</property>
-                                                            <property name="dataType">date-time</property>
-                                                        </structure>
-                                                    </list-property>
-                                                    <property name="columnName">Call_Date</property>
-                                                </tabular-level>
-                                            </property>
-                                        </tabular-hierarchy>
-                                    </property>
-                                </tabular-dimension>
-                                <tabular-dimension name="provider" id="79">
-                                    <property name="defaultHierarchy">NewTabularHierarchy</property>
-                                    <property name="hierarchies">
-                                        <tabular-hierarchy name="NewTabularHierarchy" id="80">
-                                            <property name="levels">
-                                                <tabular-level name="Provider" id="81">
-                                                    <property name="dataType">string</property>
-                                                    <property name="columnName">Provider</property>
-                                                </tabular-level>
-                                                <tabular-level name="Product" id="84">
-                                                    <property name="dataType">string</property>
-                                                    <property name="columnName">Product</property>
-                                                </tabular-level>
-                                                <tabular-level name="Failure_Type" id="85">
-                                                    <property name="dataType">string</property>
-                                                    <property name="columnName">Failure_Type</property>
-                                                </tabular-level>
-                                                <tabular-level name="Severity" id="88">
-                                                    <property name="dataType">string</property>
-                                                    <property name="columnName">Severity</property>
-                                                </tabular-level>
-                                            </property>
-                                        </tabular-hierarchy>
-                                    </property>
-                                </tabular-dimension>
-                                <tabular-dimension name="ComplaintType" id="93">
-                                    <property name="defaultHierarchy">NewTabularHierarchy2</property>
-                                    <property name="hierarchies">
-                                        <tabular-hierarchy name="NewTabularHierarchy2" id="94">
-                                            <property name="levels">
-                                                <tabular-level name="Customer_Type" id="95">
-                                                    <property name="dataType">string</property>
-                                                    <property name="columnName">Customer_Type</property>
-                                                </tabular-level>
-                                            </property>
-                                        </tabular-hierarchy>
-                                    </property>
-                                </tabular-dimension>
+                    <property name="linkedDataModels">
+                        <linked-data-model name="Data Model" id="4">
+                            <property name="aliasDataSets">
+                                <alias-data-set name="Customer Complaints By Provider" id="17">
+                                    <property name="originDataSet">Customer Complaints By Provider</property>
+                                </alias-data-set>
                             </property>
-                            <property name="measureGroups">
-                                <tabular-measure-group name="Summary Field" id="89">
-                                    <property name="measures">
-                                        <tabular-measure name="Minutes_On_Phone" id="90">
-                                            <expression name="measureExpression" type="javascript">dataSetRow["Minutes_On_Phone"]</expression>
-                                            <property name="dataType">integer</property>
-                                        </tabular-measure>
-                                    </property>
-                                </tabular-measure-group>
-                                <tabular-measure-group name="Summary Field1" id="91">
-                                    <property name="measures">
-                                        <tabular-measure name="Complaint" id="92">
-                                            <property name="function">count</property>
-                                            <expression name="measureExpression" type="javascript">dataSetRow["Complaint"]</expression>
-                                            <property name="dataType">integer</property>
-                                        </tabular-measure>
-                                    </property>
-                                </tabular-measure-group>
+                            <property name="drillPaths">
+                                <drill-path id="18">
+                                    <text-property name="displayName">Call_Date</text-property>
+                                    <simple-property-list name="drillPathColumns">
+                                        <value>dataSetRow["Call_Date"]["Year"]</value>
+                                        <value>dataSetRow["Call_Date"]["Quarter"]</value>
+                                        <value>dataSetRow["Call_Date"]["Month"]</value>
+                                    </simple-property-list>
+                                </drill-path>
                             </property>
-                            <property name="dataSet">Complaints</property>
-                        </tabular-cube>
-                    </cubes>
+                            <property name="categories">
+                                <category name="Customer Complaints By Provider" id="5">
+                                    <property name="categoryColumns">
+                                        <category-column name="Call_Date" id="6">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Call_Date</property>
+                                        </category-column>
+                                        <category-column name="Complaint" id="7">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Complaint</property>
+                                        </category-column>
+                                        <category-column name="ID" id="8">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">ID</property>
+                                        </category-column>
+                                        <category-column name="Product" id="9">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Product</property>
+                                        </category-column>
+                                        <category-column name="Resolution_Description" id="10">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Resolution_Description</property>
+                                        </category-column>
+                                        <category-column name="Resolved_Ontime" id="11">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Resolved_Ontime</property>
+                                        </category-column>
+                                        <category-column name="Provider" id="12">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Provider</property>
+                                        </category-column>
+                                        <category-column name="Minutes_On_Phone" id="13">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Minutes_On_Phone</property>
+                                        </category-column>
+                                        <category-column name="Severity" id="14">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Severity</property>
+                                        </category-column>
+                                        <category-column name="Failure_Type" id="15">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Failure_Type</property>
+                                        </category-column>
+                                        <category-column name="Customer_Type" id="16">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Customer_Type</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                            </property>
+                            <property name="pushDown">true</property>
+                        </linked-data-model>
+                    </property>
                 </datamart>
             </datamart-node>
         </external-datamarts>
@@ -578,7 +539,7 @@
             <property name="dataType">date</property>
             <property name="distinct">true</property>
             <simple-property-list name="defaultValue">
-                <value type="constant">2012-07-27</value>
+                <value type="constant">2014-07-25</value>
             </simple-property-list>
             <list-property name="selectionList"/>
             <property name="paramType">simple</property>
@@ -601,45 +562,47 @@
                     <property name="columnName">Call_Date</property>
                     <property name="analysis">dimension</property>
                     <text-property name="heading">Call_Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Complaint</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Complaint</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">ID</property>
-                    <property name="analysis">dimension</property>
+                    <property name="analysis">measure</property>
                     <text-property name="heading">ID</text-property>
-                    <property name="indexColumn">true</property>
+                    <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Product</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Product</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Resolution_Description</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Resolution_Description</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Resolved_Ontime</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Resolved_Ontime</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Provider</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Provider</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
@@ -653,21 +616,21 @@
                 </structure>
                 <structure>
                     <property name="columnName">Severity</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Severity</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Failure_Type</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Failure_Type</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
                 </structure>
                 <structure>
                     <property name="columnName">Customer_Type</property>
-                    <property name="analysis">attribute</property>
+                    <property name="analysis">dimension</property>
                     <text-property name="heading">Customer_Type</text-property>
                     <property name="indexColumn">false</property>
                     <property name="compressed">false</property>
@@ -733,7 +696,7 @@
                 </list-property>
             </structure>
             <property name="dataSource">Data Source</property>
-            <property name="dataObject">Complaints</property>
+            <property name="dataObject">Customer Complaints By Provider</property>
             <list-property name="selectedColumns">
                 <structure>
                     <property name="position">1</property>
@@ -939,6 +902,13 @@
                     <text-property name="displayName">Customer_Type</text-property>
                     <expression name="expression" type="javascript">dataSetRow["Customer_Type"]</expression>
                     <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="sort">
+                <structure>
+                    <expression name="key" type="javascript">row["Call_Date"]</expression>
+                    <property name="direction">desc</property>
+                    <property name="strength">-1</property>
                 </structure>
             </list-property>
             <list-property name="filter">
