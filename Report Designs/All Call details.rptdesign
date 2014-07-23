@@ -1003,6 +1003,7 @@
                     </cell>
                 </row>
                 <row id="248">
+                    <property name="height">3.5208333333333335in</property>
                     <cell id="249">
                         <property name="colSpan">13</property>
                         <property name="rowSpan">1</property>
@@ -1320,6 +1321,9 @@
     <color _nil="1"/>
    </lineAttributes>
    <label>
+    <caption>
+     <font rotation="0.0"/>
+    </caption>
     <background _nil="1"/>
     <outline>
      <color _nil="1"/>
@@ -1353,8 +1357,8 @@
 ]]></xml-property>
                             <property name="outputFormat">JS</property>
                             <property name="inheritColumns">true</property>
-                            <property name="height">2.6041666666666665in</property>
-                            <property name="width">12.458333333333334in</property>
+                            <property name="height">3.4479166666666665in</property>
+                            <property name="width">14in</property>
                             <property name="theme">ThemesReportItems3.Modern</property>
                         </extended-item>
                     </cell>
