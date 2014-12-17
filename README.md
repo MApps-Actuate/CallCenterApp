@@ -2,6 +2,8 @@ CallCenterApp
 =============
 The CallCenter/SLA demo (Call Center - Server Level Agreement)  is an example tracking call center support operations demo.  This demo incorporates a tight integration with BIRT Scorecard for the comparison of target to goal KPIs.
 
+Deploy Call Volume Analysis.gadget to CallCenter/Dashboards folder.
+
 Externally facing app.  Think of this as a SAAS that companies purchase.
 
 To learn how to use GitHub in Eclipse with this repository, check out the following link:
