@@ -5876,7 +5876,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                             <property name="height">440px</property>
                             <property name="width">508px</property>
                             <property name="title">Average Daily Metrics</property>
-                            <property name="externalGadgetURI">/Applications/CallCenterApp/Report Designs/MonthlyMetrics.rptdesign</property>
+                            <property name="externalGadgetURI">^/Report Designs/MonthlyMetrics.rptdesign</property>
                             <property name="showTitle">false</property>
                             <property name="showBorder">false</property>
                             <property name="zIndex">5</property>
@@ -5907,7 +5907,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                     <property name="gadgetType">viewer</property>
                                     <property name="externalContentRef">
                                         <external-element-ref>
-                                            <property name="sourceFile">/Applications/CallCenterApp/Report Designs/MonthlyMetrics.rptdesign</property>
+                                            <property name="sourceFile">^/Report Designs/MonthlyMetrics.rptdesign</property>
                                         </external-element-ref>
                                     </property>
                                     <property name="paramSettings">
@@ -5956,7 +5956,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                             <property name="height">403px</property>
                             <property name="width">808px</property>
                             <property name="title">Moving Daily Average</property>
-                            <property name="externalGadgetURI">/Applications/CallCenterApp/Report Designs/ActualvsTarget.rptdesign</property>
+                            <property name="externalGadgetURI">^/Report Designs/ActualvsTarget.rptdesign</property>
                             <property name="showTitle">false</property>
                             <property name="showBorder">false</property>
                             <property name="zIndex">8</property>
@@ -5987,7 +5987,7 @@ xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
                                     <property name="gadgetType">viewer</property>
                                     <property name="externalContentRef">
                                         <external-element-ref>
-                                            <property name="sourceFile">/Applications/CallCenterApp/Report Designs/ActualvsTarget.rptdesign</property>
+                                            <property name="sourceFile">^/Report Designs/ActualvsTarget.rptdesign</property>
                                             <property name="targetBookmark">Chart</property>
                                         </external-element-ref>
                                     </property>
