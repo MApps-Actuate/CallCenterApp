@@ -1,32 +1,54 @@
 <!DOCTYPE html>
+<!--
+	BIRT Application - Demo Framework
+	author: Pierre Tessier
+	version: 1.0.1 
+ -->
 <html>
 <head>
-	<script>
-	var demoProps = {
-		dashboardName: "/Applications/CallCenterApp/Dashboards/Call Center Support Performance.dashboard"
-	}
-	var DEV_MODE = true; // Set DEV_MODE to true if developing in BD Pro. Set to false when deploying to iHub
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<script>	
+	/** BIRT Application Properties	
+	*
+	* 1 of dashbaordName or reportName need to be specified
+	* dashboardName takes precedence over reportName if both are specified
+	*
+	*
+	* dashboardName - name of dashboard file.  File is assumed to be in /Dashboards folder as part of BIRT Application 
+	* reportName - name of report file.  File is assumed to be in /Report Designs fodler as part of BIRT Application
+	* editMode - launch in Edit or View mode for dashboards, or launch with interactivity enabled for reports (default: false)
+	* hideNav - optional - hide navigation bar for reports (default: false)
+	* title - optional - will set the window/tab title in web browser (default: <derived app name from URL>)
+	*/
+	var birtApp = {
+		dashboardName: "Call Center Support Performance.dashboard",
+		//reportName: "Test Report.rptdesign",
+		editMode: true,
+		hideNav: true,
+		title: null,
+		submitCallback: true
+	};
 	</script>
 
-	
-	<title>Call Center Management Application</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 			
 	<link href="/iportal/common/jslib/themes/default/birt360.css" type="text/css" rel="stylesheet" >
 	<link href="/iportal/common/jslib/themes/default/yggdrasil.css" type="text/css" rel="stylesheet" >
+	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"  >
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	
-	<style>
-	.actuate-dashboard-view-outerwrapper {
-		padding: 0 !important;
-	}
+	<style>	
+		.actuate-dashboard-view-outerwrapper {
+			padding: 0 !important;
+		}
 	</style>
 	
 	<script type="text/javascript" src="/iportal/jsapi"></script>
-	<script type="text/javascript" src="demo.js"></script>	
+	<script type="text/javascript" src="birt-app.js"></script>	
+	
 </head>
-<body>
-	<div width:100%; margin:auto;";>
-		<table width="100%"><tr><td style="padding:0"><div id="dashboardDiv" style="background:#FFFFFF"></div></td></tr></table>
-	</div>
+
+<body style="height: 100%; width: 100%; overflow:hidden;">
+	<div id="dashboardContainer" style="width:100%; height:100%"></div>
 </body>
 </html>

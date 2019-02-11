@@ -589,18 +589,6 @@
             <property name="namespace">ThemesReportItems3</property>
         </structure>
     </list-property>
-    <method name="onContentUpdate"><![CDATA[// Get the Viewer's current UI Options
-var uiOptions = this.getViewer().getUIOptions();
-
-// Remove ability for user to change interactivity options
-uiOptions.enableEditReport(false);
-
-// Set the modified UI Options back into the Viewer
-this.getViewer().setUIOptions(uiOptions);
-
-// If Interactivity is not enabled, enable it
-if (!this.getViewer().isInteractive())
-	this.getViewer().enableIV();]]></method>
     <parameters>
         <scalar-parameter name="Vendor" id="263">
             <text-property name="helpText">Select Call Center Vendor</text-property>
@@ -926,6 +914,7 @@ if (!this.getViewer().isInteractive())
     </page-setup>
     <body>
         <table name="Table" id="166">
+            <property name="fontFamily">"Verdana"</property>
             <property name="dataSet">Data Set</property>
             <property name="theme">ThemesReportItems3.Modern Table</property>
             <list-property name="boundDataColumns">
@@ -1031,10 +1020,11 @@ if (!this.getViewer().isInteractive())
             <column id="246">
                 <property name="textAlign">right</property>
             </column>
+            <column id="247"/>
             <header>
                 <row id="264">
                     <cell id="265">
-                        <property name="colSpan">12</property>
+                        <property name="colSpan">13</property>
                         <property name="rowSpan">1</property>
                         <property name="backgroundColor">white</property>
                         <property name="borderBottomColor">#FFFFFF</property>
@@ -1049,18 +1039,16 @@ if (!this.getViewer().isInteractive())
                         <property name="borderTopColor">#FFFFFF</property>
                         <property name="borderTopStyle">solid</property>
                         <property name="borderTopWidth">medium</property>
+                        <label id="278">
+                            <text-property name="text">Vendor Call Detail Report</text-property>
+                        </label>
                     </cell>
                 </row>
                 <row id="248">
                     <cell id="249">
-                        <property name="colSpan">12</property>
+                        <property name="colSpan">13</property>
                         <property name="rowSpan">1</property>
                         <property name="backgroundColor">white</property>
-                        <text-data id="279">
-                            <property name="fontSize">12pt</property>
-                            <expression name="valueExpr">params["Vendor"].value + " Call Detail Report"</expression>
-                            <property name="contentType">html</property>
-                        </text-data>
                         <extended-item extensionName="Chart" id="262">
                             <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side">
@@ -1144,40 +1132,6 @@ if (!this.getViewer().isInteractive())
     </title>
     <seriesDefinitions>
      <query definition=""/>
-     <seriesPalette>
-      <entries _body=",255,102,176,209"/>
-      <entries _body=",255,242,88,106"/>
-      <entries _body=",255,232,172,57"/>
-      <entries _body=",255,128,255,128"/>
-      <entries _body=",255,64,128,128"/>
-      <entries _body=",255,128,128,192"/>
-      <entries _body=",255,170,85,85"/>
-      <entries _body=",255,128,128,0"/>
-      <entries _body=",255,192,192,192"/>
-      <entries _body=",255,255,255,128"/>
-      <entries _body=",255,128,192,128"/>
-      <entries _body=",255,7,146,94"/>
-      <entries _body=",255,0,128,255"/>
-      <entries _body=",255,255,128,192"/>
-      <entries _body=",255,0,255,255"/>
-      <entries _body=",255,255,128,128"/>
-      <entries _body=",255,0,128,192"/>
-      <entries _body=",255,128,128,192"/>
-      <entries _body=",255,255,0,255"/>
-      <entries _body=",255,128,64,64"/>
-      <entries _body=",255,255,128,64"/>
-      <entries _body=",255,80,240,120"/>
-      <entries _body=",255,0,64,128"/>
-      <entries _body=",255,128,0,64"/>
-      <entries _body=",255,255,0,128"/>
-      <entries _body=",255,128,128,64"/>
-      <entries _body=",255,128,128,128"/>
-      <entries _body=",255,255,128,255"/>
-      <entries _body=",255,0,64,0"/>
-      <entries _body=",255,0,0,0"/>
-      <entries _body=",255,255,255,255"/>
-      <entries _body=",255,255,128,0"/>
-     </seriesPalette>
      <series _type="BarSeries" seriesIdentifier="Call Mins" stacked="false" riser="0">
       <label>
        <background _nil="1"/>
@@ -1234,40 +1188,6 @@ if (!this.getViewer().isInteractive())
     </title>
     <seriesDefinitions>
      <query definition=""/>
-     <seriesPalette>
-      <entries _body=",255,53,120,173"/>
-      <entries _body=",255,232,172,57"/>
-      <entries _body=",255,128,255,128"/>
-      <entries _body=",255,64,128,128"/>
-      <entries _body=",255,128,128,192"/>
-      <entries _body=",255,170,85,85"/>
-      <entries _body=",255,128,128,0"/>
-      <entries _body=",255,192,192,192"/>
-      <entries _body=",255,255,255,128"/>
-      <entries _body=",255,128,192,128"/>
-      <entries _body=",255,7,146,94"/>
-      <entries _body=",255,0,128,255"/>
-      <entries _body=",255,255,128,192"/>
-      <entries _body=",255,0,255,255"/>
-      <entries _body=",255,255,128,128"/>
-      <entries _body=",255,0,128,192"/>
-      <entries _body=",255,128,128,192"/>
-      <entries _body=",255,255,0,255"/>
-      <entries _body=",255,128,64,64"/>
-      <entries _body=",255,255,128,64"/>
-      <entries _body=",255,80,240,120"/>
-      <entries _body=",255,0,64,128"/>
-      <entries _body=",255,128,0,64"/>
-      <entries _body=",255,255,0,128"/>
-      <entries _body=",255,128,128,64"/>
-      <entries _body=",255,128,128,128"/>
-      <entries _body=",255,255,128,255"/>
-      <entries _body=",255,0,64,0"/>
-      <entries _body=",255,0,0,0"/>
-      <entries _body=",255,255,255,255"/>
-      <entries _body=",255,255,128,0"/>
-      <entries _body=",255,80,166,218"/>
-     </seriesPalette>
      <series _type="LineSeries" seriesIdentifier="Time To Answer" stacked="false">
       <label>
        <background _nil="1"/>
@@ -1323,40 +1243,6 @@ if (!this.getViewer().isInteractive())
    </associatedAxes>
    <seriesDefinitions>
     <query definition=""/>
-    <seriesPalette>
-     <entries _body=",255,80,166,218"/>
-     <entries _body=",255,242,88,106"/>
-     <entries _body=",255,232,172,57"/>
-     <entries _body=",255,128,255,128"/>
-     <entries _body=",255,64,128,128"/>
-     <entries _body=",255,128,128,192"/>
-     <entries _body=",255,170,85,85"/>
-     <entries _body=",255,128,128,0"/>
-     <entries _body=",255,192,192,192"/>
-     <entries _body=",255,255,255,128"/>
-     <entries _body=",255,128,192,128"/>
-     <entries _body=",255,7,146,94"/>
-     <entries _body=",255,0,128,255"/>
-     <entries _body=",255,255,128,192"/>
-     <entries _body=",255,0,255,255"/>
-     <entries _body=",255,255,128,128"/>
-     <entries _body=",255,0,128,192"/>
-     <entries _body=",255,128,128,192"/>
-     <entries _body=",255,255,0,255"/>
-     <entries _body=",255,128,64,64"/>
-     <entries _body=",255,255,128,64"/>
-     <entries _body=",255,80,240,120"/>
-     <entries _body=",255,0,64,128"/>
-     <entries _body=",255,128,0,64"/>
-     <entries _body=",255,255,0,128"/>
-     <entries _body=",255,128,128,64"/>
-     <entries _body=",255,128,128,128"/>
-     <entries _body=",255,255,128,255"/>
-     <entries _body=",255,0,64,0"/>
-     <entries _body=",255,0,0,0"/>
-     <entries _body=",255,255,255,255"/>
-     <entries _body=",255,255,128,0"/>
-    </seriesPalette>
     <series seriesIdentifier="">
      <label>
       <background _nil="1"/>
@@ -1407,9 +1293,9 @@ if (!this.getViewer().isInteractive())
 ]]></xml-property>
                             <property name="outputFormat">JS</property>
                             <property name="inheritColumns">true</property>
-                            <property name="height">3.448in</property>
-                            <property name="width">14in</property>
-                            <property name="theme">ThemesReportItems3.Modern</property>
+                            <property name="height">2.6041666666666665in</property>
+                            <property name="width">12.458333333333334in</property>
+                            <property name="theme">ThemesReportItems3.Warm Red</property>
                         </extended-item>
                     </cell>
                 </row>
@@ -1474,67 +1360,52 @@ if (!this.getViewer().isInteractive())
                             <text-property name="text">TTA</text-property>
                         </label>
                     </cell>
+                    <cell id="192">
+                        <label id="193">
+                            <text-property name="text">Vendor</text-property>
+                        </label>
+                    </cell>
                 </row>
             </header>
             <detail>
                 <row id="194">
-                    <list-property name="highlightRules">
-                        <structure>
-                            <property name="operator">eq</property>
-                            <property name="backgroundColor">#E6E6E6</property>
-                            <expression name="testExpr" type="javascript">row.__rownum %2</expression>
-                            <simple-property-list name="value1">
-                                <value type="javascript">1</value>
-                            </simple-property-list>
-                        </structure>
-                    </list-property>
                     <cell id="195">
-                        <property name="fontSize">9pt</property>
                         <property name="textAlign">center</property>
                         <data id="196">
                             <property name="resultSetColumn">CALL ID</property>
                         </data>
                     </cell>
                     <cell id="197">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="198">
-                            <property name="marginRight">5pt</property>
-                            <property name="textAlign">right</property>
                             <property name="resultSetColumn">Call_Date</property>
                         </data>
                     </cell>
                     <cell id="199">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="200">
                             <property name="resultSetColumn">Product</property>
                         </data>
                     </cell>
                     <cell id="201">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="202">
-                            <property name="textAlign">center</property>
                             <property name="resultSetColumn">Resolved_Ontime</property>
                         </data>
                     </cell>
                     <cell id="203">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="204">
                             <property name="resultSetColumn">Service</property>
                         </data>
                     </cell>
                     <cell id="205">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="206">
                             <property name="resultSetColumn">Support_Rep</property>
                         </data>
                     </cell>
                     <cell id="207">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingRight">1pt</property>
                         <data id="208">
                             <property name="textAlign">right</property>
@@ -1542,7 +1413,6 @@ if (!this.getViewer().isInteractive())
                         </data>
                     </cell>
                     <cell id="209">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <property name="textAlign">left</property>
                         <data id="210">
@@ -1551,14 +1421,12 @@ if (!this.getViewer().isInteractive())
                         </data>
                     </cell>
                     <cell id="211">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="212">
                             <property name="resultSetColumn">Failure_Type</property>
                         </data>
                     </cell>
                     <cell id="213">
-                        <property name="fontSize">9pt</property>
                         <property name="paddingLeft">5pt</property>
                         <data id="214">
                             <property name="resultSetColumn">Customer_Type</property>
@@ -1567,17 +1435,20 @@ if (!this.getViewer().isInteractive())
                     <cell id="215">
                         <property name="paddingLeft">5pt</property>
                         <data id="216">
-                            <property name="fontSize">9pt</property>
                             <property name="resultSetColumn">Customer Sat Rating</property>
                         </data>
                     </cell>
                     <cell id="217">
                         <property name="paddingRight">1pt</property>
                         <data id="218">
-                            <property name="fontSize">9pt</property>
-                            <property name="marginRight">5pt</property>
                             <property name="textAlign">right</property>
                             <property name="resultSetColumn">TTA</property>
+                        </data>
+                    </cell>
+                    <cell id="219">
+                        <property name="paddingLeft">5pt</property>
+                        <data id="220">
+                            <property name="resultSetColumn">Vendor</property>
                         </data>
                     </cell>
                 </row>
@@ -1596,6 +1467,7 @@ if (!this.getViewer().isInteractive())
                     <cell id="231"/>
                     <cell id="232"/>
                     <cell id="233"/>
+                    <cell id="234"/>
                 </row>
             </footer>
         </table>

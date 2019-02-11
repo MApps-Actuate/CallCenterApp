@@ -1,602 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
     <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
-    <xml-property name="externalMetadata">
-        <external-datamarts>
-            <datamart-node location="file:/C:/ihub3/CallCenter/file/006/137.dat">
-                <reference-elements>NewDataMartDataSource;</reference-elements>
-                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
-                    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
-                    <data-sources>
-                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Call Center Management System" id="2">
-                            <property name="HOME">Data/</property>
-                            <property name="DELIMTYPE">COMMA</property>
-                            <property name="CHARSET">UTF-8</property>
-                            <property name="INCLCOLUMNNAME">YES</property>
-                            <property name="INCLTYPELINE">YES</property>
-                            <property name="TRAILNULLCOLS">NO</property>
-                        </oda-data-source>
-                    </data-sources>
-                    <data-sets>
-                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Call Center Performance Results" id="3">
-                            <property name="isVisible">true</property>
-                            <property name="nullsOrdering">nulls lowest</property>
-                            <list-property name="columnHints">
-                                <structure>
-                                    <property name="columnName">CALL ID</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">CALL ID</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Call_Date</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Call_Date</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Product</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Product</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Resolved_Ontime</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Resolved_Ontime</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Service</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Service</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Support_Rep</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Support_Rep</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Minutes_On_Phone</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="heading">Minutes_On_Phone</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Severity</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Severity</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Failure_Type</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Failure_Type</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Customer_Type</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Customer_Type</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Customer Sat Rating</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Customer Sat Rating</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">TTA</property>
-                                    <property name="analysis">measure</property>
-                                    <text-property name="heading">TTA</text-property>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                                <structure>
-                                    <property name="columnName">Vendor</property>
-                                    <property name="analysis">dimension</property>
-                                    <text-property name="heading">Vendor</text-property>
-                                    <property name="horizontalAlign">left</property>
-                                    <structure name="action">
-                                        <property name="targetWindow">_blank</property>
-                                        <property name="linkType">drill-through</property>
-                                        <property name="targetFileType">report-design</property>
-                                        <property name="reportName">^/Report Designs/Call details.rptdesign</property>
-                                        <list-property name="paramBindings">
-                                            <structure>
-                                                <property name="paramName">Vendor</property>
-                                                <simple-property-list name="expression">
-                                                    <value type="javascript">row["Vendor"]</value>
-                                                </simple-property-list>
-                                            </structure>
-                                        </list-property>
-                                    </structure>
-                                    <property name="indexColumn">false</property>
-                                    <property name="compressed">false</property>
-                                </structure>
-                            </list-property>
-                            <list-property name="parameters"/>
-                            <structure name="cachedMetaData">
-                                <list-property name="resultSet">
-                                    <structure>
-                                        <property name="position">1</property>
-                                        <property name="name">CALL ID</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">2</property>
-                                        <property name="name">Call_Date</property>
-                                        <property name="dataType">date</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">3</property>
-                                        <property name="name">Product</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">4</property>
-                                        <property name="name">Resolved_Ontime</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">5</property>
-                                        <property name="name">Service</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">6</property>
-                                        <property name="name">Support_Rep</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">7</property>
-                                        <property name="name">Minutes_On_Phone</property>
-                                        <property name="dataType">float</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">8</property>
-                                        <property name="name">Severity</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">9</property>
-                                        <property name="name">Failure_Type</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">10</property>
-                                        <property name="name">Customer_Type</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">11</property>
-                                        <property name="name">Customer Sat Rating</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">12</property>
-                                        <property name="name">TTA</property>
-                                        <property name="dataType">float</property>
-                                    </structure>
-                                    <structure>
-                                        <property name="position">13</property>
-                                        <property name="name">Vendor</property>
-                                        <property name="dataType">string</property>
-                                    </structure>
-                                </list-property>
-                            </structure>
-                            <property name="dataSource">Call Center Management System</property>
-                            <list-property name="resultSet">
-                                <structure>
-                                    <property name="position">1</property>
-                                    <property name="name">CALL ID</property>
-                                    <property name="nativeName">CALL ID</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">2</property>
-                                    <property name="name">Call_Date</property>
-                                    <property name="nativeName">Call_Date</property>
-                                    <property name="dataType">date</property>
-                                    <property name="nativeDataType">91</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">3</property>
-                                    <property name="name">Product</property>
-                                    <property name="nativeName">Product</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">4</property>
-                                    <property name="name">Resolved_Ontime</property>
-                                    <property name="nativeName">Resolved_Ontime</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">5</property>
-                                    <property name="name">Service</property>
-                                    <property name="nativeName">Service</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">6</property>
-                                    <property name="name">Support_Rep</property>
-                                    <property name="nativeName">Support_Rep</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">7</property>
-                                    <property name="name">Minutes_On_Phone</property>
-                                    <property name="nativeName">Minutes_On_Phone</property>
-                                    <property name="dataType">float</property>
-                                    <property name="nativeDataType">8</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">8</property>
-                                    <property name="name">Severity</property>
-                                    <property name="nativeName">Severity</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">9</property>
-                                    <property name="name">Failure_Type</property>
-                                    <property name="nativeName">Failure_Type</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">10</property>
-                                    <property name="name">Customer_Type</property>
-                                    <property name="nativeName">Customer_Type</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">11</property>
-                                    <property name="name">Customer Sat Rating</property>
-                                    <property name="nativeName">Customer Sat Rating</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">12</property>
-                                    <property name="name">TTA</property>
-                                    <property name="nativeName">TTA</property>
-                                    <property name="dataType">float</property>
-                                    <property name="nativeDataType">8</property>
-                                </structure>
-                                <structure>
-                                    <property name="position">13</property>
-                                    <property name="name">Vendor</property>
-                                    <property name="nativeName">Vendor</property>
-                                    <property name="dataType">string</property>
-                                    <property name="nativeDataType">12</property>
-                                </structure>
-                            </list-property>
-                            <xml-property name="queryText"><![CDATA[select "CALL ID", "Call_Date", "Product", "Resolved_Ontime", "Service", "Support_Rep", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type", "Customer Sat Rating", "TTA", "Vendor" from "callcenterdata.csv" : {"CALL ID","CALL ID",STRING;"Call_Date","Call_Date",DATE;"Product","Product",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Service","Service",STRING;"Support_Rep","Support_Rep",STRING;"Minutes_On_Phone","Minutes_On_Phone",DOUBLE;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING;"Customer Sat Rating","Customer Sat Rating",STRING;"TTA","TTA",DOUBLE;"Vendor","Vendor",STRING}]]></xml-property>
-                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
-  <Version>2.0</Version>
-  <design:ResultSets derivedMetaData="true">
-    <design:resultSetDefinitions>
-      <design:resultSetColumns>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Call_Date</design:name>
-              <design:position>1</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Call_Date</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Product</design:name>
-              <design:position>2</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Product</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Resolved_Ontime</design:name>
-              <design:position>3</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Resolved_Ontime</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Service</design:name>
-              <design:position>4</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Service</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Support_Rep</design:name>
-              <design:position>5</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Support_Rep</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Minutes_On_Phone</design:name>
-              <design:position>6</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Minutes_On_Phone</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Severity</design:name>
-              <design:position>7</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Severity</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Failure_Type</design:name>
-              <design:position>8</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Failure_Type</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Customer_Type</design:name>
-              <design:position>9</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Customer_Type</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Customer Sat Rating</design:name>
-              <design:position>10</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Customer Sat Rating</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>TTA</design:name>
-              <design:position>11</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>8</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>TTA</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-        <design:resultColumnDefinitions>
-          <design:attributes>
-            <design:identifier>
-              <design:name>Vendor</design:name>
-              <design:position>12</design:position>
-            </design:identifier>
-            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
-            <design:precision>-1</design:precision>
-            <design:scale>-1</design:scale>
-            <design:nullability>Unknown</design:nullability>
-          </design:attributes>
-          <design:usageHints>
-            <design:label>Vendor</design:label>
-            <design:formattingHints/>
-          </design:usageHints>
-        </design:resultColumnDefinitions>
-      </design:resultSetColumns>
-      <design:criteria/>
-    </design:resultSetDefinitions>
-  </design:ResultSets>
-</model:DesignValues>]]></xml-property>
-                        </oda-data-set>
-                    </data-sets>
-                    <property name="linkedDataModels">
-                        <linked-data-model name="Data Model" id="4">
-                            <property name="aliasDataSets">
-                                <alias-data-set name="Call Center Performance Results" id="18">
-                                    <property name="originDataSet">Call Center Performance Results</property>
-                                </alias-data-set>
-                            </property>
-                            <property name="drillPaths">
-                                <drill-path id="19">
-                                    <text-property name="displayName">Call Date</text-property>
-                                    <simple-property-list name="drillPathColumns">
-                                        <value>dataSetRow["Call Date"]["Year"]</value>
-                                        <value>dataSetRow["Call Date"]["Quarter"]</value>
-                                        <value>dataSetRow["Call Date"]["Month"]</value>
-                                        <value>dataSetRow["Call Date"]["DayOfMonth"]</value>
-                                    </simple-property-list>
-                                </drill-path>
-                                <drill-path id="20">
-                                    <text-property name="displayName">Support</text-property>
-                                    <simple-property-list name="drillPathColumns">
-                                        <value>dataSetRow["Vendor"]</value>
-                                        <value>dataSetRow["Support Rep"]</value>
-                                        <value>dataSetRow["Contact Type"]</value>
-                                    </simple-property-list>
-                                </drill-path>
-                                <drill-path id="21">
-                                    <text-property name="displayName">Product</text-property>
-                                    <simple-property-list name="drillPathColumns">
-                                        <value>dataSetRow["Service"]</value>
-                                        <value>dataSetRow["Product"]</value>
-                                    </simple-property-list>
-                                </drill-path>
-                            </property>
-                            <property name="categories">
-                                <category name="Call Center Performance Results" id="5">
-                                    <property name="categoryColumns">
-                                        <category-column name="Call Date" id="6">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Call_Date</property>
-                                        </category-column>
-                                        <category-column name="Product" id="7">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Product</property>
-                                        </category-column>
-                                        <category-column name="Resolved Ontime" id="8">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Resolved_Ontime</property>
-                                        </category-column>
-                                        <category-column name="Service" id="9">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Service</property>
-                                        </category-column>
-                                        <category-column name="Support Rep" id="10">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Support_Rep</property>
-                                        </category-column>
-                                        <category-column name="Call Minutes" id="11">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Minutes_On_Phone</property>
-                                        </category-column>
-                                        <category-column name="Call Severity" id="12">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Severity</property>
-                                        </category-column>
-                                        <category-column name="Contact Type" id="13">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Failure_Type</property>
-                                        </category-column>
-                                        <category-column name="Account Type" id="14">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Customer_Type</property>
-                                        </category-column>
-                                        <category-column name="Customer Sat Rating" id="15">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Customer Sat Rating</property>
-                                        </category-column>
-                                        <category-column name="Time To Answer" id="16">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">TTA</property>
-                                        </category-column>
-                                        <category-column name="Vendor" id="17">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">Vendor</property>
-                                        </category-column>
-                                        <category-column name="Case ID" id="22">
-                                            <property name="aliasDataSet">Data Model/Call Center Performance Results</property>
-                                            <property name="resultSetColumnName">CALL ID</property>
-                                        </category-column>
-                                    </property>
-                                </category>
-                            </property>
-                            <property name="pushDown">true</property>
-                        </linked-data-model>
-                    </property>
-                </datamart>
-            </datamart-node>
-        </external-datamarts>
-    </xml-property>
     <property name="layoutPreference">auto layout</property>
     <list-property name="libraries">
         <structure>
@@ -622,13 +26,14 @@
             <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Stacked" orientation="0">
   <block>
-   <children _type="TitleBlock" visible="true" auto="true">
+   <children _type="TitleBlock" visible="false" auto="false">
     <outline>
      <color _nil="1"/>
     </outline>
     <label>
-     <caption>
-      <font bold="false" italic="false" underline="false"/>
+     <caption value="">
+      <font size="12.0" bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -665,7 +70,6 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,498.0,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -678,11 +82,9 @@
   <extendedProperties name="jschart.scroll" value="true"/>
   <extendedProperties name="keep.hierarchy.category" value="true"/>
   <extendedProperties name="keep.hierarchy.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="false"/>
   <extendedProperties name="jschart.glass.style" value="false"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
-  <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="drilled.filters_" value="_@,_"/>
-  <extendedProperties name="enable.drill.proc_" value="true"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
    <orthogonalSampleData dataSetRepresentation="2.3" seriesDefinitionIndex="0"/>
@@ -699,6 +101,7 @@
    <title visible="false">
     <caption value="">
      <font bold="false" italic="false" underline="false" rotation="90.0"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -709,6 +112,7 @@
     <title visible="false">
      <caption value="">
       <font bold="false" italic="false" underline="false" rotation="0.0"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -741,6 +145,7 @@
     <label visible="true">
      <caption>
       <font bold="false" italic="false" underline="false" rotation="0.0"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -788,6 +193,7 @@
    <label visible="true">
     <caption>
      <font bold="false" italic="false" underline="false" rotation="0.0"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -822,7 +228,7 @@
 ]]></xml-property>
             <property name="outputFormat">JS</property>
             <property name="height">186pt</property>
-            <property name="width">498pt</property>
+            <property name="width">471.75pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Vendor</property>
@@ -839,13 +245,8 @@
                     <expression name="expression">dataSetRow["Service"]</expression>
                     <property name="dataType">string</property>
                 </structure>
-                <structure>
-                    <property name="name">Support Rep</property>
-                    <expression name="expression">dataSetRow["Support Rep"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
             </list-property>
-            <property name="theme">ThemesReportItems3.Modern</property>
+            <property name="theme">ThemesReportItems3.Clean Blue</property>
             <property name="linkedDataModel">NewDataMartDataSource::Data Model</property>
             <list-property name="userProperties">
                 <structure>
@@ -859,13 +260,14 @@
             <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Area Chart" subType="Stacked" orientation="1">
   <block>
-   <children _type="TitleBlock" visible="true" auto="true">
+   <children _type="TitleBlock" visible="false" auto="false">
     <outline>
      <color _nil="1"/>
     </outline>
     <label>
-     <caption>
-      <font bold="false" italic="false" underline="false"/>
+     <caption value="">
+      <font size="12.0" bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -902,7 +304,6 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,498.0,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -915,11 +316,11 @@
   <extendedProperties name="jschart.scroll" value="false"/>
   <extendedProperties name="keep.hierarchy.category" value="true"/>
   <extendedProperties name="keep.hierarchy.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="false"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
-  <extendedProperties name="jschart.series.shadow" value="false"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
-   <orthogonalSampleData dataSetRepresentation="2.3" seriesDefinitionIndex="0"/>
+   <orthogonalSampleData dataSetRepresentation="QWER" seriesDefinitionIndex="0"/>
   </sampleData>
   <interactivity enable="true" legendBehavior="1"/>
   <emptyMessage visible="true">
@@ -933,6 +334,7 @@
    <title visible="false">
     <caption value="">
      <font bold="false" italic="false" underline="false"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -943,6 +345,7 @@
     <title visible="false">
      <caption value="">
       <font bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -951,15 +354,15 @@
     </title>
     <seriesDefinitions sorting="0">
      <query definition="row[&quot;Customer Sat Rating&quot;]"/>
-     <series _type="AreaSeries" seriesIdentifier="Time To Answer" stacked="true">
+     <series _type="AreaSeries" seriesIdentifier="Customer Sat Rating" stacked="true">
       <label>
        <background _nil="1"/>
        <outline>
         <color _nil="1"/>
        </outline>
       </label>
-      <dataDefinition definition="row[&quot;Time To Answer&quot;]">
-       <grouping enabled="true" aggregateExpression="Average"/>
+      <dataDefinition definition="row[&quot;Customer Sat Rating&quot;]">
+       <grouping enabled="true" aggregateExpression="Count"/>
       </dataDefinition>
       <triggers condition="6">
        <action type="1">
@@ -981,6 +384,7 @@
     <label visible="true">
      <caption>
       <font bold="false" italic="false" underline="false" rotation="0.0"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1028,6 +432,7 @@
    <label visible="true">
     <caption>
      <font bold="false" italic="false" underline="false" rotation="0.0"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -1061,8 +466,8 @@
 </ActuateChart>
 ]]></xml-property>
             <property name="outputFormat">JS</property>
-            <property name="height">199.5pt</property>
-            <property name="width">498pt</property>
+            <property name="height">220.5pt</property>
+            <property name="width">471.75pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Call Date</property>
@@ -1070,17 +475,12 @@
                     <property name="dataType">date</property>
                 </structure>
                 <structure>
-                    <property name="name">Time To Answer</property>
-                    <expression name="expression">dataSetRow["Time To Answer"]</expression>
-                    <property name="dataType">float</property>
-                </structure>
-                <structure>
                     <property name="name">Customer Sat Rating</property>
                     <expression name="expression">dataSetRow["Customer Sat Rating"]</expression>
                     <property name="dataType">string</property>
                 </structure>
             </list-property>
-            <property name="theme">ThemesReportItems3.Modern</property>
+            <property name="theme">ThemesReportItems3.Clean Blue</property>
             <property name="linkedDataModel">NewDataMartDataSource::Data Model</property>
             <list-property name="userProperties">
                 <structure>
@@ -1094,13 +494,14 @@
             <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Line Chart" subType="Overlay" orientation="1">
   <block>
-   <children _type="TitleBlock" visible="true" auto="true">
+   <children _type="TitleBlock" visible="false" auto="false">
     <outline>
      <color _nil="1"/>
     </outline>
     <label>
-     <caption>
-      <font bold="false" italic="false" underline="false"/>
+     <caption value="">
+      <font size="12.0" bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1137,7 +538,6 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,515.25,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1150,10 +550,8 @@
   <extendedProperties name="jschart.scroll" value="false"/>
   <extendedProperties name="keep.hierarchy.category" value="true"/>
   <extendedProperties name="keep.hierarchy.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="false"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
-  <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="drilled.filters_" value="dataSetRow[&quot;Call Date&quot;][&quot;Quarter&quot;]eq&quot;3&quot;_@,__@,_"/>
-  <extendedProperties name="enable.drill.proc_" value="true"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
    <orthogonalSampleData dataSetRepresentation="QWER" seriesDefinitionIndex="0"/>
@@ -1170,6 +568,7 @@
    <title visible="false">
     <caption value="">
      <font bold="false" italic="false" underline="false"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -1180,6 +579,7 @@
     <title visible="false">
      <caption value="">
       <font bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1218,6 +618,7 @@
     <label visible="true">
      <caption>
       <font bold="false" italic="false" underline="false" rotation="0.0"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1257,7 +658,7 @@
      <dataDefinition definition="row[&quot;Call Date&quot;]"/>
      <curveFitting _nil="1"/>
     </series>
-    <grouping enabled="true" groupingUnit="5" groupType="1"/>
+    <grouping enabled="true" groupingUnit="6" groupType="1"/>
    </seriesDefinitions>
    <lineAttributes>
     <color _nil="1"/>
@@ -1265,6 +666,7 @@
    <label visible="true">
     <caption>
      <font bold="false" italic="false" underline="false" rotation="0.0"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -1298,17 +700,8 @@
 </ActuateChart>
 ]]></xml-property>
             <property name="outputFormat">JS</property>
-            <list-property name="filter">
-                <structure>
-                    <property name="operator">eq</property>
-                    <expression name="expr" type="javascript">dataSetRow["Call Date"]["Quarter"]</expression>
-                    <simple-property-list name="value1">
-                        <value>"3"</value>
-                    </simple-property-list>
-                </structure>
-            </list-property>
-            <property name="height">236.25pt</property>
-            <property name="width">515.25pt</property>
+            <property name="height">220.5pt</property>
+            <property name="width">487.5pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Call Date</property>
@@ -1325,13 +718,8 @@
                     <expression name="expression">dataSetRow["Service"]</expression>
                     <property name="dataType">string</property>
                 </structure>
-                <structure>
-                    <property name="name">Product</property>
-                    <expression name="expression">dataSetRow["Product"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
             </list-property>
-            <property name="theme">ThemesReportItems3.Modern</property>
+            <property name="theme">ThemesReportItems3.Clean Blue</property>
             <property name="linkedDataModel">NewDataMartDataSource::Data Model</property>
             <list-property name="userProperties">
                 <structure>
@@ -1345,13 +733,14 @@
             <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
  <ChartWithAxes version="2.6.1" type="Column Chart" subType="SideBySide" orientation="1">
   <block>
-   <children _type="TitleBlock" visible="true" auto="true">
+   <children _type="TitleBlock" visible="false" auto="false">
     <outline>
      <color _nil="1"/>
     </outline>
     <label>
-     <caption>
-      <font bold="false" italic="false" underline="false"/>
+     <caption value="">
+      <font size="12.0" bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1388,7 +777,6 @@
      </outline>
     </title>
    </children>
-   <bounds _body=",,515.25,"/>
    <outline>
     <color _nil="1"/>
    </outline>
@@ -1401,11 +789,9 @@
   <extendedProperties name="jschart.scroll" value="true"/>
   <extendedProperties name="keep.hierarchy.category" value="true"/>
   <extendedProperties name="keep.hierarchy.series" value="true"/>
+  <extendedProperties name="enable.data.summarize" value="false"/>
   <extendedProperties name="jschart.glass.style" value="false"/>
   <extendedProperties name="jschart.zoom" value="xy"/>
-  <extendedProperties name="jschart.series.shadow" value="false"/>
-  <extendedProperties name="drilled.filters_" value="_@,_"/>
-  <extendedProperties name="enable.drill.proc_" value="true"/>
   <sampleData>
    <baseSampleData dataSetRepresentation="QWER"/>
    <orthogonalSampleData dataSetRepresentation="2.3" seriesDefinitionIndex="0"/>
@@ -1422,6 +808,7 @@
    <title visible="false">
     <caption value="">
      <font bold="false" italic="false" underline="false"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -1432,6 +819,7 @@
     <title visible="false">
      <caption value="">
       <font bold="false" italic="false" underline="false"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1464,6 +852,7 @@
     <label visible="true">
      <caption>
       <font bold="false" italic="false" underline="false" rotation="0.0"/>
+      <color _body=",255,0,0,0"/>
      </caption>
      <background _nil="1"/>
      <outline>
@@ -1511,6 +900,7 @@
    <label visible="true">
     <caption>
      <font bold="false" italic="false" underline="false" rotation="0.0"/>
+     <color _body=",255,0,0,0"/>
     </caption>
     <background _nil="1"/>
     <outline>
@@ -1545,7 +935,7 @@
 ]]></xml-property>
             <property name="outputFormat">JS</property>
             <property name="height">347pt</property>
-            <property name="width">515.25pt</property>
+            <property name="width">487.5pt</property>
             <list-property name="boundDataColumns">
                 <structure>
                     <property name="name">Service</property>
@@ -1562,13 +952,8 @@
                     <expression name="expression">dataSetRow["Account Type"]</expression>
                     <property name="dataType">string</property>
                 </structure>
-                <structure>
-                    <property name="name">Product</property>
-                    <expression name="expression">dataSetRow["Product"]</expression>
-                    <property name="dataType">string</property>
-                </structure>
             </list-property>
-            <property name="theme">ThemesReportItems3.Modern</property>
+            <property name="theme">ThemesReportItems3.Clean Blue</property>
             <property name="linkedDataModel">NewDataMartDataSource::Data Model</property>
             <list-property name="userProperties">
                 <structure>
@@ -1591,13 +976,13 @@
                             <property name="width">13.47985347985348%</property>
                             <property name="gadgets">
                                 <gadget name="Gadget_a2a61dfb-974b-49b8-a57c-d5dc56dedcab" id="56">
-                                    <property name="height">87px</property>
+                                    <property name="height">88px</property>
                                     <property name="title">Call Severity</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">6</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">87px</property>
+                                    <property name="height">88px</property>
                                     <property name="caption">
                                         <gadget-caption id="58">
                                             <property name="showCaption">true</property>
@@ -1691,13 +1076,13 @@
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_e803e834-ffa4-4f68-9103-3cea97fa5f32" id="59">
-                                    <property name="height">127px</property>
+                                    <property name="height">123px</property>
                                     <property name="title">Account Type</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">7</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">127px</property>
+                                    <property name="height">123px</property>
                                     <property name="caption">
                                         <gadget-caption id="61">
                                             <property name="showCaption">true</property>
@@ -1837,13 +1222,13 @@
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_fc0f6c01-2a26-4390-8b56-fd5ef4653387" id="62">
-                                    <property name="height">110px</property>
+                                    <property name="height">104px</property>
                                     <property name="title">Vendor</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">8</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">110px</property>
+                                    <property name="height">104px</property>
                                     <property name="caption">
                                         <gadget-caption id="64">
                                             <property name="showCaption">true</property>
@@ -1937,13 +1322,13 @@
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_3b3d1357-fe02-4059-a981-2322a464f6d7" id="65">
-                                    <property name="height">89px</property>
+                                    <property name="height">86px</property>
                                     <property name="title">Service</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">9</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">89px</property>
+                                    <property name="height">86px</property>
                                     <property name="caption">
                                         <gadget-caption id="67">
                                             <property name="showCaption">true</property>
@@ -2037,13 +1422,13 @@
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_080deca3-71f5-465a-a40d-48f93eb1115c" id="68">
-                                    <property name="height">73px</property>
+                                    <property name="height">66px</property>
                                     <property name="title">Contact Type</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">10</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">73px</property>
+                                    <property name="height">66px</property>
                                     <property name="caption">
                                         <gadget-caption id="70">
                                             <property name="showCaption">true</property>
@@ -2167,6 +1552,22 @@
                                             <property name="internalReportLetRef">Call Minutes Analysis_bb76d1e9-5aa2-4d7a-af40-e3e24f1ee83e</property>
                                         </data-view>
                                     </property>
+                                    <property name="observers">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_09dd4a8d-375d-4dc8-ab16-d4cd579eb7a3</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
                                     <property name="subscribeTo">
                                         <event-subscriber>
                                             <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
@@ -2191,18 +1592,27 @@
                                                     <property name="gadget">Gadget_080deca3-71f5-465a-a40d-48f93eb1115c</property>
                                                     <property name="dirty">false</property>
                                                 </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_09dd4a8d-375d-4dc8-ab16-d4cd579eb7a3</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd</property>
+                                                </event-object>
                                             </property>
                                         </event-subscriber>
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26" id="51">
-                                    <property name="height">335px</property>
+                                    <property name="height">329px</property>
                                     <property name="title">Call Volume</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">5</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">335px</property>
+                                    <property name="height">329px</property>
                                     <property name="caption">
                                         <gadget-caption id="52">
                                             <property name="showCaption">true</property>
@@ -2221,6 +1631,22 @@
                                             <property name="internalReportLetRef">Line Chart - Data Model_a83e8523-0688-45e5-b66a-658dc8367262</property>
                                         </data-view>
                                     </property>
+                                    <property name="observers">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">Gadget_a7560e44-8baf-4b5c-ba39-a79eae080b67</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_09dd4a8d-375d-4dc8-ab16-d4cd579eb7a3</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
                                     <property name="subscribeTo">
                                         <event-subscriber>
                                             <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
@@ -2244,6 +1670,15 @@
                                                 <event-object>
                                                     <property name="gadget">Gadget_080deca3-71f5-465a-a40d-48f93eb1115c</property>
                                                     <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_a7560e44-8baf-4b5c-ba39-a79eae080b67</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_09dd4a8d-375d-4dc8-ab16-d4cd579eb7a3</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd</property>
                                                 </event-object>
                                             </property>
                                         </event-subscriber>
@@ -2280,6 +1715,22 @@
                                             <property name="internalReportLetRef">Bar Chart - Data Model_3bb37553-d90b-4d17-94c4-b11076a2e8ad</property>
                                         </data-view>
                                     </property>
+                                    <property name="observers">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">Gadget_a7560e44-8baf-4b5c-ba39-a79eae080b67</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
                                     <property name="subscribeTo">
                                         <event-subscriber>
                                             <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
@@ -2304,18 +1755,27 @@
                                                     <property name="gadget">Gadget_080deca3-71f5-465a-a40d-48f93eb1115c</property>
                                                     <property name="dirty">false</property>
                                                 </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_a7560e44-8baf-4b5c-ba39-a79eae080b67</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd</property>
+                                                </event-object>
                                             </property>
                                         </event-subscriber>
                                     </property>
                                 </gadget>
                                 <gadget name="Gadget_d0b95be3-0668-4bb9-979a-6fe0158126dd" id="45">
-                                    <property name="height">335px</property>
-                                    <property name="title">Hold Time Impact On Customer Satisfaction</property>
+                                    <property name="height">329px</property>
+                                    <property name="title">Customer Satisfaction</property>
                                     <property name="showTitle">false</property>
                                     <property name="showBorder">false</property>
                                     <property name="zIndex">4</property>
                                     <property name="showScrollBar">false</property>
-                                    <property name="height">335px</property>
+                                    <property name="height">329px</property>
                                     <property name="caption">
                                         <gadget-caption id="46">
                                             <property name="showCaption">true</property>
@@ -2334,6 +1794,22 @@
                                             <property name="internalReportLetRef">Hold Time Impact On Customer Satisfaction_64fd9e5a-9b48-4405-8467-b07fc955cca5</property>
                                         </data-view>
                                     </property>
+                                    <property name="observers">
+                                        <event-subscriber>
+                                            <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
+                                            <property name="eventObjects">
+                                                <event-object>
+                                                    <property name="gadget">Gadget_a7560e44-8baf-4b5c-ba39-a79eae080b67</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_09dd4a8d-375d-4dc8-ab16-d4cd579eb7a3</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26</property>
+                                                </event-object>
+                                            </property>
+                                        </event-subscriber>
+                                    </property>
                                     <property name="subscribeTo">
                                         <event-subscriber>
                                             <property name="eventName">SELECT_EVENT:SEMANTIC_filter</property>
@@ -2357,6 +1833,15 @@
                                                 <event-object>
                                                     <property name="gadget">Gadget_080deca3-71f5-465a-a40d-48f93eb1115c</property>
                                                     <property name="dirty">false</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_a7560e44-8baf-4b5c-ba39-a79eae080b67</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_09dd4a8d-375d-4dc8-ab16-d4cd579eb7a3</property>
+                                                </event-object>
+                                                <event-object>
+                                                    <property name="gadget">Gadget_583fe60e-0d4b-40e5-a203-719e077d8c26</property>
                                                 </event-object>
                                             </property>
                                         </event-subscriber>
@@ -2435,26 +1920,6 @@
                             </property>
                         </section>
                     </property>
-                </tab-element>
-                <tab-element name="2a117ffe-4578-46ce-b27d-c2c2f2e447f8" id="89">
-                    <property name="title">Provider SLA</property>
-                    <property name="externalTab">/Applications/CallCenterApp/Dashboards/Provider SLA.dashboard</property>
-                    <property name="externalTabName">180a3b33-87c3-4efd-af27-ac689d7b111c</property>
-                </tab-element>
-                <tab-element name="869eb816-bc0a-4e6a-a4ae-49fb15c95be0" id="87">
-                    <property name="title">Briefing Booking</property>
-                    <property name="externalTab">/Applications/CallCenterApp/Dashboards/Briefing Book.dashboard</property>
-                    <property name="externalTabName">44933ef1-0bf1-4301-8728-7e0f58f52a49</property>
-                </tab-element>
-                <tab-element name="cc91d065-de16-4495-9d6f-dd5abcf7249b" id="97">
-                    <property name="title">Corporate Strategy</property>
-                    <property name="externalTab">/Applications/CallCenterApp/Dashboards/Corporate Strategy.dashboard</property>
-                    <property name="externalTabName">e1d8138a-0f43-4f9a-a6bc-ce8389111e83</property>
-                </tab-element>
-                <tab-element name="e7510ae9-f89b-46c9-8093-bc74b5e03248" id="90">
-                    <property name="title">Performance View</property>
-                    <property name="externalTab">/Applications/CallCenterApp/Dashboards/Performance View.dashboard</property>
-                    <property name="externalTabName">cc518bc5-e024-4b8d-a687-58cb1d4ef5fe</property>
                 </tab-element>
             </property>
         </dashboard>

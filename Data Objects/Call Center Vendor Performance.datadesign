@@ -13,8 +13,6 @@
     </data-sources>
     <data-sets>
         <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Call Center Performance Results" id="3">
-            <property name="isVisible">true</property>
-            <property name="nullsOrdering">nulls lowest</property>
             <list-property name="columnHints">
                 <structure>
                     <property name="columnName">CALL ID</property>
@@ -109,7 +107,7 @@
                         <property name="targetWindow">_blank</property>
                         <property name="linkType">drill-through</property>
                         <property name="targetFileType">report-design</property>
-                        <property name="reportName">^/Report Designs/Call details.rptdesign</property>
+                        <property name="reportName">/Report Designs/Call details.rptdesign</property>
                         <list-property name="paramBindings">
                             <structure>
                                 <property name="paramName">Vendor</property>
