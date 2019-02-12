@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+    <xml-property name="externalMetadata">
+        <external-datamarts>
+            <datamart-node location="file:/C:/Users/ActuateUser/git/CallCenterApp/Data%20Objects/CustomerComplaintsbyProvider.data">
+                <reference-elements>Data Source;</reference-elements>
+                <datamart xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+                    <property name="createdBy">Eclipse BIRT Designer Version 4.2.3.v20131216-0430 Build &lt;4.2.3.v20131216-0430></property>
+                    <data-sources>
+                        <oda-data-source extensionID="org.eclipse.datatools.connectivity.oda.flatfile" name="Data Source" id="2">
+                            <property name="HOME">Data/</property>
+                            <property name="DELIMTYPE">COMMA</property>
+                            <property name="CHARSET">UTF-8</property>
+                            <property name="INCLCOLUMNNAME">YES</property>
+                            <property name="INCLTYPELINE">NO</property>
+                            <property name="TRAILNULLCOLS">NO</property>
+                        </oda-data-source>
+                    </data-sources>
+                    <data-sets>
+                        <oda-data-set extensionID="org.eclipse.datatools.connectivity.oda.flatfile.dataSet" name="Customer Complaints By Provider" id="3">
+                            <list-property name="columnHints">
+                                <structure>
+                                    <property name="columnName">Call_Date</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Call_Date</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Complaint</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Complaint</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">ID</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">ID</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Product</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Product</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Resolution_Description</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Resolution_Description</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Resolved_Ontime</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Resolved_Ontime</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Provider</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Provider</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Minutes_On_Phone</property>
+                                    <property name="analysis">measure</property>
+                                    <text-property name="heading">Minutes_On_Phone</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Severity</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Severity</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Failure_Type</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Failure_Type</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                                <structure>
+                                    <property name="columnName">Customer_Type</property>
+                                    <property name="analysis">dimension</property>
+                                    <text-property name="heading">Customer_Type</text-property>
+                                    <property name="indexColumn">false</property>
+                                    <property name="compressed">false</property>
+                                </structure>
+                            </list-property>
+                            <structure name="cachedMetaData">
+                                <list-property name="resultSet">
+                                    <structure>
+                                        <property name="position">1</property>
+                                        <property name="name">Call_Date</property>
+                                        <property name="dataType">date</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">2</property>
+                                        <property name="name">Complaint</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">3</property>
+                                        <property name="name">ID</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">4</property>
+                                        <property name="name">Product</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">5</property>
+                                        <property name="name">Resolution_Description</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">6</property>
+                                        <property name="name">Resolved_Ontime</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">7</property>
+                                        <property name="name">Provider</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">8</property>
+                                        <property name="name">Minutes_On_Phone</property>
+                                        <property name="dataType">integer</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">9</property>
+                                        <property name="name">Severity</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">10</property>
+                                        <property name="name">Failure_Type</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                    <structure>
+                                        <property name="position">11</property>
+                                        <property name="name">Customer_Type</property>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                            </structure>
+                            <property name="dataSource">Data Source</property>
+                            <list-property name="resultSet">
+                                <structure>
+                                    <property name="position">1</property>
+                                    <property name="name">Call_Date</property>
+                                    <property name="nativeName">Call_Date</property>
+                                    <property name="dataType">date</property>
+                                    <property name="nativeDataType">91</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">2</property>
+                                    <property name="name">Complaint</property>
+                                    <property name="nativeName">Complaint</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">3</property>
+                                    <property name="name">ID</property>
+                                    <property name="nativeName">ID</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">4</property>
+                                    <property name="name">Product</property>
+                                    <property name="nativeName">Product</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">5</property>
+                                    <property name="name">Resolution_Description</property>
+                                    <property name="nativeName">Resolution_Description</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">6</property>
+                                    <property name="name">Resolved_Ontime</property>
+                                    <property name="nativeName">Resolved_Ontime</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">7</property>
+                                    <property name="name">Provider</property>
+                                    <property name="nativeName">Provider</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">8</property>
+                                    <property name="name">Minutes_On_Phone</property>
+                                    <property name="nativeName">Minutes_On_Phone</property>
+                                    <property name="dataType">integer</property>
+                                    <property name="nativeDataType">4</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">9</property>
+                                    <property name="name">Severity</property>
+                                    <property name="nativeName">Severity</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">10</property>
+                                    <property name="name">Failure_Type</property>
+                                    <property name="nativeName">Failure_Type</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                                <structure>
+                                    <property name="position">11</property>
+                                    <property name="name">Customer_Type</property>
+                                    <property name="nativeName">Customer_Type</property>
+                                    <property name="dataType">string</property>
+                                    <property name="nativeDataType">12</property>
+                                </structure>
+                            </list-property>
+                            <xml-property name="queryText"><![CDATA[select "Call_Date", "Complaint", "ID", "Product", "Resolution_Description", "Resolved_Ontime", "Provider", "Minutes_On_Phone", "Severity", "Failure_Type", "Customer_Type" from "CustomerComplaintsByProvider.csv" : {"Call_Date","Call_Date",DATE;"Complaint","Complaint",STRING;"ID","ID",INT;"Product","Product",STRING;"Resolution_Description","Resolution_Description",STRING;"Resolved_Ontime","Resolved_Ontime",STRING;"Provider","Provider",STRING;"Minutes_On_Phone","Minutes_On_Phone",INT;"Severity","Severity",STRING;"Failure_Type","Failure_Type",STRING;"Customer_Type","Customer_Type",STRING}]]></xml-property>
+                            <xml-property name="designerValues"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<model:DesignValues xmlns:design="http://www.eclipse.org/datatools/connectivity/oda/design" xmlns:model="http://www.eclipse.org/birt/report/model/adapter/odaModel">
+  <Version>2.0</Version>
+  <design:ResultSets derivedMetaData="true">
+    <design:resultSetDefinitions>
+      <design:resultSetColumns>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Call_Date</design:name>
+              <design:position>1</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>91</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Call_Date</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Complaint</design:name>
+              <design:position>2</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Complaint</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>ID</design:name>
+              <design:position>3</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>ID</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Product</design:name>
+              <design:position>4</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Product</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Resolution_Description</design:name>
+              <design:position>5</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Resolution_Description</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Resolved_Ontime</design:name>
+              <design:position>6</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Resolved_Ontime</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Provider</design:name>
+              <design:position>7</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Provider</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Minutes_On_Phone</design:name>
+              <design:position>8</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>4</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Minutes_On_Phone</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Severity</design:name>
+              <design:position>9</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Severity</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Failure_Type</design:name>
+              <design:position>10</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Failure_Type</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+        <design:resultColumnDefinitions>
+          <design:attributes>
+            <design:identifier>
+              <design:name>Customer_Type</design:name>
+              <design:position>11</design:position>
+            </design:identifier>
+            <design:nativeDataTypeCode>12</design:nativeDataTypeCode>
+            <design:precision>-1</design:precision>
+            <design:scale>-1</design:scale>
+            <design:nullability>Unknown</design:nullability>
+          </design:attributes>
+          <design:usageHints>
+            <design:label>Customer_Type</design:label>
+            <design:formattingHints/>
+          </design:usageHints>
+        </design:resultColumnDefinitions>
+      </design:resultSetColumns>
+      <design:criteria/>
+    </design:resultSetDefinitions>
+  </design:ResultSets>
+</model:DesignValues>]]></xml-property>
+                        </oda-data-set>
+                    </data-sets>
+                    <property name="linkedDataModels">
+                        <linked-data-model name="Data Model" id="4">
+                            <property name="aliasDataSets">
+                                <alias-data-set name="Customer Complaints By Provider" id="17">
+                                    <property name="originDataSet">Customer Complaints By Provider</property>
+                                </alias-data-set>
+                            </property>
+                            <property name="drillPaths">
+                                <drill-path id="18">
+                                    <text-property name="displayName">Call_Date</text-property>
+                                    <simple-property-list name="drillPathColumns">
+                                        <value>dataSetRow["Call_Date"]["Year"]</value>
+                                        <value>dataSetRow["Call_Date"]["Quarter"]</value>
+                                        <value>dataSetRow["Call_Date"]["Month"]</value>
+                                    </simple-property-list>
+                                </drill-path>
+                            </property>
+                            <property name="categories">
+                                <category name="Customer Complaints By Provider" id="5">
+                                    <property name="categoryColumns">
+                                        <category-column name="Call_Date" id="6">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Call_Date</property>
+                                        </category-column>
+                                        <category-column name="Complaint" id="7">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Complaint</property>
+                                        </category-column>
+                                        <category-column name="ID" id="8">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">ID</property>
+                                        </category-column>
+                                        <category-column name="Product" id="9">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Product</property>
+                                        </category-column>
+                                        <category-column name="Resolution_Description" id="10">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Resolution_Description</property>
+                                        </category-column>
+                                        <category-column name="Resolved_Ontime" id="11">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Resolved_Ontime</property>
+                                        </category-column>
+                                        <category-column name="Provider" id="12">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Provider</property>
+                                        </category-column>
+                                        <category-column name="Minutes_On_Phone" id="13">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Minutes_On_Phone</property>
+                                        </category-column>
+                                        <category-column name="Severity" id="14">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Severity</property>
+                                        </category-column>
+                                        <category-column name="Failure_Type" id="15">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Failure_Type</property>
+                                        </category-column>
+                                        <category-column name="Customer_Type" id="16">
+                                            <property name="aliasDataSet">Data Model/Customer Complaints By Provider</property>
+                                            <property name="resultSetColumnName">Customer_Type</property>
+                                        </category-column>
+                                    </property>
+                                </category>
+                            </property>
+                            <property name="pushDown">true</property>
+                        </linked-data-model>
+                    </property>
+                </datamart>
+            </datamart-node>
+        </external-datamarts>
+    </xml-property>
+    <property name="units">in</property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems.rptlibrary</property>
+            <property name="namespace">ThemesReportItems</property>
+        </structure>
+        <structure>
+            <property name="fileName">ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <method name="onContentUpdate"><![CDATA[// Get the Viewer's current UI Options
+var uiOptions = this.getViewer().getUIOptions();
+
+// Remove ability for user to change interactivity options
+uiOptions.enableEditReport(false);
+
+// Set the modified UI Options back into the Viewer
+this.getViewer().setUIOptions(uiOptions);
+
+// If Interactivity is not enabled, enable it
+if (!this.getViewer().isInteractive())
+	this.getViewer().enableIV();]]></method>
+    <parameters>
+        <scalar-parameter name="pProvider" id="79">
+            <property name="hidden">false</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">Performacall</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pDate" id="87">
+            <property name="hidden">true</property>
+            <text-property name="promptText">Choose a date</text-property>
+            <property name="valueType">static</property>
+            <property name="dataType">date</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">2014-07-25</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <data-mart-data-source name="Data Source" id="80">
+            <property name="datamartURL">Data Objects/CustomerComplaintsByProvider</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <data-sets>
+        <data-mart-data-set name="Data Set" id="86">
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">Call_Date</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Call_Date</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Complaint</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Complaint</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">ID</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">ID</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Product</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Product</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Resolution_Description</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Resolution_Description</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Resolved_Ontime</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Resolved_Ontime</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Provider</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Provider</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Minutes_On_Phone</property>
+                    <property name="analysis">measure</property>
+                    <text-property name="heading">Minutes_On_Phone</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Severity</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Severity</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Failure_Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Failure_Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Customer_Type</property>
+                    <property name="analysis">dimension</property>
+                    <text-property name="heading">Customer_Type</text-property>
+                    <property name="indexColumn">false</property>
+                    <property name="compressed">false</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">Call_Date</property>
+                        <property name="dataType">date</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">Complaint</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">ID</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">Product</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">Resolution_Description</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">Resolved_Ontime</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">Provider</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">Minutes_On_Phone</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">Severity</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">Failure_Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">Customer_Type</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">Data Source</property>
+            <property name="dataObject">Customer Complaints By Provider</property>
+            <list-property name="selectedColumns">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">Call_Date</property>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">Complaint</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">ID</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">Product</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">Resolution_Description</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">Resolved_Ontime</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">Provider</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">Minutes_On_Phone</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">Severity</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">Failure_Type</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">Customer_Type</property>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+        </data-mart-data-set>
+    </data-sets>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="orientation">landscape</property>
+            <page-header>
+                <grid id="230">
+                    <column id="231">
+                        <property name="width">3.875in</property>
+                    </column>
+                    <column id="235">
+                        <property name="width">6.46875in</property>
+                    </column>
+                    <row id="232">
+                        <cell id="233">
+                            <label id="237">
+                                <property name="fontFamily">"Verdana"</property>
+                                <property name="fontSize">14pt</property>
+                                <property name="color">#808080</property>
+                                <property name="textAlign">left</property>
+                                <text-property name="text">Call Center Activity Detail</text-property>
+                            </label>
+                        </cell>
+                        <cell id="234">
+                            <property name="verticalAlign">bottom</property>
+                            <data id="238">
+                                <property name="fontFamily">"Verdana"</property>
+                                <property name="fontSize">14pt</property>
+                                <property name="color">gray</property>
+                                <list-property name="boundDataColumns">
+                                    <structure>
+                                        <property name="name">pProvider</property>
+                                        <expression name="expression" type="javascript">params["pProvider"]</expression>
+                                        <property name="dataType">string</property>
+                                    </structure>
+                                </list-property>
+                                <property name="resultSetColumn">pProvider</property>
+                            </data>
+                        </cell>
+                    </row>
+                </grid>
+            </page-header>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <table id="159">
+            <property name="dataSet">Data Set</property>
+            <property name="theme">ThemesReportItems.default-table</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">Call_Date</property>
+                    <text-property name="displayName">Call_Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Call_Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+                <structure>
+                    <property name="name">Complaint</property>
+                    <text-property name="displayName">Complaint</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Complaint"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">ID</property>
+                    <text-property name="displayName">ID</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ID"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Product</property>
+                    <text-property name="displayName">Product</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Product"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Resolution_Description</property>
+                    <text-property name="displayName">Resolution_Description</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Resolution_Description"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Resolved_Ontime</property>
+                    <text-property name="displayName">Resolved_Ontime</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Resolved_Ontime"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Provider</property>
+                    <text-property name="displayName">Provider</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Provider"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Minutes_On_Phone</property>
+                    <text-property name="displayName">Minutes_On_Phone</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Minutes_On_Phone"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">Severity</property>
+                    <text-property name="displayName">Severity</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Severity"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Failure_Type</property>
+                    <text-property name="displayName">Failure_Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Failure_Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Customer_Type</property>
+                    <text-property name="displayName">Customer_Type</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Customer_Type"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+            </list-property>
+            <list-property name="sort">
+                <structure>
+                    <expression name="key" type="javascript">row["Call_Date"]</expression>
+                    <property name="direction">desc</property>
+                    <property name="strength">-1</property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">between</property>
+                    <expression name="expr" type="javascript">row["Call_Date"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">BirtDateTime.addMonth(params["pDate"].value, -1)</value>
+                    </simple-property-list>
+                    <expression name="value2" type="javascript">params["pDate"].value</expression>
+                    <property name="updateAggregation">true</property>
+                </structure>
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["Provider"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pProvider"].value</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <column id="185">
+                <property name="width">0.7604166666666666in</property>
+            </column>
+            <column id="186">
+                <property name="width">4.34375in</property>
+            </column>
+            <column id="187">
+                <property name="width">1.7395833333333333in</property>
+            </column>
+            <column id="188">
+                <property name="textAlign">left</property>
+                <property name="width">0.8125in</property>
+            </column>
+            <column id="189">
+                <property name="textAlign">center</property>
+                <property name="width">0.8645833333333334in</property>
+            </column>
+            <column id="190">
+                <property name="textAlign">right</property>
+                <property name="width">0.75in</property>
+            </column>
+            <header>
+                <row id="221">
+                    <cell id="222">
+                        <property name="colSpan">6</property>
+                        <property name="rowSpan">1</property>
+                        <extended-item extensionName="Chart" id="229">
+                            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Stacked">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,212.0,130.0"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.zoom" value="xy"/>
+  <extendedProperties name="keep.hierarchy.category" value="false"/>
+  <extendedProperties name="keep.hierarchy.series" value="false"/>
+  <extendedProperties name="jschart.series.shadow" value="true"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000,03/12/2000,02/29/2000"/>
+   <orthogonalSampleData dataSetRepresentation="6,4,12,8,10" seriesDefinitionIndex="0"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes type="3">
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true" percent="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition="row[&quot;Product&quot;]">
+      <grouping/>
+     </query>
+     <series _type="BarSeries" seriesIdentifier="Series 1" labelPosition="4" stacked="true" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;Minutes_On_Phone&quot;]">
+       <grouping/>
+      </dataDefinition>
+      <dataPoint separator=", ">
+       <components type="1"/>
+      </dataPoint>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions sorting="0">
+    <query definition=""/>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Call_Date&quot;]"/>
+     <dataPoint separator=", ">
+      <components type="1"/>
+     </dataPoint>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupType="1"/>
+    <sortKey definition="row[&quot;Call_Date&quot;]"/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <formatSpecifier _type="JavaDateFormatSpecifier" pattern="MMM-dd"/>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+                            <property name="outputFormat">JS</property>
+                            <property name="inheritColumns">true</property>
+                            <property name="height">2.6770833333333335in</property>
+                            <property name="width">10.791666666666666in</property>
+                            <property name="theme">ThemesReportItems3.Modern</property>
+                        </extended-item>
+                    </cell>
+                </row>
+                <row id="160">
+                    <cell id="162">
+                        <label id="193">
+                            <text-property name="text">Date</text-property>
+                        </label>
+                    </cell>
+                    <cell id="163">
+                        <label id="195">
+                            <text-property name="text">Complaint</text-property>
+                        </label>
+                    </cell>
+                    <cell id="164">
+                        <label id="197">
+                            <text-property name="text">Product</text-property>
+                        </label>
+                    </cell>
+                    <cell id="165">
+                        <label id="199">
+                            <property name="textAlign">center</property>
+                            <text-property name="text">Ontime</text-property>
+                        </label>
+                    </cell>
+                    <cell id="166">
+                        <label id="201">
+                            <text-property name="text">Severity</text-property>
+                        </label>
+                    </cell>
+                    <cell id="167">
+                        <label id="203">
+                            <property name="textAlign">center</property>
+                            <text-property name="text">Duration</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="168">
+                    <property name="verticalAlign">middle</property>
+                    <cell id="170">
+                        <data id="206">
+                            <property name="paddingLeft">10pt</property>
+                            <structure name="dateTimeFormat">
+                                <property name="category">Short Date</property>
+                                <property name="pattern">Short Date</property>
+                            </structure>
+                            <property name="resultSetColumn">Call_Date</property>
+                        </data>
+                    </cell>
+                    <cell id="171">
+                        <data id="207">
+                            <property name="resultSetColumn">Complaint</property>
+                        </data>
+                    </cell>
+                    <cell id="172">
+                        <data id="208">
+                            <property name="paddingLeft">10pt</property>
+                            <property name="resultSetColumn">Product</property>
+                        </data>
+                    </cell>
+                    <cell id="173">
+                        <data id="209">
+                            <property name="paddingLeft">10pt</property>
+                            <property name="resultSetColumn">Resolved_Ontime</property>
+                        </data>
+                    </cell>
+                    <cell id="174">
+                        <data id="210">
+                            <property name="resultSetColumn">Severity</property>
+                        </data>
+                    </cell>
+                    <cell id="175">
+                        <data id="211">
+                            <property name="paddingRight">5pt</property>
+                            <property name="textAlign">center</property>
+                            <property name="resultSetColumn">Minutes_On_Phone</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="176">
+                    <cell id="178"/>
+                    <cell id="179"/>
+                    <cell id="180"/>
+                    <cell id="181"/>
+                    <cell id="182"/>
+                    <cell id="183"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+    <list-property name="images">
+        <structure>
+            <property name="name">SFlogoSmall.jpg</property>
+            <property name="data">
+                /9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAPAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQA
+                BgQEBAUEBgUFBgkGBQYJCwgGBggLDAoKCwoKDBAMDAwMDAwQDA4PEA8ODBMTFBQTExwbGxscHx8fHx8f
+                Hx8fHwEHBwcNDA0YEBAYGhURFRofHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8f
+                Hx8fHx8fHx8f/8AAEQgASAFKAwERAAIRAQMRAf/EAMEAAQACAwEBAAAAAAAAAAAAAAAGBwQFCAMCAQEA
+                AwEBAQEAAAAAAAAAAAAABAUGAwIHARAAAQMDAgQBBgcMCQEJAAAAAQIDBAARBRIGITETB0FRYXGBIhSR
+                oTJytDUIsUJSkrIjsyR0FXU3gqLSM1M0FjYXVfDB0WKTo0RUhBEAAQMCAgIOBwYEBwEAAAAAAQACAxEE
+                EgUhMUFRYXGBkaGxwdEiMhMG8OFCUoIzNGJyssJzFPFTFRaSoiNjgyQ14v/aAAwDAQACEQMRAD8A6poi
+                gncneWU2zOw7sQpcYeL3vUZYFlpTotY80kXNjVNmt++3cwt1GtRxLSZDlUd2yQP0OFKHa1rUnvtj+GnE
+                Pnjx/Oo5fBUb+4We4VO/s+T+Y3iK1+b72S5cdDGHimC8tYDkh0ocKUk/eDlfzmuFxn5cKRjCdtSrTym1
+                jsUrsY2hUcauEG4B5+etSsGUoiURKIlESiJREoiURKIlESiJREoiURKIlESiJREoiURKIlESiJREoiUR
+                KIlESiJREoiURKIlESiJREoi8J02LBiPTJTgajsJK3XFcgBXiSQMaXHUF0hidI8MaKuKpXuWxOmzMRPy
+                JWw7lFLDUVX/AMeNqQG0kf4h1Fa/ObeFZLNmue5jn6C/Y2hscO2voOQPZGyRkdCI6VPvO014NgceyrR2
+                m4yqC5jZMdprI4tQjy0JQlIUAPzbyRb5LqLK9Nx4VorIjCWEAOZoPQeELHZk0h4kaSY5O03Txt+E6FVf
+                c9TU+VGy7DKGsc885EiFCQkvpZt1HyRzClqKU+YX8azeb0e4SAUaSQN2msrZ+XwY2uicSXgBzvs11N4B
+                pO6VaO25j8J87fnOFbjTfVxklZ4vxfAE+LjV9KvNY+NaO1eWHwnHSO6dtvWPWsbfxNkb47BQE0ePdd1O
+                1jhCkdT1VJREoiURKIlESiJREoiURKIlESiJREoiURKIlESiJREoiURKIlESiJREoiURKIlESiJREoiU
+                RKIlESiKA7lfO4sZmX1laMZik/q0YgpL73TS4h9fjoSFgtp8flHwqmuT47Xk9xmobZ297a41prBn7WSN
+                o0ySaz7orQtG7o7R4BsqF94MjJO8WmivU3CZaWy2fkhSjqV8NheqbPJXeOB7oC0HliBv7QnZeTXmWFlt
+                7btzTqZTcIx1qYU287DbdHWiqPFKySr2Lg+0OXHjXObMJ5TUNpo2AdLVItsptbcYS7EMVQHFvZdubu4s
+                DdW7spm48GFMhswm8eLxmmULRZC0pCeCyeGlItUe9vnyhrXNDcOpScuyyO3c57HF5frJIOreVlwoz+fh
+                7WdckrayAx8h+POFipD6FMJCynkoEXCgeYNaGNpmERJ7WBxru9lZGV7bZ84DQWeI0Fu2049HUpbtjMP5
+                XGdaSyWZLLjkd+wIbW40ooUtonmhRHD4Ks7ScyMqRQg0PBtbio8wtWwyUaatIBG2AdNDurbVKUJVNnO/
+                Tb+43tsbCwj27MzHuJLrTiWYjRSdKrvKB1BJ4E8E35E1Yx5fRuOR2BvKuJl00GlabcfeXvHtGN+8dz7B
+                ZRigQHJESYHQgE2GtSA6E38pFq6x2UEhox+neX46RzdYVu7VzyNw7axmcbYVGRk4zUpLCyFKQHUhQSSO
+                fOq2WPA8t2iuzTUVUS7ldyN07GxT+ae22xkMMw6ltT7OQKHUpcVpQpbSo1hckA2UbVJtrZkpw4qO3vWu
+                b3lumigm3PtO7i3K6+1gO38rJOxkhchEealRQlRsCbsDmRUuXK2x96QDg9a5tnLtQWxyXfvuFjYTs2d2
+                tyceKykqdfU+SlCR98rTHNgPLXhuXxONBKPThXoyuGwrO2XuCbuDZuLzr0ZuPKyUVMoRULKkJ6g1ITrt
+                fla5tVfcR4HuaNNF2jINCVHtxd0Zu3ch7jk8IQ4pAcacakhSFpNxcEtpPMWrPXWcOgfhez/N6lqLHy8y
+                6jxxy6NRq3SP8ykW0dxS9wYxvJrhoiRXtXRAe6qyUKKTqGhATy8tT7G6dOzHhwg7tehVWZ2LbWQxhxc4
+                a+zQaq7ZW9qaq1aOZu3HxN0wtvOD9YmNKdDtxpSR8hBHlXpV/wBjUOS9Y2ZsR1uCsYstkfbOnHdYadZ4
+                NC3lTFXLDysnIRoqnoUZuUtAKltuOlngBfgrQ5x9Ncpnva2rQDw06CpFtGx7qPcW12hXpCim1O4mQ3O6
+                4jH4YIbYCTIfek2QnVyA0tqJJsarLPM33BIazVrq71K6zLI47MAySVLtQDf/AKU3q4WdSiJREoiURKIl
+                ESiJREoiURKIlESiJREoiURKIlESiJRFDMv9W708AFJ+ARGqrJu7L6eyFf23zLb09tyrjecrH5ruNHLB
+                60J9cRgrIIS4nUEqKb2uk+BHOs7fvbNdimlpwhazKo5LewNdD2h53vWrRyDTTGYnMsoDbTeEKW20iyUg
+                OOAAAVpZAA9wGrw+tY2BxdEwnSTP0BQnupBi/wCktuTg2kStDTJdt7RQWNWknxAKapc5jb+3jdTToHIt
+                D5dmd+6mZXs1Jpu4luu3uShyht2M0v8AWIeOlIkMqBSpOpxgpVY80q+9UOBqZlsrXeGBrax1eNqr87ge
+                zxnEdl0jKHgdyjZClm0fqNP7RL+lO1Z2Py+F34iqTM/nfCz8DVre7GQn4/tpuWbAJTLZx75aWn5SboIK
+                x50gk1Z2jQ6VoOqqrZD2SqM+x5nMJHkZ7CvLQ1mJhZkRdVgp1lpKgtCSeZQVaree/hVtnMbjhd7IUe2c
+                NIXS2Sx8XI4+TAltpdiy2lsvtKF0qQ4kpUCPQao2uLSCNhSiKrC2ngzgdr4nCF0PnGRGInWA06+i2Ear
+                XNr6a9TSY3l22V+NFBRQr7R/8mdw+iL9LZqVlvz28PMV4n7hVR/Y3+vty/ssb9IurLOu63fK4WuyupHm
+                kOtLaWLocSUqHmULGqAGimLEweIiYXDQcRD1e649huMxrN1aGkhKbkW42FepHlzi46yvwCgooL3sw3vG
+                Di5VCbuQXdDhH+E9w+JYT8NZ3zBBijDx7J5Ctb5TusMzojqeOUeqq8+x+V6uJnYtSvaiuh5sf+R4cfgU
+                k/DXny9NWNzNo141683W2GVkg9oU4R6irKUpKUlSjZKRck8gBWhJWSAqubtxbilzd1v55kqSRI1wlnlo
+                YIDdvUBf018+urpz5zKNvRwal9ZsbFsdqID7va+LWuhcLlGMtiYmRY/u5TaXAPISPaT/AETwrd28wlYH
+                jZC+W3du6GV0btbTRaruFmP3VtDIyArS6430Gfnvexw9AJNRszn8OBx2To41NyS18a6Y3YBqeDSsLtXg
+                /wB17QjKWnTInEynb87L4Nj8QCuOT2/hwDbdp6uRSPMV34106ndZ2Rwa+VYHcmZuHb+LGVxuYfT1JCW1
+                xnG2FoAWFEaCW9Qtp8tcc1fLAzGx516tHUpOQxQXUnhSRt0NrUFwOjb0rUbMmdxd0Y56azuJEVLLxZLa
+                4rSySEpVe4Sn8KouXyXdywuElKGndHUp2axWFnIGGEuqK94jZK2q4PciBlsSZ+bRNxz0ttuShlpDSgOK
+                rGyAdJ02PGpJju2PZifiYXCtBToUMTZfLFJgiLJAwkVJPTrVgVeLLr5ccbabU44oJbQCpajyAAuSa/CQ
+                BUr9a0k0GsqttidxZGY3fkYUpz9TmFS8WhVvYDXDQPno9o+es/l2aGWdzXd13d4PUtbnGRtgtWPaO03v
+                7tdngOhWXWhWRXhNjOyGC21JcirvcOtBBV6PziVp+KvEjC4UBLd71rpFIGmpaHbhr0EKmp++d8xd0u4F
+                GVC0omCImQphnUQpYSFEabX9qsnJmFy2fwsftUrQdS30OUWb7YTmP2MVMTtrfVxwIj8ZooemOzFk36jw
+                bBHDwDaGxWrjYWjSS7fp0ALBzSteahobvV6SVH98K3M+cbjtvPe7TJLq3HZJ+QhllPta+CuBUtPC1Qcw
+                MxwsiNHE69wfxVnlAt245JxiY0AAbZO1xFa1G3e6oACtzxwPE+7oUfjQKji1vf5o4h1KWb7LP5Dv8R61
+                CMdvXuDO3E3g0ZkIdckLjB4sMlIKCRqtov8Ae1TxX90+bw8ezTUOpaKfKbGO3Mxj0BodTE7Z4VNXtv8A
+                dkIUWtyRlqt7KSwhF/X01Wq4dbX1NEo4h1LPMvcsrphcPiPWtvsxOckbX6WWlOpyiXn2npAKFLSW3lJ4
+                XSpHIW5cqlWHiOho8nHU6eFQc1MLbmsTR4eFpA000t41Ad8b03ntvcD2Nj5UvsJQh1tbrLGsBY+SSlCQ
+                bW8lUeYX9xBKWB9RvDqWmyjKrS7gEjo6GpGhzqaOFWjt+PPbx7Ls6c7NfeaQtZcS0hKVFNzoDaEcOPje
+                tHatcGAucXEjc6AsdevYXkMYGNBOqvLUlZk2M7IZ6bUlyKq9+q0EFXo/OJWn4q7SMLhQEt3vWuEUgaal
+                oduGvQQqayu+d8wdzvYJGV1pblCMh9TDOohagAo2Ta9lVk5swuWTGLHs0rQdS3ttlFlJbCYx0q3FTE7r
+                VxwIr8ZjpvS3Zi73LrwbB5cgG0oFvVWrjYWihJdv06KLBTSNeahoaNoV6SVk10XJVnkkT8vC3TMcU7Bx
+                qFpcEEjQ88tMdrSXjx0t6QDo5m/teSqGQOlbI41aza2ToGvc3ONa+AsgfAwUfIdGLWB2nd3d+1xKNdxA
+                G+5kVLY0BHuQQE8AAFC1rcqrc00XbafZVtkZrlzq/bVl5b69yP8ABVfpHK0M3zHfp9JWRtvks/W6AoR3
+                WJ/0btkX4aUEj/8AOKpc5+ni9NhaLy59XPw/iW027jXJmP2kY0hcOa3jZK2ZTYBN0raslxJ4Lb9o3Sfu
+                1Ktoi5sVDhdgdp4Rr2xuKHfTiOS4xDGwyNqDvO1bR3VKNiPSnMCUymek81JlIUtP924eutSlt8b6dRI4
+                8eFWGXOJi0jSHO5zqVPnDGierTUFrd8dkaDurdzoUWdCkQpTYdiym1svtHkpDiSlST6QasGuINQqkiq4
+                X7m9tty9sN1pWwt5EDq9XB5lolJIBulJWn5LqOSh48xwrW2tyydmnXshV8jCwq9OyP2jmtxPR9t7tUiP
+                nHCG4WRACGpSvBCxyQ6fD71XhY8Kqb7LcHbZ3draUiKeug61fVU6kqtftH/yZ3F6Iv0xmp2W/Pbw8xXK
+                fuFc8fZ23rk9q5TNPQNt5Dca5TDKFtY5BWpoIWo6l2CuCr8KusygEgFXBu+osDqV0K3dw/aTzuJgqW/2
+                /wAtjnnbNxn8iksxw6v2Ua1aOV/Ac6rY8sa4/Mad5d3TEbCvFgulhsu26pSOpp4DVbjb11VFSFiZ7Ft5
+                bDTMc58mU0psHyKI9k+pVjXC5hEsbmHZCk2dwYZWyD2TVUh2tyTmJ3s1FfugStcJ9J8F3un+ui1Y7J5T
+                Fchp2ez6cK+ieYYBPZlzfZo4b38CrS7nZw4naUrpG0mbaIwBzu7cKI9CL1pM2uPDgNNbtHH6ljfL9p41
+                02vdZ2jwetRLdmxPdO2kDpt/r2JHvEi3Mh7i+P6Jt6k1WXuXYbNtO8zSeHX6biu8tzjHmD6nsSaBwd30
+                3Vkdkc/1YcvBuq9uOfeIwP8AhrNlgehXH1168v3NWmM7GkdK5ebbKj2zD2uyd8auTmWR3SK8tm8BtZon
+                9ae68kDwQDpB9SdZrrnFZZI4Rsmp9ONcvL1IIZrk+yKDf9KKxmm0NNobbGlCAEoSOQAFgKvgABQLKOcS
+                anWVBO9X+z0ftjX5K6pc/wDp/iHStL5U+rP3D0LA7KzIbG3ZqX322lGYohK1pSbdJvjYmuGQSNbC6pA7
+                XQFI81xPdcNoCextbpU/Oaw/XZj++MqffVpZaStKlKVYngASeQq8/cR1AxCpWZFrLhLsLqDWaLNrso6h
+                XdXNPRcCjFQyTkMy4IrKE89BIC/huE+uqjOJy2LA3vSaPTmWh8uWofOZX9yIYjv7HXwKtd4bfkbK3DjZ
+                EJR0htp9lzwLzVg6P6R4+g1nr62NpK0t3DwjX6bq1uV3rcwge1+2Qd46vTcV6YnJR8njIuQjm7MptLiP
+                NqHEHzg8K2cMokYHjUQvnFzA6GR0btbTRZddVwXPeZ/mk7/Fm/0qaw0/1vx9K+o2v/mj9I8xXQlblfLk
+                oiURc97X/mdG/iL35S6w1p9aPvlfUcw/8536behdCVuV8uQADkLeNEqqE7yf70e/ZmfuKrFZ79RwBfS/
+                K30g+8VdOOymMGPigy2QQy2COoj8EeetbFMzANI1ba+fz28niO7LtZ2Csj964v8A+4x/6iP/ABr34zPe
+                HGuX7aT3XcRVB7jcQ53MfW2oLQrJMlKkkEEa0ciKxV0Qbwke+F9MsQRlwB/lu5iuhq3S+WpRFDMt9Xbz
+                +en6IzVZL3ZfT2Qr+2+Zbb353Kot3qk/65yRZKjIE09C3FWsKGi1/PyrJXxd+5dTXiW5ywN/ZMr3cGnp
+                UidxvdhUyQJEpSJSYZW/rcauY2pV0+yCOd+FWLor7EanTh3NSq2z5YGNwt7OPRod3lodzsb1axmN/fy1
+                rx60hWPuptSQNAsPY4g6PLUG8bcBjfF7uwrHL32bpH+ABjHe17e7uqddpiox8Vck2GTAv4DXGq5ybUz4
+                /wAizvmTvSf8XM9TnaH1Gn9pl/SnaubH5fxO/EVnMz+d8LPwNW4UpKRdRABIAvw4ngKlqvWv3Bt7C7hx
+                L+JzMRubj5As6w4LjzKSeaVDwI4ivccjmHE00K/CAdBXFfertHL7c59lUR5b+DnlS8XKPB1tTZBLThFv
+                bRcEKHMced61NjeCdunvDWoEseArrDsxuuXuntrhMvNV1Jy2lMS3PFbsdamVLPnVo1Gs7exCOUtGpTIn
+                VaCtV9o/+TO4vRF+mM10y357eHmK/J+4VUf2N/r7cv7LG/SLqyzrut3yuFrsrpXcOCg57Cy8RPBMSYjQ
+                5ptqFiFApuCLggEcKoo5CxwcNYUtwqKLY14X6lEVBdy8e7g98rmRxoEhSJ8cj8PV7X9dN/XWIzaIw3OI
+                bPaHpvr6ZkE4uLMMd7NWHe/gpfMmtbz33hIrPt4zGx0ZCSBxT1HAlYSf6ifhq1fILu5YB3GjEefqVHFE
+                bCylcfmSOLBvDR1niVlvsNSGHGHkhbTqShxJ5FKhYj4K0DmhwIOorIseWuDhrC57hLkbK38EuE9OFILb
+                h/DjOcL/AIigr01hoybS60+yeT+C+oyhuYWNRre2u84evQrC2mE53uPm8+CHImPSIcJY4pJI0lST6EqP
+                9Kr2y/1rt8vst0D09Nay2Zf9bL4oNTn9p3pxcSsWr5ZVQLvV/s9H7Y1+SuqTP/p/iHStN5U+rP3D0KOd
+                qtmbZzuDlycrCTJfbklpCytxNkBtCrewpI5qNQMlsYpoiXipxbZ2grXzHmtxbTNbE7CC2uobZ2wphD7b
+                YPFbgx2UxDHu4jl0SUFalApW0pKSAoniFGrVmVxxytewUpWuncVFLn000D45TixUpo3epTCrVUKpyZuZ
+                E/uSvLKgy8ljsNdiI3DaLtnE3GtXIC6tRHoFZR93ju8eFz2M0DCKrexWBjy8RYmRyS6TiNNG1xU5V6dx
+                Nwt7jwqWkYLKR5MRzrNyHoxS2lNrOBSgTYaePqr1mlz48dPDeC3TUjjXjI7E2s1TLE5rhSgdp3Fn9ktw
+                9WFKwTyvbjH3iKD/AIazZaR81fH1128v3VWmI7GkenprUbzZZYXtmGp2g741cnMrQrRrHLnvM/zSd/iz
+                f6VNYaf634+lfUbX/wA0fpHmK6Ercr5clESiLnva/wDM6N/EXvyl1hrT60ffK+o5h/5zv029C6Ercr5c
+                lEVCd5Dbejx8kZn7iqxWe/UcAX0vyt9IPvFWNC7V7FdhR3V4661toUo9V3iSkE/fVfx5RbloOHY2z1rK
+                y+Yr1ryA/UTsDqXt/wATbC/6b/7rv9qvX9Htvd5T1rn/AHJe+/yDqVRZXHxMd3BVBho6UWPkGUMt3Jsn
+                Wg2ubnxrLTRNju8LdQcFubaZ0tjjeaudG6vEV0ZW9XylKIoZlvq3enz0/RGarJe7L6eyFoLb5ltvfncq
+                o3Hw7jy/4kn9ImstdfVn7/StpY/QN/S6FcmW+vcj/BVfpHK1s3zHfp9JWCtvks/W6AoP3W/2ftj5if0C
+                apc5+ni9NgLR+XPqp9/8xWZ2m/y2J9GT/LjV1ybUz4/yKP5k70n/ABcz1OdofUaf2mZ9Kdq4sfl/E78R
+                WdzP53ws/A1Q77QG4XtvbFj5hlJUuFlsc+EA21BmQl0p9YRarrL48cmHbaeZVUpoKqYbW3ltvdOKZymE
+                nNSozqQopSodRskcUOovqQpPiDUaWF0Zo4L21wI0KiftTbrxOeawuysEpOVz6pwfWxFs6ps9NTSGvZv7
+                ay5fT4Acat8qicysjtDaKPcGtAFcfajZ72z+3+HwMggy4zRXMKeI67yi64AfEJUu16rLubxJC4al3jbh
+                bRRv7S8ptjs5mkKIBkLitIv4q95bXw9SK75YKzjh5l4n7iqT7HMlCd07hjEjW5BZcSPEht0g2/HFWOcj
+                sNO6uNrrK6srPKYlESiKue9eF95wUbKNpu5Ac0uEf4T1k/EsJqgz+3xRB49k8hWr8p3eCZ0R1PHKPVVe
+                vZnAe5bfcyjqbP5Jd0X5hlu4T+Mbn4K9ZDbYIsZ1v5l4803viTiMao+c61YNXqy6qbvfgLGHnmk8P8rL
+                I9amlH4x8FZjzDbapRvHoW38pXvegP3h0qW9rsN+69nxNadL8y8p3y/nPkD8QJq0yiDw7cbbtPpwKj8w
+                3XjXbqam9kcGvlqpZVmqRQDvWtI2i0kniqY1YehKzVHn5/0B94cxWn8pj/tH7h5wtT2Yz2HiYqbAly2o
+                8lUjrIQ6sI1IU2lN0lVr8U1FyC5jbG5riAa10qb5qs5Xyte1pc3DTRp2Sptnt6YPGY12Q3NjvyraYsdD
+                iVqcdVwQmyTe1+dXFzfxxsJDgXbArsrPWeVTTSBpa4N2TTUNleHcDcYwW15EgLCZshPQijx6ixYqHzBd
+                VeMzuvBhJ9o6AumS2P7m5DfYbpO8OvUsftbgk4raUZah+sT/ANbeV42cA0D1ItXjJ7fw4Adl2nq5F18w
+                3njXTh7LOyODXyqWONocbU2sBSFgpUk8iDwIqzIqKFUjSQahc+Av7H3+fldGG/xHiuK7932FfCKwtTZ3
+                W408h9S+o0GY2O65vE4evkXQMeQzIYbkMLDjLqQttxJuFJULgity1wcARqK+XvYWuLXChC543HMbj9xZ
+                stXFtjJBxVuPBtwE/k1hLqQNuy7af0r6nYxF1g1myYqcYV7sbq2y+0l1rKxFIVxB6yB8RN62jbyEioe3
+                jC+bvy64aaGN/wDhKxYu7MfP3GjE419qUhuO4/MdbOsIIUhLaQoHTc6jeubL1r5cDCHaCTyUXWTLXxW/
+                iyAtq4BoOzrqt9U1Vq532w8j/kmI6CNC8iux+etQH3awlo4fvAftr6nmDD/T3D/bHIAuiK3a+WJRFQfe
+                JYVvWQBzTHZSfTpJ/wC+sTnh/wCyd4L6Z5XFLMfecrxw7gcxMJxPJcdpQt5CgGtjAaxtO4F86um0lcPt
+                HnWXXVcFzxud5A7lS3b+wjJN6j8xaQfuVhLtw/eE/bX1PL2n+ntH+2eUFdD1u18sSiKGZb6t3p89P0Rm
+                qyXuy+nshaC2+Zbb353Kpt0uts9wp7zhs21kAtZ52SlYJ+KsreODbpxOrF0rbZc0usGAazH0Kf5LuRtN
+                3KzJDclamnsaYqFBpf8AelazaxA8FCryXNoC8kHWymrZWYgyK6ETWloqJMWsaqBRjf8AurCZfbmDhQHy
+                7JhJSJCShSQmzQSeKgAeIqtzK9jlhY1p0t18SuMly6aC4le8Ua/Vp3VIu03+WxHoyf6SNVhk2pnx/kVV
+                5k70n/FzPU52h9Rp/aZn0p2rex+X8TvxFZ3M/nfCz8DVl5zA4bO413GZiG1PgPW6kd9IUkkG4PHkQeRF
+                T2SOYatNCq4gHWq4f+zH2icfLreOkRgo3LbMt9KfRYqJ+OpozSbb5Fz8Bqlez+1uwtnqLuAw7MWUoaVT
+                FanXyDzHVcKlAHxANR5rqSTvFemxgalKqjr2ovuTtnsrcz/Wz0BeQOoLDTsmV0QoJ03DIdDQNvImpEV1
+                Iwdk04AvBjB1rWw+x/a2DJRKgYMQpKLhL8WRKYcAPMamnUm1ezfTEULq8AX54TVM4MJiDEbiR9fRaFkd
+                Rxby7XvxcdUtavWaiucSaldAF71+IlEWNk8dEyUB+BMR1I0lBbdRci4PkI5GucsTZGlrtRXa3ndE8PYa
+                OaahesaOzGjtR2EBDLKUttoHIJSLAfBXpjQ0ADUF4keXuLnaSV6V6XhYeXxEDL493Hz2+rFeADiLkHgQ
+                QQRxHEVynhbK0tcKgrvbXL4JBIw0cFlNtobbS22kJQgBKEjkABYCugAAoFxc4k1OtfVfq/FqMttLb+XV
+                qyUX3rjqAW47pBta6UhQCfVUWayil74rwnrU62zKeD5bsPAOpa09rthk/VKPR1Hv7dR/6Rbe5ynrUv8A
+                uG9/mHib1L0j9tdjx3232cU2l1pQW2ordICkm4Niog8fLXpuV27TUN0jdPWvL8+vHNLTIaHcHUsidsba
+                897rToRlOcbF515y1zc6QpZCfVXuTL4Xmrm1O6T1rlDm9zEKMdhG4GjoWxxmHgYtnowkKbZsAG1OOOJS
+                E8gkLUrSPMK7wwNjFG6t89Ki3F0+Y1eaneA5hpWZXZR1ospsbauVlqmZCAmRJXbU6pbgNgLAcFDhUKbL
+                4ZHYntqeFWVvm9zC3BG/C3aoOpe0DaeCgMFiGy4wwRbpJkP6RxvwGuw4+SvcdlEwUaCBvu61zmzKaU4n
+                kE/db1LAc7abHdcU45i0KWo3UouO3JPMn264HKbYmpbynrUpuf3gFBIeJvUvP/i7Yf8A0lB9Lj39uvz+
+                kW3u8p616/uG9/mHib1LaYTae3cG465ioSIrjwCXFgqUSkG4F1lVSLezihJLG0qod3mU9wAJXYgN7oWb
+                Px0Wex0JIWWibkIccaJ4W4ltSTbjXaWJrxR2rfI5lGhndG7E2ld4HnqtGO22x0204ptJTYpUlboUCORC
+                gq96h/0q39zn61ZHPrz+YeIdS3sHHxoLRaj69BNz1HHHTytzcUs1MjiDBQc5POq2aZ0hq6nAAOYBezrS
+                HWltLvoWClWklJsfIpJBHqr24VFF4a4tNQo87272Y86t1/GpedcOpbjjjq1E+dSlk1BOV25NS2p3z1qz
+                bnl20UD6AbQA6FssVt7FYoBMBtbSEp0pbLzy0AHwCFrUkeoV3htWR90U4T1qLcXss3fIPA0HjAqsyVFZ
+                lMKYe1dNVr6FrbVw4/KQUq+Ouz2BwoepR45Cw1GveB51H1dttkKuVYptSlElSlLdKiTzJUVXvUH+lW/u
+                c/WrQZ9eDVIeIdS3OOxEHHIKIgcSkgDSt110ADlbqKXb1VLigbH3a8ZPOq+e5fKaupxAcwCzK6rgqtyG
+                +tsuw9zNIlKLmRUDEHSc9q0dtv8AB4e0kjjWdkzKEtkFe9q0HaC2UGT3DXwEt0M72ke8TzFV5uGVCyG7
+                pk1ClLx8mXr6mlSSWlKFzYi/Ks/dPbJOXeyXci1NjG+K1aw99rOVSiSrtU3KkJitlcX3FaY6lpkKV72V
+                K0m54/Jt5qs3GyBOHVh0a+8qdgzMtbiPa8QV7vcWk3U3sw43HLwAWMgUgZFFnQkHpi9gvh8u/wAmoV6L
+                fA3wu97WvaVjlxu/EeJ6YPZ1be5uba3/AG+3ZgsQxjk5B9TSo4ndUdNarddbBb+SDzDaqnZZexRBuI0p
+                i5cNOZVed5bNO55jFcXh00j2Q6vOFY2wcnDn4ArirK0typIUSkp4rfU6nmB944k1fZbK18VW+87nJ6Vl
+                c5t3xT0cKVa3kaBzgqR1YKpSiJREoiURKIlESiJREoiURKIlESiJREoiURKIlESiJREoiURKIlESiJRE
+                oiURKIlESiJREoiURKIv/9k=
+</property>
+        </structure>
+        <structure>
+            <property name="name">sflogo_40PX.jpg</property>
+            <property name="data">
+                /9j/4AAQSkZJRgABAQEAZABkAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERET
+                FhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4e
+                Hh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAoAK4DAREAAhEBAxEB/8QA
+                HAAAAQUBAQEAAAAAAAAAAAAAAAIEBQYHAwEI/8QAPhAAAgEDAgMFBwEECAcAAAAAAQIDBAURAAYHEiET
+                IjFBUQgUFWFxgZEyI0KhsRcYJSdSYoKzNERUZXJ0kv/EABsBAAEFAQEAAAAAAAAAAAAAAAABAgQFBgMH
+                /8QAPBEAAQMCAwQHBgMHBQAAAAAAAQACAwQRBSExBhJBcRMiMlFhgaEUQpGxwdEVNHIjM2Ky4fDxFiRS
+                0tP/2gAMAwEAAhEDEQA/APqziBuA7Z2rV3hFhklh5ezjkYgSEsBy9PPGfxqDiVZ7HTOm4j1VrguHfiVa
+                ymJIBvcjhlqqrceJN3pLFJd22NdY6bsRIk8ksfZ9R3ScdeU5HXHnqslxuWOEzGB1rXvwV5BsvTS1IpxW
+                MLr2sAb5a24XV523cVu1goLkrRsamnSRuzPdDEd4D6HI+2rmlnE8LJO8ArM11MaWpkhPukjPnl6KQ1IU
+                RGhCNCEaEI0IRoQjQhGhCNCEaEI0IRoQjQhGhCNCEaEI0IRoQjQhZBxeuVRVbWudZNGFieOOCmicYaEG
+                dldz/nPZ4+Q6eZ1k8cmc+me8jLIAd2eZ5m3kPNeg7L0jI62KNpzBJce+zQQB4De8znwCgb7uC91G2Kuh
+                qNpV0Fo92doVaQHsGZF77dMlF7QMq4GOYegxAqqyodTOY6EhljbwuBr4C9wOF/BWtFhtJHWMlbUtMu8L
+                5doAnIeJtYm+dvEq8cNblUpbrTIkIalrqWnWSJPGObkcGQZ8iIu8PXqPE6usKncGR2GTg3LuNjn52z+K
+                y+P0rDLMCesxzrHvbcZcxvZHuy7lYuIW87Lsfb/xi9NOUeZKemp6ePtJqmZzhIo182P1A8yRrUU1M+of
+                uM5+AHeVj3vDRcqv0/EDcVPuGz27cHDu62mlu9T7tBWCup6hYpCjMBKqNlMhT6jPTOpBpIyxzo5AS3O1
+                iPgmCR18xZHGfihBwvtEF5u1hrq62zTrTiaklj5lkKswBViDjCnqM6KGhNY4sa6x8USS9HmQm39Jm4Ep
+                qOsqOF+5KehqpYEFU1XRskazMqq7BJWYL3wT06ad7FHcgSgkXyseHkk6Q8Wqwb93tDs8QS19rq56adii
+                TQsmAwGcEEjHTP4OsziWKtw+xkYSDxFlpMFwJ+LlzYpAHNzIN9O8WBVnpZTNTRzFQpdQ2A3NjPz89WbH
+                bzQVSSN3XFo4KP21f7fuCnqZ7e5dKaqkpnz/AIkOM/Q9CPkdR6WsjqmudGdCR8FLr8OnoHNZMLFzQ4cj
+                9RoUzu+5jQboorAlsnqaitjeSJ0kQKqp+otk5AGfnnXKeuMVQ2AMJLtNOGt1IpsL6ejkqzIA1hANwb3O
+                lu9TYq6Y/wDMQ9Oh/aDodTOkZ3qt6J//ABPwSo54ZWKxyxuQMkKwOBpQ9rsgU1zHNzIS3dUHM7BRkDJO
+                Op8NKSBqkAJ0XulSLj71TYz7xFjOP1jx0zpG96f0T+4pU00MPL2sqR8xwOZgMnSuc1upSNY53ZF0n3qm
+                /wCoi/8AsaTpG96d0T+4/BAqqY82KiI8gBbvjoD4Z0dI3vSdE/LI5pSTwu4RJY2YjIAYE40oe05ApCxw
+                FyENUQK5Rpoww8QWGRoL2g2ulEbiLgJaMrqHRgynwIOQdKCCLhNIINisN4pyzz7UnqZSaaIzr2MDEB5M
+                1Uxy4I6Ede6PDz9Bi8Yc51KXHIXyHf1na/b4r07ZxrGVrWNzNjc8B+zbpz7z5eN03TIot+4H7vWgrDjP
+                rT0+retP7OU/wu/las1hzf2tOP42fzyKF4WNURWnb/K3vVM4gBIYc0LclQOXAHVfqcj5jwh4QXCOKxuD
+                byyd6eoVntGGOqKi43XDe5EXZnz9D4cW/tWbK3Bu3YdDXbV53vdgr0uVLCn6pSoIIUeBcdGA88Y89b/C
+                KqOCYtl7LhYrzudhc3q6hNvZ/wCNdn4mIthv1HHbt10X7SSlkXuTMn6pIubqGBzlD3l+Y6h2I4Y+k67D
+                dh4/dJDMJMjqob2+R/cnSD/vcH+1Nrvs9+aPI/MJtX2BzVw2nxKp/cNt2ep2Xu6mNb7tRx1NVbQlMGKD
+                DF+Y4HdJHTr0xqHNRG73h7Ta5yOa6Nl0FirJxfsvxzYFwhROaaBPeYR/mTqR915h99ZbHKX2mie0ajMe
+                X9Fptl6/2LE43k5HqnkcvnYqCsO65pOCtNXUzc9y7IW6BfNqgnsk/mrag02IE4S17e3bdH6tB91Z1mDt
+                btA6J+Ud98/p7R+oURw+gk2HxQqtpTzPJRXOnSWlkf8AekVfH6nDj7DUTDGHC8RdSOPVeARz/u4Vhjcg
+                xzB2Yg0WfGSHDwJ/wfirjtlPivEK/wB9bvRUQS1Up/8AHvykf6mA+2rikHT1ss/BtmDyzd6rPYg72bDK
+                elGr7yO88m+gJ81S96QWKHjva/i8Nvjt70Baf3lUETNiXBbPTOQPH5ao8QbTtxqPpgAzdzva3varS4Q+
+                rds3L7OXF4fla9/d0tn3rQdnU+0Fra6o2q1tJZY0qRQlSgI5iueXpnqf4a0VCyiDnOpbcL7unG2iyOKS
+                YmWRsr97K5G9e/C+vBVfjTNcrpC1jsspWWgpjdqsr4gI37NB8yQzf6NVuPOmmb0MJzaN8+Wg+Z8ld7Js
+                p6ZwqqkZPd0bfMdY8gLDzVy2LfYtybVobumOaaMdqo/dkHRh+QftjVvh1WKymZMOIz58VncXw92HVklM
+                eBy5cPRZ9FSUv9Y2WP3aHk+H9py8gxzcg72PX56z7Y2fjpFh2fotc6WT/SgO8b79vK+i0i+bftN8lpmu
+                1HFWJTFjHFKvMnMwA5iPMgdB9TrSVFHDUkdK24HA6LGUeI1NEHezvLS61yNbDhdZZcdvWJOPVstKWehW
+                gkt5d6YQL2bNyydSuMZ6D8aystFTjGmRBg3S3S2WhW7gxKsds1LUGV2+H2vc3tdvFabadrWG0z1ctutl
+                NTLVoiTRRxgI/KTg8vhnvHWnhoKeAuMbQL2uOGXgsRVYtWVbWiaQu3bkEnMXtx8lmHAy67ftC374lcLd
+                QzGvIi7eZI2KAHoMnOM+msvs9UU1P0vSOa073EgZLcbYUdZVmn6BjnjdzsCRfxtxXnG25bfu9Xtw2yvt
+                tdL7+Fm93lSRuQlejY8vro2gqKaodD0TmuO9nYg9yXZGkraRlT07HMG5lcEZ56X4raIkSOMJGioi9Aqj
+                AGtmAALBebOJcblYXxtH9gUv/tv/AL1RrD7Sfl28/q5epbH/AJl/6R/KxPNwbB21SWu7PBTVCyUtHUSx
+                salyeZIYWXPXBGXb867VWD0rIpC0G4a46ng1p+qi0O0dfLNEHOFnOaD1RoXPB9AE+4K9Nt2n51Y/lUa6
+                7Pj/AG8fP/uo21v5yX9P/mrjuvfFn2zu6w2O9VlNQw3mGp7CeokCL2sRiwnMeg5g7Yz5qB5628NK+aNz
+                2C+7b1uvPHPDSAVinEqxWO7+1BsK57Dkpp72lQarcL0Lhkip0K4kmK9FZlLp16sCPlq4pZpI6CVs/Z0b
+                fv8AD5qO9odKC3VPfb8qYE4NUFM8qLLJeoiiFgCQIZs4H3GmbOg+1E+B+YS1XZHNbZsmSkrtmWSeIw1E
+                RoaeRGGGGezUgj56p5wWyuHiVIbm0KcdQylWAIIwQR464EXTgbaLGeG+3a6l4g3OxSg/B7LXNXxKR0aW
+                ROWH8ISfqNY7CqGSOufAf3cZ3hzI6vpmvRsfxOGXC4qpv72Zu4eQN3euXIqd482udbPQ7qt4K11lqFl5
+                gOvZkj+TBT9M6nbR07uiZVR9qM38v8qs2Nq2GeSgm7EwI87fUX9FbNgW2W17Uooan/i5VNRVHHUyyEu/
+                8Wx9tW2GwOhpmtd2jmeZzKoMZqm1Na9zOyOq39Lch6BZ/uyvt1J7QdnmuFVTw06UHJI8zgKpKy4BJ6Dq
+                R+dZ6tljZjkbpCAA3jp7y12GU88uy8zYmkuL8ra5Ft1fKS97Virqx6Kut5dab3irkgkUqiIcAsVOAepx
+                64Or9lVSNc4scNLki2g71k5aHEHMYJWOtezQQbknPK/LNVrZFnqtw0dXuuS93KgkvUplEVMYuUQLlYlP
+                OjdeX5+eq2gpX1TXVRkc0yG9hbQZAZg8Fc4tWx0EjKARNeIRa7t7tHNxycOPyUXwvnXZ+/LzsSsqMU8j
+                ipt7SMAWyB09MlcfdDqLg7vw+skoXnI5tv8A33fJT9oozi2Gw4rG3rDqvtw/oD6ELjV3S3UHtFyT1tdT
+                00JoBEZJZAqhjGCASeg0x88cWOFz3ADd1Omi7RUs0+yobEwuO/ewBJtdabb9w2e43I2+3XGmrZVhMz+7
+                yrIEXIAyQehJPT6HWlirIJn7kbg42vkbrET4bVU8XSzMLRe2YIubXyv3cVnV2qYF9o+1c0yDFvKHLDox
+                SXA/jrPTuH49Hn7v0K2FNG47Jy5e/f1atXdlCcxIC+OTrVErBhZJ7PYo6mDcSuIJW+I8wyAxwQcH+esn
+                syGPbNfPrL0DbgyRupiLjqI4/CjpptrhRDCfiPM2AF7o5cn6aNpQxhgtl1vsjYkySNqr3PU+61xGDLlS
+                CPUa1gN15+cl8+8XbtbK+yU8dDcKWpcVLMVilDEDtZznp8iD9xrAY/UwywtEbwc+B8XL1rZajqIKhxlY
+                WjdGot7rPsUq832/S0NxWXdG1Ju1pZlkjhJy6mKIMqHzYgAD5q2nVNZUOjeDMw3B05N08e7xBTKTD6Ns
+                kRbTyizm2JtlZzrE+ANyfAhTXBq6W1LTaKB66mWqNWAITIA56T+Xj5j8jUvAJ4hFHGXDevpfP3lXbWUk
+                5nmlDDu7utsvc4+RWs3i0Wm9UopbxbKK40+c9lVU6Spn6MCNbZkj4zdhtyXm5aDqk2Sx2Wx07U9ltNBb
+                IGOWjo6ZIVJ9cKANEkr5Dd5J5oDQ3QJVws1ouE6z19roqqVV5VeanR2A9ASD00Nke0WaSEFoOq6263UF
+                thMNvoqakiJyUgiWNSfXCgaRz3PN3G6AANE501KkJDEkrypGivJjnYKAWx0GT56QNANwE4ucQATkETxR
+                TxNFNGkkbDDKwyCPQg6HNDhYjJDXOYQ5psQljSpqZT2m1zyNJPbqSV28WeBST9yNcXU0LzdzQfIKQyrq
+                GCzXkDmV4lmtKIyLbaJUYglRAgBx4eWkFLCBYMHwCU1lQ43Mjr8ynNNTU9KnJTwxwpnPKiBRn6DXVjGs
+                Fmiy4ySPkO88knxXGottvqZu2qKGmmk/xvCrH8kaY+CJ53nNBPILoypmjbuseQPAlIls9plYtJbKJyfE
+                tToc/wANNNLC43LB8AnNrahgs2Rw8z911o7fQ0TMaSjp6ct+rsolTP1wNPjhjj7DQOQTJaiWa3SOJt3k
+                lIe1Wx3aR7fSM7HmZjApJPqemmmniJuWj4BOFXO0WDzbmU4khilhMMkaPGRgoyggj0xrqWgixGS4tc5p
+                3gc1xp7bb6eUSwUNNFIBgMkKqR9wNc2wRsN2tAPJdX1M0g3XvJHiSiot1BUyGSooqaZyMc0kSscemSND
+                4I3m7mg+SSOomjG6x5A8CV3ghigiEUEaRxr4KigAfYae1oaLNFgubnued5xuV//Z
+</property>
+        </structure>
+        <structure>
+            <property name="name">NEW_sfwLOGO.png</property>
+            <property name="type">image/png</property>
+            <property name="data">
+                iVBORw0KGgoAAAANSUhEUgAAAO0AAAAoCAYAAAASaH2IAAARzElEQVR42u1d+XsNdxf3F7y66UqpfacL
+                tcdWQqmQ2JcgxBIhSBVBEEtWkQQRayW2hCQoEo1WkZDYRaR0Qyjqfd6XoO3723nnc2KS2e/MvTdInznP
+                831u7p2Z7zbfz/ec8zlnJtXIFltsqVJSzZ4CW2yxQWuLLbZUBdBu3bqViy222PKSgxZArV27NlWrVo0L
+                /rbBa4stLyFojx07Rh4eHjKwSsGLYzjHFltsecGg1QKrVLMqNa8NXltseUGgVYK1evXqFBsba2g24xwb
+                vLbY8pxBe+PGDfL19ZWBNTQ0lB4+fOiwcpyDc6XgRV2o0xZbbHEzaF0Bqw1eW2x5jqB1J1ht8NpiSyWC
+                VgtQM2bMcAtY9cDr6sbw6NEjOn7ipFByy8rJXEresZvCwmNoWUQshUWsooTEDcLveXz8h+MnLNWPa8LC
+                o7kuVwv6Er8uSehz6bO+l/J3/M7HhXbQHsZkRm7eusXjFfvH1wvjvHS50PT4bt4qobCVUbL+od6qLJjX
+                5O27KtaA8Ln/m0NOn+dqO5UGWhBKL0L7aWl1I3JLlITETVSzeWd6tXFXer15L3qjZd+y0ro/vfnxIHqr
+                7RB6u91weuvTYfTmJ95U48Mv+DjO7zvMn4LnL+YFayQpu/bSK4260JttfLguVwv6gv417dCH6+8zeBy9
+                0epz/h3H0c6rTbrTsqh4U3Pn6eNLr7fwLO8fPjEXk4Lmm7r+ywVhwnx48HyV90/oT58h46s0aDF+zEP5
+                GmgzmF5p2JlO5OU7dZ6r7VQqaEWGt7LAevHiRWaPpSUzM5M1rBS46IOeHDiURc079+cFWqtHAH3QP4Tq
+                DVxK9X2Wl5XB4dRwWAw1GhlPjUevoUajEqjh8FXUYEgEH8f5tT6bzgsUE5yya49uW/19Z1HtPsHUcEQs
+                1+VqQV/Qv7fbj6S8s4U0fXEC1R2wiH/HcbTzwRcLqF6nIVRa+thwLk+ePsuLpd6gsPL+4RNzARA6uv7E
+                qQLeyDAfmC+xf3W9QikwNK5Kg3aA31xhHhdWrIGRq6lm9ymUW3DBqfNcbafSQAtAOQKMM1oUYR+pGWym
+                4HwtuXzlKtVp259BhwXafPJOajVjP7UOOmC6tJyWTs0nbecFWufzubzA/YPmabbnPT2cmo7fZKl+R6XV
+                9EwG6ulL1yk79xI18V0vO95iyi7eKHamG5tZIRGJDFCMRza+gD08rp0Zhw2vDwiJZIC2mJoqu77xmHV0
+                6kJxlQatT1A0NZu4TTYubNh55wqdOs/VdirVpxXNY1d8WGhP+MGtWrWyBFRpwQaiqfnGzOAFiYnC4ncV
+                QAB9g6FRrLG2p2aq2hs8M4aa+6e4FbQo0I637/2b2/hobKxs48Hf0Hxe/gsN57mtd5AK8GLB9b6zww2v
+                b+Q5hZqM26jaUDymrKnyJI3WfdMCk9nzXG2nUkErmqhW84ZFUkmaBWW2QLMD5AMGDCjPrtKSwqvX6D2P
+                Caz5ZIs8MIN8lh2kNfvOU0J6PhUUl1DB1VuSUkLbss7TmsxzNC76iKZmgsn6Yd/xpm4KFnavkH20dv8F
+                WpNxxnJBH6FlRVmyfp+gXXfL2sCmVLPbZLp153fNubhS/BO932sGa2Ut0Db120KN+07TvV+Hck6wNldq
+                WdS3ZH2mDdqqBFpoSZGEcjZ846jgXNQPX1Yq4oYBAGvJ+uR0NiuVoMMCLb5x3/Rg5yblMFBlGleYeIDE
+                zE3BtaOWprpt8q/+fEulMTFG+EqJyXu15yIlg+oOXKJrbaCPtfvOYXBqybRFq3mjUroWjX0TuT9Gcrnw
+                CrPMvb3HMJEmLfhtWeRqpxhUsN69vUao6pTVP3AURwaqEmg5+iDM19CxU8nTZyyPw9Pbl4JDlvBcugxa
+                CDQdgOXIRAborIIVZJdWvfhNPE+PBItKSmWzT7lAYd5akcdP/6Y2kzertHUL7xBTNwUm9dCvEt26a3pM
+                jlcBEORGj1FzNM/vMfor9sl1/WZhbAAlwKkljftMVfnqmIN+s5L0CcCDWdTBczC91uwzJvHe7eLHG520
+                4DeQbGCga7Xuzgy/I8HirdW6B5Ni73Qco6pTVn+nsXxeR8+hDPLKAC3W2IxlSbQ8Zm1FqG5ltCbA9Nu5
+                QoVFxdShdxmbz/PVeTy919WfxwGLES5Zy24+lLB+s+ughaYzIoMAMNGUNVtwvtEmIGWu9SRq417NhVrP
+                exlFJO6wpt1+vUPzNhylsdHZbDL7hh+g7NwL5kArfMfv7pQliRkqU5e1f48AKrlzV3Zu6eMnzFA68rUB
+                SoDTrGmM+jZnHNNmmvPy6bWmPbjdul6L+T7AwsE10sJm+Zh1wsJdQe/3nsnhreXRCbrjnhMaTjU+Hiic
+                O4vZ/SZjk1R1yuofv5HPQ9QAoTsQk+4GLdqARYcNQgzVIWRYvV47ulVy2zHoh68iv0VJfA0ACrKQ52v8
+                ZsHtSebzm03Yypsy+JkaHw0wnCNToBVZZGhGrZCNVe1q5gEB0Rc28qVPnb/KjLFycYJqr9VzGtX+xJP8
+                p89xyeR4UaCFSQrTVKn5wO5GrE2WnbszM5vDNDhuBFqAEmCA/2vGNMYiEskxJWNft6MPm+tMADpoV9T0
+                sEjQDkJz32TlqOpFSAoLu8GwaPbpzUYB0D4WfZ1+86j1ZyPpUWmpW0EL1wLjxOYjhuoARGjHk/nnTYB+
+                M2trbC7YxPTmC5YVohj1B6/keTiRV+A8aCEi8ysFEcxhqwSTGRYabRgRUI7MSNxwMXwD8wqmWfUGHdl3
+                gH914OBhpzN8nhdoITBNlTcYC6bNwOmy8wJD49klUC6APouzZXMDEMAKCYlMcmgat5y2lyat0LZWunj5
+                8SYBLSE9PzDhKJ0pvl1B+BWXMNnXYdaecgDi3kDr1us8VACXPG6MWKZS4+O69jNTKfPkNSYQxbrRjm/k
+                YRmfAeCCjFu5eoNbQWvE+CO27hD0wtyIpYwkPUzhu04Lc3OWwncXCPOTLtugMEfQ7AHzI10DrRJI4nez
+                xSyRZVbLlmukX27Tp4Epql0Z33HzYV5hkYCEgWkC/wo+0GvNelL1+u0508dMJpQjn7bj2OWCBtxmPn1x
+                ZZTDNmGaarWFmPSV4usS0AXwbq5km89ev6+KGUJ7t/EOcmgaAwBp2adUfTp45HueR7Qnzjk2hh6zU+jx
+                n39rjmNq9H4Z0YcxQeOv2yonkEp+v8+WhFSDDgxNF+r9n2a9xb/dk40b/YDl1X1ksNs1bcjWXAZZOeMv
+                FC3XQQ/0GMugxZn0480/VNcs33ZMFS1A6A0hOJdAKwWTVf/VCmCtaNmKm3eXfCMOqlhkVQKFMJkwcWCm
+                YHFgscInAykAEEMTO2Ii9W4qzB/s8mbTF5HAgU3jRO5p3bZgmsJEVWpQ7PAhEesrtJPnbLl2EhbIF3O2
+                8HF8SrU1/GT0UzSR9UxjjKf0yZ9qlnlhLG+C0jqb+SfTt6eL9Mdx/z+8ecrizjrgsir9gzfJ+gLzEvfU
+                3T5tftENpzd1aNiAuCwmPLWJ0L+ozaQNcm2r48pYBq1Vc9gqYGE6i/6xM++TgtnkvWS/KR9LmQkFEEOD
+                gARo1qGv4AcXmb4p7IsIGhA312z6IkABUmllvDFT2C9ordpElmjLkMgNZSCS3HCMaVVyFh/HJ77LQb+U
+                ItZt1zeNhU0oOFY7lbOtz2xVAgYAqAVwqcBPMxNSK/dvnzyl3DOX2WeEb5e8M7U8CZ9LZBxFrt9JXSbG
+                MCikGxY2MXezx2YzwvR82vzCXwyvGz5/s3wcwv2EiYw5cAm07ENK3lLhqEBbWsmkEuOy8J9dEcRoV+zI
+                Zd/BCoBhSsI3BJjqtPlck4l0Z0YUFnvUhjTDsWxK/17VHmtLz1mUdfwsfTpkjiqmi02h6FlsFZ/4rjze
+                c9xCvl7LNMYi02LOIbV6BqpMOVgDmDOwya806CgvjbpwWEMZmsN9AeeQW6DOdDtwKJtqtuzKoSStBz7E
+                8n6vICaEpIsdpU7fOS9VnBZ9BGlqJENmx6miBeAflD6zU6BFzNTV1ENHWtydr5+BP5Rz9icG8biYbw1N
+                aFETgeGDD9xvVGClgrbRqHhKPfiDYf/1TGSY+MNDtnBChfRmc9rh5DgFWRcnI6SgebGLY3fHJqVMmUQa
+                pS7fIIBcSfzB/0U9ACEAoyw4hjlVjh+horyzFZoErC+eUqrxkRf77Tiu9cCHWGDZcK65oj8vG2jNXO+O
+                TCrD182YSfbXi+nqmcWiv2zFnHZFE2ccv8Jpjkg/VN50LFyYjO91m8TEixnz2GoaY0J6Ae3JOWOqv2Bx
+                ldoEQIFGZEJI0n9OO0zMMIz5QsthfCioR8m8I41STwAIt+VbC5qk6PpvFSbixFn0TidfBjnm2OqDHzZo
+                HYhR8r8VEklqcpvJupIKHjgOnh/KKWDOpsuB8Vyx/aTKRIRGxqKatnDVc09jVApYXCW40D+xOEo71Ir5
+                6l0PU9sobbHF4EUqMKGO8bHfcVKK2YIkltkxFaTf9rR99G7ncaxBxT6hnY5f7qNxq45yOAnhI+nGh01S
+                a9O1QWtgJuslVVghkaRa24o5zVR5zFr2dxDkFtPl4EddLrL+GNnoZXs1F7B3wPIXksYoJ2X+1EzX1DLt
+                Ebc2G8+2cn257/XlGpXWh8a+8+CRS2McExTGhJqSVOoxK9nwOmyWyrxxG7Qm/VBpxpPV8I6zbPGACfM4
+                /MGm4rN0OTCHHoP8NbNijJjKzhOiVTcf9fqFrH1hyRVS8V+WogKLKuNJwzTWM5E1H0sUfF29tEVRFq9J
+                UxMtI2IpLSvPeI4fP+HwFIgnfCpTMb0DV6pYaYSS9h49Z1gvNktsmu4Crd/CRG5XmcsembT7nwFarSQL
+                s76s9Dor/q9UFsXvUN1ogBc3rV6nwWUZUFFxhkkOy6PiqdvwICZ0lKCFBtm459uXArRaJrKywDI4dfFH
+                zevxu96zthXEWIJm2qJUtNhoEGqfeE1TZThJCab2vbyZXQYbjNfh/KtuW9kbQvwWrFMlgqC/G9OydfuC
+                cFCH0UvcCtqYrfuFNbRZ1Q+ExgqLfvxngNYZAEpNYleIJ8TOoF2VoQQAGUnZiAMijdEoyQFJ4HidC4L/
+                SvMRGuT2vQcvBWghH4+P0yVnmPX1Ne4Djutejyd6gtaaI8ZW7pJpfYwfaY0f9hrN79DCi+XEF+rhe502
+                /QQXZiIz1liIsI5wb8ITtpTXic1RGS/GfUQoaW5YTNlL+J69oA8bMV4vhHsLZtmd5nHRTzd5E1JaMIht
+                1+86suJJn8jVFByylGbPXVj+Ur4qBVolcAFEvcftpO99clbDSmXvd+c5N1UZtsCiQm4swGiU5ICFAbNQ
+                Gc/F7q1lmr1I0M5elaYizKQZNFJiR/N64bje9ZirtCOnzZF3T/8irwWp5XOGzQ7zCOC+3W4E8wxifBU8
+                A37Hcekcw+S8ffeBzG/vGrhBwYSXvUWkLOnFqzxeC7AiqwvHtN5Y4gpomcVesFXGb2A9wcqBIkDMmTd8
+                YVwosBrWbkyumqAVfVyRnAKDLI234m/pWyzc+R/0EMJpN32H0yECpcbCJpB+7LLpyX1eoGUTV+EOSE35
+                7JMXnL7eTFaTErh4lFHUcpwVhjRRYSOE9hPjq7CEeFOUZmzpbIjFv95R5ZFz/rjQZwBUjNfy43oa8Vl3
+                gZbz2adtUykCbCIIsfGGjyd+hIIniyLWpVRd0ELAAEvBCc0q1a5KMLstieLp37Qt+yL1mp/p1LuisLMi
+                FIFXv+glvlf4PFtUfjR+fx4StjlLMzw1YlGKqetHLNymYskRm43dkeNUf9J/KKRe8zJMzTnHs+emU07B
+                Nf0N2EQeuRgXRwL/mWt3VYtdC7Qzw7+29MI1rCc8U+0oGafRyDhZgozVdowIMGUcu9JAq2UGm33w3X2a
+                9x4/xgUAGiY4CAXvikLO8p0/zPcLeaTSd045yit1t6CvBVdvVrRfdMOSlpRff1P4/l+X+4R6jOab39Ul
+                nGPlHuLeJGjUk3PmuuH9gF+qFTbLL/xVdt7pS9ccz9WDh/T14XOqfoh9OXLqilvauX33D8q/8pvsuqs/
+                l1i6B275T/CiSVxZ2tUWW2xxM2htscUWG7S22GKLjvwfEPdb0bXLKWQAAAAASUVORK5CYII=
+</property>
+        </structure>
+    </list-property>
+</report>

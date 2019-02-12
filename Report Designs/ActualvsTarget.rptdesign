@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.23" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 4.6.0.v201603302314</property>
+    <property name="units">in</property>
+    <method name="initialize"><![CDATA[var testthis;]]></method>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <property name="layoutPreference">auto layout</property>
+    <property name="bidiLayoutOrientation">ltr</property>
+    <property name="imageDPI">96</property>
+    <list-property name="libraries">
+        <structure>
+            <property name="fileName">/ThemesReportItems3.rptlibrary</property>
+            <property name="namespace">ThemesReportItems3</property>
+        </structure>
+    </list-property>
+    <parameters>
+        <scalar-parameter name="pMeasure" id="1131">
+            <property name="valueType">dynamic</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["MeasureName"]</expression>
+            <expression name="sortByColumn">dataSetRow["MeasureName"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">After Call Work</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="linkedDataModelName">Data Model</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pLocation" id="1132">
+            <property name="valueType">dynamic</property>
+            <expression name="valueExpr" type="javascript">dataSetRow["LocationName"]</expression>
+            <expression name="sortByColumn">dataSetRow["LocationName"]</expression>
+            <property name="sortDirection">asc</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">Conversys</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="linkedDataModelName">Data Model</property>
+            <property name="paramType">simple</property>
+            <property name="controlType">list-box</property>
+            <property name="mustMatch">true</property>
+            <property name="fixedOrder">false</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pScorecardDB" id="1296">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">"SLADemo"</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="pViewID" id="1297">
+            <property name="hidden">true</property>
+            <property name="valueType">static</property>
+            <property name="dataType">string</property>
+            <property name="distinct">true</property>
+            <simple-property-list name="defaultValue">
+                <value type="constant">692094617</value>
+            </simple-property-list>
+            <list-property name="selectionList"/>
+            <property name="paramType">simple</property>
+            <property name="controlType">text-box</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <data-mart-data-source name="Data Source" id="1134">
+            <property name="datamartURL">Data Objects/CallCenter</property>
+            <property name="accessType">latest</property>
+        </data-mart-data-source>
+    </data-sources>
+    <property name="linkedDataModels">
+        <data-mart-linked-data-model name="Data Model" id="1135">
+            <property name="dataSource">Data Source</property>
+            <property name="dataObject">Data Model</property>
+        </data-mart-linked-data-model>
+    </property>
+    <styles>
+        <style name="report" id="4">
+            <property name="fontFamily">sans-serif</property>
+            <property name="fontSize">10pt</property>
+        </style>
+        <style name="crosstab-cell" id="5">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+        <style name="crosstab" id="6">
+            <property name="borderBottomColor">#CCCCCC</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderBottomWidth">1pt</property>
+            <property name="borderLeftColor">#CCCCCC</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderLeftWidth">1pt</property>
+            <property name="borderRightColor">#CCCCCC</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderRightWidth">1pt</property>
+            <property name="borderTopColor">#CCCCCC</property>
+            <property name="borderTopStyle">solid</property>
+            <property name="borderTopWidth">1pt</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <extended-item extensionName="Chart" id="1133">
+            <xml-property name="xmlRepresentation"><![CDATA[<ActuateChart version="2.6.1">
+ <ChartWithAxes version="2.6.1" type="Bar Chart" subType="Side-by-side" orientation="1">
+  <block>
+   <children _type="TitleBlock" visible="false">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <label>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+   </children>
+   <children _type="Plot">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+   </children>
+   <children _type="Legend" orientation="0" position="0">
+    <outline>
+     <color _nil="1"/>
+    </outline>
+    <triggers condition="2">
+     <action type="2">
+      <value _type="SeriesValue" name=""/>
+     </action>
+    </triggers>
+    <cursor type="0"/>
+    <clientArea>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </clientArea>
+    <separator>
+     <color _nil="1"/>
+    </separator>
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+   </children>
+   <bounds _body="0.0,0.0,572.25,286.125"/>
+   <outline>
+    <color _nil="1"/>
+   </outline>
+  </block>
+  <extendedProperties name="enable.area.alt" value="false"/>
+  <extendedProperties name="enable.drill.category" value="true"/>
+  <extendedProperties name="enable.drill.series" value="true"/>
+  <extendedProperties name="jschart.series.shadow" value="false"/>
+  <sampleData>
+   <baseSampleData dataSetRepresentation="01/05/2000,02/01/2000,04/12/2000,03/12/2000,02/29/2000"/>
+   <orthogonalSampleData dataSetRepresentation="5,4,12" seriesDefinitionIndex="0"/>
+   <orthogonalSampleData dataSetRepresentation="10.0,8.0,24.0" seriesDefinitionIndex="1"/>
+   <orthogonalSampleData dataSetRepresentation="42,91,62,9,21" seriesDefinitionIndex="2"/>
+  </sampleData>
+  <emptyMessage>
+   <caption value="This chart contains no data."/>
+   <background _body=",64,127,127,127"/>
+   <outline>
+    <color _body=",128,127,127,127"/>
+   </outline>
+  </emptyMessage>
+  <axes type="3">
+   <title>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </title>
+   <associatedAxes primaryAxis="true">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,128,201,236"/>
+      <entries _body=",255,69,166,85"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="Actual" stacked="false" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;BaseData1&quot;]">
+       <grouping enabled="true" aggregateExpression="First"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <triggers condition="2">
+       <action type="0">
+        <value _type="MultiURLValues">
+         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
+         <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
+         <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
+         <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
+        </value>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,69,166,85"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,154,204,0"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+      <entries _body=",255,128,201,236"/>
+     </seriesPalette>
+     <series _type="BarSeries" seriesIdentifier="Target" stacked="false" riser="0">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;CompData1&quot;]">
+       <grouping enabled="true" aggregateExpression="First"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <triggers condition="2">
+       <action type="0">
+        <value _type="MultiURLValues">
+         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
+         <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
+         <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
+         <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
+        </value>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Verdana" size="8.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <origin>
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <associatedAxes titlePosition="3" labelPosition="3" primaryAxis="false">
+    <title>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </title>
+    <seriesDefinitions>
+     <query definition=""/>
+     <seriesPalette>
+      <entries _body=",255,70,91,118"/>
+      <entries _body=",255,232,172,57"/>
+      <entries _body=",255,128,255,128"/>
+      <entries _body=",255,64,128,128"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,170,85,85"/>
+      <entries _body=",255,128,128,0"/>
+      <entries _body=",255,192,192,192"/>
+      <entries _body=",255,255,255,128"/>
+      <entries _body=",255,128,192,128"/>
+      <entries _body=",255,7,146,94"/>
+      <entries _body=",255,0,128,255"/>
+      <entries _body=",255,255,128,192"/>
+      <entries _body=",255,0,255,255"/>
+      <entries _body=",255,255,128,128"/>
+      <entries _body=",255,0,128,192"/>
+      <entries _body=",255,128,128,192"/>
+      <entries _body=",255,255,0,255"/>
+      <entries _body=",255,128,64,64"/>
+      <entries _body=",255,255,128,64"/>
+      <entries _body=",255,80,240,120"/>
+      <entries _body=",255,0,64,128"/>
+      <entries _body=",255,128,0,64"/>
+      <entries _body=",255,255,0,128"/>
+      <entries _body=",255,128,128,64"/>
+      <entries _body=",255,128,128,128"/>
+      <entries _body=",255,255,128,255"/>
+      <entries _body=",255,0,64,0"/>
+      <entries _body=",255,0,0,0"/>
+      <entries _body=",255,255,255,255"/>
+      <entries _body=",255,255,128,0"/>
+      <entries _body=",255,80,166,218"/>
+     </seriesPalette>
+     <series _type="LineSeries" seriesIdentifier="Performance Index" stacked="false">
+      <label>
+       <background _nil="1"/>
+       <outline>
+        <color _nil="1"/>
+       </outline>
+      </label>
+      <dataDefinition definition="row[&quot;Performance Index&quot;]">
+       <grouping enabled="true" aggregateExpression="First"/>
+      </dataDefinition>
+      <triggers condition="6">
+       <action type="1">
+        <value _type="TooltipValue" text="" delay="200"/>
+       </action>
+      </triggers>
+      <triggers condition="2">
+       <action type="0">
+        <value _type="MultiURLValues">
+         <uRLValues baseUrl="&lt;structure&gt;&#10;    &lt;property name=&quot;linkType&quot;&gt;drill-through&lt;/property&gt;&#10;    &lt;property name=&quot;reportName&quot;&gt;CustomerComplaintsByProvider.rptdesign&lt;/property&gt;&#10;    &lt;property name=&quot;targetWindow&quot;&gt;_blank&lt;/property&gt;&#10;    &lt;property name=&quot;targetFileType&quot;&gt;report-design&lt;/property&gt;&#10;    &lt;list-property name=&quot;paramBindings&quot;&gt;&#10;        &lt;structure&gt;&#10;            &lt;property name=&quot;paramName&quot;&gt;pProvider&lt;/property&gt;&#10;            &lt;simple-property-list name=&quot;expression&quot;&gt;&#10;                &lt;value type=&quot;javascript&quot;&gt;params[&quot;pLocation&quot;].value&lt;/value&gt;&#10;            &lt;/simple-property-list&gt;&#10;        &lt;/structure&gt;&#10;    &lt;/list-property&gt;&#10;&lt;/structure&gt;&#10;" baseParameterName="" valueParameterName="" seriesParameterName="">
+          <label>
+           <caption value="Drill to Complaint Report"/>
+          </label>
+         </uRLValues>
+         <propertiesMap key="MenuItem" value="color:Black;fontSize:10pt;paddingLeft:10px;paddingRight:10px;paddingTop:2px;paddingBottom:2px"/>
+         <propertiesMap key="Menu" value="zIndex:99999;backgroundColor:#FAFFF8;width:auto;height:auto;border:1px solid #333333;filter:progid:DXImageTransform.Microsoft.Shadow(Color:#333333,Direction=120,strength=5)"/>
+         <propertiesMap key="OnMouseOut" value="backgroundColor:#FAFFF8;color:#000000"/>
+         <propertiesMap key="OnMouseOver" value="backgroundColor:#245DDB;color:#FFFFFF"/>
+        </value>
+       </action>
+      </triggers>
+      <curveFitting _nil="1"/>
+      <markers>
+       <outline/>
+      </markers>
+      <lineAttributes>
+       <color _nil="1"/>
+      </lineAttributes>
+     </series>
+     <grouping _nil="1"/>
+    </seriesDefinitions>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <label>
+     <caption>
+      <font name="Verdana" size="8.0"/>
+     </caption>
+     <background _nil="1"/>
+     <outline>
+      <color _nil="1"/>
+     </outline>
+    </label>
+    <markerRanges>
+     <outline/>
+     <fill _body=",255,255,223,191"/>
+     <startValue _type="NumberDataElement" value="0.0"/>
+     <endValue _type="NumberDataElement" value="84.0"/>
+     <label visible="false">
+      <caption>
+       <font>
+        <alignment/>
+       </font>
+      </caption>
+      <outline/>
+      <insets/>
+     </label>
+    </markerRanges>
+    <markerRanges>
+     <outline/>
+     <fill _body=",255,255,255,255"/>
+     <startValue _type="NumberDataElement" value="84.0"/>
+     <endValue _type="NumberDataElement" value="85.0"/>
+     <label visible="false">
+      <caption>
+       <font>
+        <alignment/>
+       </font>
+      </caption>
+      <outline/>
+      <insets/>
+     </label>
+    </markerRanges>
+    <markerRanges>
+     <outline/>
+     <fill _body=",255,252,245,215"/>
+     <startValue _type="NumberDataElement" value="85.0"/>
+     <endValue _type="NumberDataElement" value="89.0"/>
+     <label visible="false">
+      <caption>
+       <font>
+        <alignment/>
+       </font>
+      </caption>
+      <outline/>
+      <insets/>
+     </label>
+    </markerRanges>
+    <markerRanges>
+     <outline/>
+     <fill _body=",255,255,255,255"/>
+     <startValue _type="NumberDataElement" value="89.0"/>
+     <endValue _type="NumberDataElement" value="90.0"/>
+     <label visible="false">
+      <caption>
+       <font>
+        <alignment/>
+       </font>
+      </caption>
+      <outline/>
+      <insets/>
+     </label>
+    </markerRanges>
+    <markerRanges>
+     <outline/>
+     <fill _body=",255,231,242,210"/>
+     <startValue _type="NumberDataElement" value="90.0"/>
+     <endValue _type="NumberDataElement" value="125.0"/>
+     <label visible="false">
+      <caption>
+       <font>
+        <alignment/>
+       </font>
+      </caption>
+      <outline/>
+      <insets/>
+     </label>
+    </markerRanges>
+    <majorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </majorGrid>
+    <minorGrid>
+     <lineAttributes>
+      <color _nil="1"/>
+     </lineAttributes>
+     <tickAttributes>
+      <color _nil="1"/>
+     </tickAttributes>
+    </minorGrid>
+    <scale step="25.0">
+     <min _type="NumberDataElement" value="0.0"/>
+     <max _type="NumberDataElement" value="125.0"/>
+    </scale>
+    <origin type="1">
+     <value _nil="1"/>
+    </origin>
+   </associatedAxes>
+   <seriesDefinitions>
+    <query definition=""/>
+    <seriesPalette>
+     <entries _body=",255,80,166,218"/>
+     <entries _body=",255,242,88,106"/>
+     <entries _body=",255,232,172,57"/>
+     <entries _body=",255,128,255,128"/>
+     <entries _body=",255,64,128,128"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,170,85,85"/>
+     <entries _body=",255,128,128,0"/>
+     <entries _body=",255,192,192,192"/>
+     <entries _body=",255,255,255,128"/>
+     <entries _body=",255,128,192,128"/>
+     <entries _body=",255,7,146,94"/>
+     <entries _body=",255,0,128,255"/>
+     <entries _body=",255,255,128,192"/>
+     <entries _body=",255,0,255,255"/>
+     <entries _body=",255,255,128,128"/>
+     <entries _body=",255,0,128,192"/>
+     <entries _body=",255,128,128,192"/>
+     <entries _body=",255,255,0,255"/>
+     <entries _body=",255,128,64,64"/>
+     <entries _body=",255,255,128,64"/>
+     <entries _body=",255,80,240,120"/>
+     <entries _body=",255,0,64,128"/>
+     <entries _body=",255,128,0,64"/>
+     <entries _body=",255,255,0,128"/>
+     <entries _body=",255,128,128,64"/>
+     <entries _body=",255,128,128,128"/>
+     <entries _body=",255,255,128,255"/>
+     <entries _body=",255,0,64,0"/>
+     <entries _body=",255,0,0,0"/>
+     <entries _body=",255,255,255,255"/>
+     <entries _body=",255,255,128,0"/>
+    </seriesPalette>
+    <series seriesIdentifier="">
+     <label>
+      <background _nil="1"/>
+      <outline>
+       <color _nil="1"/>
+      </outline>
+     </label>
+     <dataDefinition definition="row[&quot;Date&quot;]"/>
+     <curveFitting _nil="1"/>
+    </series>
+    <grouping enabled="true" groupType="1"/>
+    <sortKey/>
+   </seriesDefinitions>
+   <lineAttributes>
+    <color _nil="1"/>
+   </lineAttributes>
+   <label>
+    <caption>
+     <font name="Verdana" size="8.0" rotation="90.0"/>
+    </caption>
+    <background _nil="1"/>
+    <outline>
+     <color _nil="1"/>
+    </outline>
+   </label>
+   <formatSpecifier _type="JavaDateFormatSpecifier" pattern="MMM dd"/>
+   <majorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </majorGrid>
+   <minorGrid>
+    <lineAttributes>
+     <color _nil="1"/>
+    </lineAttributes>
+    <tickAttributes>
+     <color _nil="1"/>
+    </tickAttributes>
+   </minorGrid>
+   <origin>
+    <value _nil="1"/>
+   </origin>
+  </axes>
+  <rotation>
+   <angles/>
+  </rotation>
+ </ChartWithAxes>
+</ActuateChart>
+]]></xml-property>
+            <property name="outputFormat">JS</property>
+            <list-property name="action">
+                <structure>
+                    <property name="linkType">none</property>
+                </structure>
+            </list-property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">data["MeasureName"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pMeasure"].value</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">data["LocationName"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pLocation"].value</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <property name="inheritColumns">true</property>
+            <property name="height">3.65625in</property>
+            <property name="width">8in</property>
+            <expression name="bookmark" type="javascript">"Chart"</expression>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">MeasureName</property>
+                    <text-property name="displayName">MeasureName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MeasureName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">LocationName</property>
+                    <text-property name="displayName">LocationName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["LocationName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BaseData1</property>
+                    <text-property name="displayName">BaseData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BaseData1"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompData1</property>
+                    <text-property name="displayName">CompData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompData1"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">Performance Index</property>
+                    <text-property name="displayName">CompIdx</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Performance Index"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">Date</property>
+                    <text-property name="displayName">Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+            </list-property>
+            <property name="theme">ThemesReportItems3.Modern</property>
+            <property name="linkedDataModel">Data Model</property>
+        </extended-item>
+        <table id="1136">
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">MeasureName</property>
+                    <text-property name="displayName">MeasureName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MeasureName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">LocationName</property>
+                    <text-property name="displayName">LocationName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["LocationName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">MeasureLevel</property>
+                    <text-property name="displayName">MeasureLevel</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["MeasureLevel"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">ParentMeasureName</property>
+                    <text-property name="displayName">ParentMeasureName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["ParentMeasureName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">PeriodName</property>
+                    <text-property name="displayName">PeriodName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PeriodName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BaseName</property>
+                    <text-property name="displayName">BaseName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BaseName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BaseData</property>
+                    <text-property name="displayName">BaseData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BaseData"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompName</property>
+                    <text-property name="displayName">CompName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CompData</property>
+                    <text-property name="displayName">CompData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompData"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompVar</property>
+                    <text-property name="displayName">CompVar</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompVar"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompVarPct</property>
+                    <text-property name="displayName">CompVarPct</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompVarPct"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompIdx</property>
+                    <text-property name="displayName">CompIdx</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompIdx"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompTxtColor</property>
+                    <text-property name="displayName">CompTxtColor</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompTxtColor"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">PeriodName2</property>
+                    <text-property name="displayName">PeriodName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PeriodName2"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">PeriodName1</property>
+                    <text-property name="displayName">PeriodName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["PeriodName1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BaseName1</property>
+                    <text-property name="displayName">BaseName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BaseName1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">BaseData1</property>
+                    <text-property name="displayName">BaseData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["BaseData1"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompName1</property>
+                    <text-property name="displayName">CompName</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompName1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CompData1</property>
+                    <text-property name="displayName">CompData</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompData1"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompVar1</property>
+                    <text-property name="displayName">CompVar</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompVar1"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompVarPct1</property>
+                    <text-property name="displayName">CompVarPct</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompVarPct1"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">Performance Index</property>
+                    <text-property name="displayName">CompIdx</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Performance Index"]</expression>
+                    <property name="dataType">float</property>
+                </structure>
+                <structure>
+                    <property name="name">CompIdxRangeId1</property>
+                    <text-property name="displayName">CompIdxRangeId</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompIdxRangeId1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CompIdxColor1</property>
+                    <text-property name="displayName">CompIdxColor</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompIdxColor1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">CompTxtColor1</property>
+                    <text-property name="displayName">CompTxtColor</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["CompTxtColor1"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Date</property>
+                    <text-property name="displayName">Date</text-property>
+                    <expression name="expression" type="javascript">dataSetRow["Date"]</expression>
+                    <property name="dataType">date</property>
+                </structure>
+            </list-property>
+            <property name="linkedDataModel">Data Model</property>
+            <list-property name="filter">
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["MeasureName"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pMeasure"].value</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+                <structure>
+                    <property name="operator">eq</property>
+                    <expression name="expr" type="javascript">row["LocationName"]</expression>
+                    <simple-property-list name="value1">
+                        <value type="javascript">params["pLocation"].value</value>
+                    </simple-property-list>
+                    <property name="updateAggregation">true</property>
+                </structure>
+            </list-property>
+            <column id="1270"/>
+            <column id="1271"/>
+            <column id="1272"/>
+            <column id="1273"/>
+            <column id="1274"/>
+            <column id="1275"/>
+            <column id="1276"/>
+            <column id="1277"/>
+            <column id="1278"/>
+            <column id="1279"/>
+            <column id="1280"/>
+            <column id="1281"/>
+            <column id="1282"/>
+            <column id="1283"/>
+            <column id="1284"/>
+            <column id="1285"/>
+            <column id="1286"/>
+            <column id="1287"/>
+            <column id="1288"/>
+            <column id="1289"/>
+            <column id="1290"/>
+            <column id="1291"/>
+            <column id="1292"/>
+            <column id="1293"/>
+            <column id="1294"/>
+            <column id="1295"/>
+            <header>
+                <row id="1137">
+                    <cell id="1138">
+                        <label id="1139">
+                            <text-property name="text">MeasureName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1140">
+                        <label id="1141">
+                            <text-property name="text">LocationName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1142">
+                        <label id="1143">
+                            <text-property name="text">MeasureLevel</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1144">
+                        <label id="1145">
+                            <text-property name="text">ParentMeasureName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1146">
+                        <label id="1147">
+                            <text-property name="text">PeriodName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1148">
+                        <label id="1149">
+                            <text-property name="text">BaseName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1150">
+                        <label id="1151">
+                            <text-property name="text">BaseData</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1152">
+                        <label id="1153">
+                            <text-property name="text">CompName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1154">
+                        <label id="1155">
+                            <text-property name="text">CompData</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1156">
+                        <label id="1157">
+                            <text-property name="text">CompVar</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1158">
+                        <label id="1159">
+                            <text-property name="text">CompVarPct</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1160">
+                        <label id="1161">
+                            <text-property name="text">CompIdx</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1162">
+                        <label id="1163">
+                            <text-property name="text">CompTxtColor</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1164">
+                        <label id="1165">
+                            <text-property name="text">PeriodName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1166">
+                        <label id="1167">
+                            <text-property name="text">PeriodName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1168">
+                        <label id="1169">
+                            <text-property name="text">BaseName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1170">
+                        <label id="1171">
+                            <text-property name="text">BaseData</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1172">
+                        <label id="1173">
+                            <text-property name="text">CompName</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1174">
+                        <label id="1175">
+                            <text-property name="text">CompData</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1176">
+                        <label id="1177">
+                            <text-property name="text">CompVar</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1178">
+                        <label id="1179">
+                            <text-property name="text">CompVarPct</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1180">
+                        <label id="1181">
+                            <text-property name="text">CompIdx</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1182">
+                        <label id="1183">
+                            <text-property name="text">CompIdxRangeId</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1184">
+                        <label id="1185">
+                            <text-property name="text">CompIdxColor</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1186">
+                        <label id="1187">
+                            <text-property name="text">CompTxtColor</text-property>
+                        </label>
+                    </cell>
+                    <cell id="1188">
+                        <label id="1189">
+                            <text-property name="text">Date</text-property>
+                        </label>
+                    </cell>
+                </row>
+            </header>
+            <detail>
+                <row id="1190">
+                    <cell id="1191">
+                        <data id="1192">
+                            <property name="resultSetColumn">MeasureName</property>
+                        </data>
+                    </cell>
+                    <cell id="1193">
+                        <data id="1194">
+                            <property name="resultSetColumn">LocationName</property>
+                        </data>
+                    </cell>
+                    <cell id="1195">
+                        <data id="1196">
+                            <property name="resultSetColumn">MeasureLevel</property>
+                        </data>
+                    </cell>
+                    <cell id="1197">
+                        <data id="1198">
+                            <property name="resultSetColumn">ParentMeasureName</property>
+                        </data>
+                    </cell>
+                    <cell id="1199">
+                        <data id="1200">
+                            <property name="resultSetColumn">PeriodName</property>
+                        </data>
+                    </cell>
+                    <cell id="1201">
+                        <data id="1202">
+                            <property name="resultSetColumn">BaseName</property>
+                        </data>
+                    </cell>
+                    <cell id="1203">
+                        <data id="1204">
+                            <property name="resultSetColumn">BaseData</property>
+                        </data>
+                    </cell>
+                    <cell id="1205">
+                        <data id="1206">
+                            <property name="resultSetColumn">CompName</property>
+                        </data>
+                    </cell>
+                    <cell id="1207">
+                        <data id="1208">
+                            <property name="resultSetColumn">CompData</property>
+                        </data>
+                    </cell>
+                    <cell id="1209">
+                        <data id="1210">
+                            <property name="resultSetColumn">CompVar</property>
+                        </data>
+                    </cell>
+                    <cell id="1211">
+                        <data id="1212">
+                            <property name="resultSetColumn">CompVarPct</property>
+                        </data>
+                    </cell>
+                    <cell id="1213">
+                        <data id="1214">
+                            <property name="resultSetColumn">CompIdx</property>
+                        </data>
+                    </cell>
+                    <cell id="1215">
+                        <data id="1216">
+                            <property name="resultSetColumn">CompTxtColor</property>
+                        </data>
+                    </cell>
+                    <cell id="1217">
+                        <data id="1218">
+                            <property name="resultSetColumn">PeriodName2</property>
+                        </data>
+                    </cell>
+                    <cell id="1219">
+                        <data id="1220">
+                            <property name="resultSetColumn">PeriodName1</property>
+                        </data>
+                    </cell>
+                    <cell id="1221">
+                        <data id="1222">
+                            <property name="resultSetColumn">BaseName1</property>
+                        </data>
+                    </cell>
+                    <cell id="1223">
+                        <data id="1224">
+                            <property name="resultSetColumn">BaseData1</property>
+                        </data>
+                    </cell>
+                    <cell id="1225">
+                        <data id="1226">
+                            <property name="resultSetColumn">CompName1</property>
+                        </data>
+                    </cell>
+                    <cell id="1227">
+                        <data id="1228">
+                            <property name="resultSetColumn">CompData1</property>
+                        </data>
+                    </cell>
+                    <cell id="1229">
+                        <data id="1230">
+                            <property name="resultSetColumn">CompVar1</property>
+                        </data>
+                    </cell>
+                    <cell id="1231">
+                        <data id="1232">
+                            <property name="resultSetColumn">CompVarPct1</property>
+                        </data>
+                    </cell>
+                    <cell id="1233">
+                        <data id="1234">
+                            <property name="resultSetColumn">Performance Index</property>
+                        </data>
+                    </cell>
+                    <cell id="1235">
+                        <data id="1236">
+                            <property name="resultSetColumn">CompIdxRangeId1</property>
+                        </data>
+                    </cell>
+                    <cell id="1237">
+                        <data id="1238">
+                            <property name="resultSetColumn">CompIdxColor1</property>
+                        </data>
+                    </cell>
+                    <cell id="1239">
+                        <data id="1240">
+                            <property name="resultSetColumn">CompTxtColor1</property>
+                        </data>
+                    </cell>
+                    <cell id="1241">
+                        <data id="1242">
+                            <property name="resultSetColumn">Date</property>
+                        </data>
+                    </cell>
+                </row>
+            </detail>
+            <footer>
+                <row id="1243">
+                    <cell id="1244"/>
+                    <cell id="1245"/>
+                    <cell id="1246"/>
+                    <cell id="1247"/>
+                    <cell id="1248"/>
+                    <cell id="1249"/>
+                    <cell id="1250"/>
+                    <cell id="1251"/>
+                    <cell id="1252"/>
+                    <cell id="1253"/>
+                    <cell id="1254"/>
+                    <cell id="1255"/>
+                    <cell id="1256"/>
+                    <cell id="1257"/>
+                    <cell id="1258"/>
+                    <cell id="1259"/>
+                    <cell id="1260"/>
+                    <cell id="1261"/>
+                    <cell id="1262"/>
+                    <cell id="1263"/>
+                    <cell id="1264"/>
+                    <cell id="1265"/>
+                    <cell id="1266"/>
+                    <cell id="1267"/>
+                    <cell id="1268"/>
+                    <cell id="1269"/>
+                </row>
+            </footer>
+        </table>
+    </body>
+</report>
